@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Matériels - Proposition Préliminaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Catalogue de Matériels - Proposition Préliminaire</h1>
+    <div id="filter-container">
+    </div>
+</header>
+
+<main id="catalogo-container">
+    <p>Chargement du catalogue...</p>
+</main>
+
+<div id="modal-detalle" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <div id="modal-body">
+        </div>
+    </div>
+</div>
+
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCartModal()">&times;</span>
+
+        <section id="cotation-page">
+            <h2>Votre Demande de Cotation</h2>
+            <div id="cart-summary">
+            </div>
+
+            <form id="order-form">
+                <h3 style="margin-top: 20px;">Vos Coordonnées</h3>
+                <label for="client_name">Nom et Prénom / Société:</label>
+                <input type="text" id="client_name" name="name" required>
+
+                <label for="client_email">Email:</label>
+                <input type="email" id="client_email" name="email" required>
+
+                <label for="client_phone">Téléphone (Optionnel):</label>
+                <input type="tel" id="client_phone" name="phone">
+
+                <label for="client_comments">Commentaires Additionnels:</label>
+                <textarea id="client_comments" name="comments"></textarea>
+
+                <button type="submit" id="submit-order">Envoyer la Demande de Budget</button>
+                <button type="button" onclick="closeCartModal()">Annuler et Fermer</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+<div id="floating-cart-button" onclick="showCotationModal()">
+    <span id="cart-icon">🛒</span>
+    <span id="cart-count">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

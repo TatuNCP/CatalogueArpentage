@@ -1,0 +1,100 @@
+[
+  {
+    "lot":"17",
+    "prix":25000.0,
+    "categorie":"Station Total",
+    "descripcion":"TS16 P 1  R500, Station Totale avec PS",
+    "imageURL":"img/17.jpg"
+  },
+  {
+    "lot":"52",
+    "prix":55000.0,
+    "categorie":"Station Total",
+    "descripcion":"Station Total MS60 I 1'' R2000 + accessoires",
+    "imageURL":"img/52.jpg"
+  },
+  {
+    "lot":"62",
+    "prix":30000.0,
+    "categorie":"Station Total",
+    "descripcion":"Station Totale TM50 1 R1000 + accessoires",
+    "imageURL":"img/62.jpg"
+  },
+  {
+    "lot":"81",
+    "prix":20000.0,
+    "categorie":"GPS",
+    "descripcion":"GPS iCG70 T UHF + Acesories",
+    "imageURL":"img/81.jpg"
+  },
+  {
+    "lot":"112.2",
+    "prix":80.0,
+    "categorie":"Accesories Apareils de mesure",
+    "descripcion":"Plumb line 8oz",
+    "imageURL":"img/112.2.jpg"
+  },
+  {
+    "lot":"132",
+    "prix":1100.0,
+    "categorie":"Accesories Apareils de mesure",
+    "descripcion":"Monitoring System Data",
+    "imageURL":"img/132.jpg"
+  },
+  {
+    "lot":"137",
+    "prix":1477.98,
+    "categorie":"Accesories Apareils de mesure",
+    "descripcion":"Laser rotatif Rugby 640 pente manuelle",
+    "imageURL":"img/137.jpg"
+  },
+  {
+    "lot":"143",
+    "prix":300.0,
+    "categorie":"Accesories Apareils de mesure",
+    "descripcion":" lot Niveau électroniques",
+    "imageURL":"img/143.jpg"
+  },
+  {
+    "lot":"153",
+    "prix":750.0,
+    "categorie":"Accesories Apareils de mesure",
+    "descripcion":"Adapteur FTA360",
+    "imageURL":"img/153.jpg"
+  },
+  {
+    "lot":"203",
+    "prix":280.0,
+    "categorie":"Outils alimentation Electrique",
+    "descripcion":"Milwaukee impact- Gun 1/2 Fuel  18 volt",
+    "imageURL":"img/203.jpg"
+  },
+  {
+    "lot":"210",
+    "prix":1000.0,
+    "categorie":"Outils alimentation Electrique",
+    "descripcion":"Hilti PS 50 détecteur acier armature",
+    "imageURL":"img/210.jpg"
+  },
+  {
+    "lot":"702",
+    "prix":100.0,
+    "categorie":"Materiel Ferroviaire",
+    "descripcion":"Cone orange 18 po bande réfléchissante",
+    "imageURL":"img/702.jpg"
+  },
+  {
+    "lot":"712",
+    "prix":1500.0,
+    "categorie":"Materiel Ferroviaire",
+    "descripcion":" Ancrage pour rail anti-chute",
+    "imageURL":"img/712.jpg"
+  },
+  {
+    "lot":"717",
+    "prix":140.0,
+    "categorie":"Materiel Ferroviaire",
+    "descripcion":"Lumière rouge de sécurité",
+    "imageURL":"img/717.jpg"
+  }
+]
