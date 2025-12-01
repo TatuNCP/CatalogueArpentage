@@ -75,25 +75,54 @@ function cargarCatalogo() {
         });
 }
 
-// 2. FILTER GENERATION
+// 2. FILTER GENERATION (Adjusted for Icon as Button + Text below)
 function generarFiltros(lotes) {
     const container = document.getElementById('filter-container');
     container.innerHTML = '';
 
-    // Get unique categories
+    // Obtener categorías únicas
     const categorias = ['Tous', ...new Set(lotes.map(l => l.categorie))];
 
     categorias.forEach(categoria => {
-        const button = document.createElement('button');
-        button.className = 'filter-button';
-        button.textContent = categoria;
-        // Assign the filter function
-        button.onclick = () => filtrarCatalogo(categoria);
-        container.appendChild(button);
+        // --- CÓDIGO CRÍTICO ---
+        let iconName = categoria
+            // 1. Convierte acentos a su letra base (é -> e, ô -> o, etc.)
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            // 2. Reemplaza cualquier espacio (o múltiples espacios) con un guion bajo
+            .replace(/\s+/g, '_')
+            // 3. Limpieza final (elimina cualquier otro carácter que no sea letra, número o guion bajo)
+            .replace(/[^a-zA-Z0-9_]/g, '');
+        // ----------------------
+
+        // Ahora iconName será: Outils_electriques
+        const iconSrc = `icons/${iconName}.jpg`;
+
+        // CREAMOS UN ENLACE/DIV CLICABLE PARA EL ICONO
+        const iconWrapper = document.createElement('div'); // Usamos div para flexibilidad
+        iconWrapper.className = 'category-button-wrapper'; // Nuevo contenedor
+        iconWrapper.onclick = () => filtrarCatalogo(categoria);
+
+        // Creamos la imagen del icono
+        const iconImg = document.createElement('img');
+        iconImg.src = iconSrc;
+        iconImg.alt = categoria;
+        iconImg.className = 'category-icon-clickable'; // Nuevo estilo para el icono clicable
+
+        // Creamos el texto de la categoría
+        const categoryTextSpan = document.createElement('span');
+        categoryTextSpan.className = 'category-text-below'; // Nuevo estilo para el texto
+        categoryTextSpan.textContent = categoria;
+
+        // Añadimos el icono y el texto al contenedor
+        iconWrapper.appendChild(iconImg);
+        iconWrapper.appendChild(categoryTextSpan);
+
+        container.appendChild(iconWrapper);
     });
 
-    // Activate the 'Tous' button by default
-    document.querySelector('.filter-button').classList.add('active');
+    // Activar el botón 'Tous' por defecto
+    // Nota: Ahora el 'active' se aplica al wrapper, no al antiguo .filter-button
+    document.querySelector('.category-button-wrapper').classList.add('active');
 }
 
 // 3. FILTER LOGIC
@@ -114,7 +143,7 @@ function filtrarCatalogo(categoriaSeleccionada) {
 }
 
 
-// 4. CARD GENERATION (Currency CAD) - CON CORRECCIÓN DE ERROR EN DESCRIPCIÓN
+// 4. CARD GENERATION (Currency CAD)
 function generarTarjetas(lotes) {
     const container = document.getElementById('catalogo-container');
     container.innerHTML = '';
@@ -125,21 +154,32 @@ function generarTarjetas(lotes) {
     }
 
     lotes.forEach(lote => {
-        // Price formatting (using CAD currency)
         const prixFormate = new Intl.NumberFormat('fr-FR', {
             style: 'currency',
             currency: 'CAD',
             minimumFractionDigits: 2
         }).format(lote.prix);
 
-        // **LÍNEA CORREGIDA:** Usamos un control para asegurar que la descripción es una cadena.
-        // Si lote.descripcion es undefined/null, usamos una cadena vacía ('') antes de usar .replace()
+        const imagenUrlSafe = lote.imageURL || '';
         const safeDescripcion = (lote.descripcion || '').replace(/'/g, "\\'");
 
-        const imagenUrlSafe = lote.imageURL || '';
+        // --- CÓDIGO CRÍTICO PARA EL ICONO DE LA ESQUINA ---
+        // Preparamos la ruta del icono de categoría (MISMA LÓGICA QUE EN LOS FILTROS)
+        const categoria = lote.categorie;
+        let iconName = categoria
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/\s+/g, '_')
+            .replace(/[^a-zA-Z0-9_]/g, '');
+        const iconSrc = `icons/${iconName}.jpg`;
+        // ----------------------------------------------------
 
         const tarjetaHTML = `
             <div class="lote-card" data-lote="${lote.lot}" data-categoria="${lote.categorie}">
+
+                <div class="category-corner-icon">
+                    <img src="${iconSrc}" alt="${categoria}" class="corner-icon-img">
+                </div>
+
                 <h3>Lot ${lote.lot}</h3>
                 <h4>${lote.descripcion}</h4>
                 <p>Catégorie: ${lote.categorie}</p>
@@ -147,7 +187,6 @@ function generarTarjetas(lotes) {
 
                 <div class="card-actions">
                     <button onclick="verDetalle('${lote.lot}', '${imagenUrlSafe}', '${prixFormate}', ${lote.prix})">Voir Détail</button>
-
                     <button onclick="anadirAlCarrito('${lote.lot}', '${safeDescripcion}', ${lote.prix})">Ajouter à la Demande</button>
                 </div>
             </div>
@@ -156,24 +195,34 @@ function generarTarjetas(lotes) {
     });
 }
 
-// 5. MODAL DETAIL LOGIC (PDF IMAGE)
-function verDetalle(lote, imagenURL, prixFormate, precioNumerico) { // <-- Añadimos precioNumerico
+
+// 5. MODAL DETAIL LOGIC (PDF IMAGE) - FINAL VERSION LIMPIA
+function verDetalle(lote, imagenURL, prixFormate, precioNumerico) {
     const modalBody = document.getElementById('modal-body');
 
-    // Recuperar la descripción real del catálogo (usando el campo correcto 'descripcion')
+    // Recuperamos datos para el botón
     const loteCompleto = catalogoData.find(item => item.lot === lote);
     const descripcionLarga = loteCompleto ? loteCompleto.descripcion : 'Description non disponible.';
+    const safeDescripcion = (descripcionLarga || '').replace(/'/g, "\\'");
 
-    // Contenido del Modal
+    // Contenido del Modal (MAXIMIZADO Y LIMPIO)
     modalBody.innerHTML = `
-    <span style="font-size: 1.5em; margin-bottom: 10px; color: white;">Lot ${lote} - Prix: ${prixFormate}</span>
-    <p style="color: white;">Description: ${descripcionLarga}</p>
-    <img src="${imagenURL}" alt="Détail du Lot ${lote}">
 
-    <button style="margin-top: 20px;" onclick="anadirAlCarrito...
-`;
+        <img src="${imagenURL}" alt="Détail du Lot ${lote}">
 
-    modal.style.display = 'block'; // Show the modal
+        <div class="modal-button-wrapper">
+            <button
+                onclick="anadirAlCarrito('${lote}', '${safeDescripcion}', ${precioNumerico}); cerrarModal();"
+            >
+                Ajouter à la Demande (${prixFormate})
+            </button>
+        </div>
+    `;
+
+    // Necesitamos que el modalBody sea el punto de referencia para el botón flotante
+    modalBody.style.position = 'relative';
+
+    modal.style.display = 'block';
 }
 
 function cerrarModal() {
