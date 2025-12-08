@@ -44,6 +44,7 @@ loadCart();
 document.addEventListener('DOMContentLoaded', () => {
     cargarCatalogo();
 
+
     // El listener del formulario debe estar dentro de DOMContentLoaded
     const orderForm = document.getElementById('order-form');
     if (orderForm) {
@@ -54,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error("DEBUG ERROR: Form with ID 'order-form' not found.");
     }
+});
+
 });
 
 function cargarCatalogo() {
@@ -401,8 +404,10 @@ window.onclick = function(event) {
 
 // --- ORDER SUBMISSION LOGIC ---
 
-function sendOrder(event) {
-    event.preventDefault();
+unction sendOrder(event) {
+    if (event && event.preventDefault) {
+        event.preventDefault();
+    }
 
     const clientName = document.getElementById('client_name').value;
     const clientEmail = document.getElementById('client_email').value;
