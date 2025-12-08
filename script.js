@@ -401,35 +401,70 @@ window.onclick = function(event) {
 
 // --- ORDER SUBMISSION LOGIC ---
 
-function sendOrder() {
+function sendOrder(event) {
+    event.preventDefault();
+
     const clientName = document.getElementById('client_name').value;
     const clientEmail = document.getElementById('client_email').value;
-    // ... (rest of form fields) ...
+    const clientPhone = document.getElementById('client_phone').value;
+    const clientMessage = document.getElementById('client_message').value;
 
-    // 1. Get final order details
-    const orderDetails = {
-        // ... (data extraction) ...
+    if (cart.length === 0) {
+        alert("Votre panier est vide. Veuillez ajouter des lots.");
+        return;
+    }
+
+    // 1. Création du corps du message pour le courriel (en français)
+    let orderDetails = `Détails du client:\n- Nom: ${clientName}\n- Email: ${clientEmail}\n- Téléphone: ${clientPhone}\n- Message: ${clientMessage}\n\n--- DEMANDE DE DEVIS ---\n`;
+
+    let totalEstimado = 0;
+
+    cart.forEach(item => {
+        // Le format de prix est déjà défini dans formatCurrency
+        orderDetails += `\nLot ID: ${item.lote} | Description: ${item.descripcion} | Prix: ${formatCurrency(item.prix)}`;
+        totalEstimado += item.prix;
+    });
+
+    // Finalisation du total
+    orderDetails += `\n\nTOTAL ESTIMÉ: ${formatCurrency(totalEstimado)}`;
+
+    // 2. Création du Payload (les données que Formspree enverra par email)
+    const formData = {
+        _replyto: clientEmail, // Permet de répondre directement au client
+        _subject: "NOUVELLE DEMANDE DE DEVIS - Catalogue NouvLR",
+        "Détail de la Commande": orderDetails, // Le corps du message qui sera envoyé
     };
 
-    // 2. SIMULATION OF EMAIL SENDING
-    console.log("--- COMMANDE ENVOYÉE (SIMULATION) ---");
-    console.log(JSON.stringify(orderDetails, null, 2));
+    // 3. ENVOYER LES DONNÉES À FORMSPREE
+    const formspreeEndpoint = 'https://formspree.io/f/mrbnakno';
 
-    // Show confirmation message inside the modal (instead of alert)
-    document.getElementById('cotation-page').innerHTML = `
-        <div style="padding: 50px; text-align: center;">
-            <h2>✅ Merci, ${clientName}!</h2>
-            <p style="font-size: 1.2em;">Votre demande de budget a été envoyée avec succès (Simulation).</p>
-            <p>Nous vous enverrons le budget officiel dans les plus brefs délais.</p>
-            <p style="margin-top: 30px;">
-                <button onclick="window.location.reload()" style="width: auto; padding: 10px 20px;">Fermer et retourner au Catalogue</button>
-            </p>
-        </div>
-    `;
-
-    // 3. Clear the cart and reset view (The user must refresh to see the catalog)
-    cart = [];
-    saveCart();
-    updateCartUI();
-    // No cerramos la modal aquí para que el usuario pueda leer el mensaje de confirmación
+    fetch(formspreeEndpoint, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+            // Afficher le message de succès en français
+            document.getElementById('cotation-page').innerHTML = `
+                <div style="padding: 50px; text-align: center;">
+                    <h2>✅ Demande Envoyée!</h2>
+                    <p>Votre demande a été envoyée avec succès. Nous vous contacterons rapidement.</p>
+                </div>
+            `;
+            // Vider le panier
+            cart = [];
+            saveCart();
+            updateCartUI();
+        } else {
+            // Gérer les erreurs de Formspree
+            alert("Échec de l'envoi. Veuillez vérifier la configuration de Formspree.");
+        }
+    })
+    .catch(error => {
+        console.error('Erreur réseau lors de l\'envoi du formulaire:', error);
+        alert("Erreur réseau. Veuillez réessayer.");
+    });
 }
