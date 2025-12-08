@@ -416,23 +416,20 @@ window.onclick = function(event) {
     }
 }
 
+// --- ORDER SUBMISSION LOGIC (EmailJS avec Table HTML pour style professionnel) ---
 function sendOrder(event) {
 
     if (event && event.preventDefault) {
         event.preventDefault();
     }
 
-    // 1. OBTENER EL ELEMENTO DEL FORMULARIO COMPLETO
-    // Se asume que el evento 'submit' fue disparado por el formulario 'order-form'
+    // 1. OBTENIR LE FORMULAIRE ET LES VALEURS
     const formElement = document.getElementById('order-form');
-
-
     if (!formElement) {
-        console.error("DEBUG: order-form no encontrado.");
+        console.error("DEBUG: order-form non trouvé.");
         return;
     }
 
-    // 2. BUSCAR LOS VALORES DENTRO DEL FORMULARIO ENCONTRADO
     const clientName = formElement.querySelector('#client_name').value;
     const clientEmail = formElement.querySelector('#client_email').value;
     const clientPhone = formElement.querySelector('#client_phone').value;
@@ -443,40 +440,45 @@ function sendOrder(event) {
         return;
     }
 
-    // 1. Création du corps du message pour le courriel (en français)
-    let orderDetails = `Détails du client:\n- Nom: ${clientName}\n- Email: ${clientEmail}\n- Téléphone: ${clientPhone}\n- Message: ${clientMessage}\n\n--- DEMANDE DE DEVIS ---\n`;
-
+    // 2. GÉNÉRER LA TABLE HTML (Les lignes)
     let totalEstimado = 0;
+    let tableRows = ""; // Contient toutes les lignes de la table
 
     cart.forEach(item => {
-        // Le format de prix est déjà défini dans formatCurrency
-        orderDetails += `\nLot ID: ${item.lote} | Description: ${item.descripcion} | Prix: ${formatCurrency(item.prix)}`;
+        const prixFormate = formatCurrency(item.prix);
         totalEstimado += item.prix;
+
+        // CRITICAL: Ajout des styles en ligne pour la lisibilité de chaque ligne
+        tableRows += `
+            <tr style="background-color: #fafafa;">
+                <td style="border: 1px solid #ddd; padding: 8px;">${item.lote}</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">${item.descripcion}</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">${prixFormate}</td>
+            </tr>
+        `;
     });
 
-    // Finalisation du total
-    orderDetails += `\n\nTOTAL ESTIMÉ: ${formatCurrency(totalEstimado)}`;
+    const totalFormateado = formatCurrency(totalEstimado);
 
-    // 2. Création du Payload (les données que Formspree enverra par email)
-    const formData = {
-        _replyto: clientEmail, // Permet de répondre directement au client
-        _subject: "NOUVELLE DEMANDE DE DEVIS - Catalogue NouvLR",
-        "Détail de la Commande": orderDetails, // Le corps du message qui sera envoyé
+    // 3. CRÉER LE PAYLOAD POUR EMAILJS
+    const templateParams = {
+        client_name: clientName,
+        client_email: clientEmail,
+        client_phone: clientPhone,
+        client_message: clientMessage,
+        total_price: totalFormateado,
+        // CLÉ CRITIQUE: Le contenu HTML des lignes de la table
+        order_table_rows: tableRows
     };
 
-    // 3. ENVOYER LES DONNÉES À FORMSPREE
-    const formspreeEndpoint = 'https://formspree.io/f/mrbnakno';
+    // 4. ENVOYER AVEC EMAILJS
+    // >>> REMPLACEZ CES IDs <<<
+    const serviceID = "service_qit85uu";
+    const templateID = "template_5l7jajt";
 
-    fetch(formspreeEndpoint, {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => {
-        if (response.ok) {
-            // Afficher le message de succès en français
+    emailjs.send(serviceID, templateID, templateParams)
+        .then(function(response) {
+            // Succès: Afficher le message de succès
             document.getElementById('cotation-page').innerHTML = `
                 <div style="padding: 50px; text-align: center;">
                     <h2>✅ Demande Envoyée!</h2>
@@ -487,13 +489,9 @@ function sendOrder(event) {
             cart = [];
             saveCart();
             updateCartUI();
-        } else {
-            // Gérer les erreurs de Formspree
-            alert("Échec de l'envoi. Veuillez vérifier la configuration de Formspree.");
-        }
-    })
-    .catch(error => {
-        console.error('Erreur réseau lors de l\'envoi du formulaire:', error);
-        alert("Erreur réseau. Veuillez réessayer.");
-    });
+        }, function(error) {
+            // Erreur: Afficher erreur
+            console.error('Erreur lors de l\'envoi via EmailJS:', error);
+            alert(`Échec de l'envoi de la demande. Veuillez vérifier la console.`);
+        });
 }
