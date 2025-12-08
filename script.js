@@ -8,6 +8,15 @@ let cart = []; // Global variable to hold the cart content
 const modal = document.getElementById('modal-detalle'); // Modal for lot details
 const cartModal = document.getElementById('cart-modal'); // Modal for the shopping cart
 
+// Función de utilidad para formatear moneda (definida una sola vez)
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('fr-FR', {
+        style: 'currency',
+        currency: 'CAD',
+        minimumFractionDigits: 2
+    }).format(amount);
+}
+
 // --- LOCAL STORAGE AND UI MANAGEMENT ---
 
 // Function to load cart from localStorage when the page starts
