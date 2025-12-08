@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error("DEBUG ERROR: Form with ID 'order-form' not found.");
     }
-});
+    });
+
 
 
 function cargarCatalogo() {
@@ -403,7 +404,7 @@ window.onclick = function(event) {
 
 // --- ORDER SUBMISSION LOGIC ---
 
-unction sendOrder(event) {
+function sendOrder(event) {
     if (event && event.preventDefault) {
         event.preventDefault();
     }
