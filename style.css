@@ -69,9 +69,15 @@ body {
 
 #filter-container {
     display: flex;
-    justify-content: flex-end; /* Alinea los filtros a la derecha */
-    width: 95%; /* Ajuste de ancho */
-    margin: 30px 40px 0 auto; /* Centrado y margen a la derecha */
+    /* CAMBIO CRÍTICO 1: Centrar los iconos en el espacio disponible */
+    justify-content: center;
+
+    /* CRÍTICO 2: Permite que los iconos salten de línea si no caben */
+    flex-wrap: wrap;
+
+    /* Ancho completo y centrado */
+    width: 95%;
+    margin: 30px auto 0 auto;
     padding: 0 10px;
 }
 
@@ -103,8 +109,8 @@ body {
 
 /* Estilo del Icono (la imagen en sí) */
 .category-icon-clickable {
-    width: 110px;
-    height: 110px;
+    width: 195px;
+    height: 195px;
     object-fit: contain;
     transition: transform 0.2s ease-in-out;
     outline: none !important;
@@ -467,4 +473,44 @@ button:hover {
 .cart-total {
     font-weight: bold;
     background-color: #e9e9e9;
+}
+
+/* ESTILOS PARA LA GALERÍA DE IMÁGENES DENTRO DEL MODAL */
+.gallery-container {
+    position: relative; /* Contenedor para posicionar flechas */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100; /* Por encima de la imagen */
+    font-size: 3em;
+    cursor: pointer;
+
+    /* CAMBIOS CLAVE: Color fuerte y fondo */
+    color: var(--color-acento-secundario); /* Verde Corporativo (color visible) */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+    border-radius: 5px; /* Bordes suaves */
+    padding: 10px 15px; /* Área de clic más grande */
+
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.gallery-arrow:hover {
+    color: var(--color-blanco); /* Blanco al pasar el ratón */
+    background-color: var(--color-primario); /* Fondo Azul fuerte */
+}
+
+.left-arrow {
+    left: 20px; /* Separación del borde */
+}
+.right-arrow {
+    right: 20px; /* Separación del borde */
 }

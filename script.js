@@ -1,4 +1,6 @@
 let catalogoData = []; // Global variable to store all lot data
+let currentImageSet = []; // Stores the array of image URLs for the current lot
+let currentImageIndex = 0; // Stores the index of the visible image
 
 const CART_KEY = 'cotationCart'; // Key for localStorage
 let cart = []; // Global variable to hold the cart content
@@ -186,7 +188,8 @@ function generarTarjetas(lotes) {
                 <strong>Prix: ${prixFormate}</strong>
 
                 <div class="card-actions">
-                    <button onclick="verDetalle('${lote.lot}', '${imagenUrlSafe}', '${prixFormate}', ${lote.prix})">Voir Détail</button>
+
+                    <button onclick="verDetalle('${lote.lot}')">Voir Détail</button>
                     <button onclick="anadirAlCarrito('${lote.lot}', '${safeDescripcion}', ${lote.prix})">Ajouter à la Demande</button>
                 </div>
             </div>
@@ -196,33 +199,87 @@ function generarTarjetas(lotes) {
 }
 
 
-// 5. MODAL DETAIL LOGIC (PDF IMAGE) - FINAL VERSION LIMPIA
-function verDetalle(lote, imagenURL, prixFormate, precioNumerico) {
+// 5. MODAL DETAIL LOGIC (FINAL CON GALERÍA Y BUSQUEDA POR ID)
+function verDetalle(lotID) {
     const modalBody = document.getElementById('modal-body');
+    const modal = document.getElementById('modal-detalle');
 
-    // Recuperamos datos para el botón
-    const loteCompleto = catalogoData.find(item => item.lot === lote);
-    const descripcionLarga = loteCompleto ? loteCompleto.descripcion : 'Description non disponible.';
-    const safeDescripcion = (descripcionLarga || '').replace(/'/g, "\\'");
+    // 1. Buscamos los datos completos del lote
+    const loteCompleto = catalogoData.find(item => item.lot === lotID);
 
-    // Contenido del Modal (MAXIMIZADO Y LIMPIO)
+    if (!loteCompleto) {
+        console.error("Lote no encontrado para ID:", lotID);
+        return;
+    }
+
+    // 2. Extracción de datos (ahora desde el objeto completo)
+    const prixFormate = new Intl.NumberFormat('fr-FR', {
+        style: 'currency',
+        currency: 'CAD',
+        minimumFractionDigits: 2
+    }).format(loteCompleto.prix);
+
+ // CRÍTICO: Usa el array 'imagenes'. Si no existe, usa la URL antigua (por seguridad).
+    const imageList = loteCompleto.imagenes
+        ? loteCompleto.imagenes
+        : (loteCompleto.imageURL ? [loteCompleto.imageURL] : ['default.jpg']);
+
+    const safeDescripcion = (loteCompleto.descripcion || 'Description non disponible.').replace(/'/g, "\\'");
+
+    // 3. Inicializamos la galería
+    currentImageSet = imageList;
+    currentImageIndex = 0; // Aseguramos que siempre empezamos en la primera imagen
+
+    // 4. CONSTRUCCIÓN EXPLÍCITA DE LA RUTA DE LA PRIMERA IMAGEN
+    const initialImageFilename = currentImageSet[0];
+    const initialImageSrc = `img/${initialImageFilename}`;
+
+    // Contenido del Modal (MAXIMIZADO Y LIMPIO CON GALERÍA)
     modalBody.innerHTML = `
 
-        <img src="${imagenURL}" alt="Détail du Lot ${lote}">
+        <div class="gallery-container">
+
+            ${currentImageSet.length > 1 ? '<span class="gallery-arrow left-arrow" onclick="imagenAnterior()">&#10094;</span>' : ''}
+
+            <img id="modal-product-image" src="${initialImageSrc}" alt="Détail du Lot ${lotID}">
+
+            ${currentImageSet.length > 1 ? '<span class="gallery-arrow right-arrow" onclick="imagenSiguiente()">&#10095;</span>' : ''}
+
+        </div>
 
         <div class="modal-button-wrapper">
             <button
-                onclick="anadirAlCarrito('${lote}', '${safeDescripcion}', ${precioNumerico}); cerrarModal();"
+                onclick="anadirAlCarrito('${lotID}', '${safeDescripcion}', ${loteCompleto.prix}); cerrarModal();"
             >
                 Ajouter à la Demande (${prixFormate})
             </button>
         </div>
     `;
 
-    // Necesitamos que el modalBody sea el punto de referencia para el botón flotante
-    modalBody.style.position = 'relative';
+    document.getElementById('modal-detalle').style.display = 'block';
+}
 
-    modal.style.display = 'block';
+
+function updateImage() {
+    const imgElement = document.getElementById('modal-product-image');
+    if (imgElement && currentImageSet.length > 0) {
+        // La ruta de la imagen usa el prefijo 'img/'
+        imgElement.src = `img/${currentImageSet[currentImageIndex]}`;
+    }
+}
+
+function imagenAnterior() {
+    if (currentImageSet.length > 1) {
+        currentImageIndex = (currentImageIndex - 1 + currentImageSet.length) % currentImageSet.length;
+        updateImage();
+    }
+}
+
+function imagenSiguiente() {
+    if (currentImageSet.length > 1) {
+        currentImageIndex = (currentImageIndex + 1) % currentImageSet.length;
+        updateImage();
+    }
 }
 
 function cerrarModal() {
