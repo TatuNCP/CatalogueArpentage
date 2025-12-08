@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-});
 
 function cargarCatalogo() {
     // Fetch the JSON catalog file
