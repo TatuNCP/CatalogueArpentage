@@ -39,17 +39,17 @@
 
             <form id="order-form">
                 <h3 style="margin-top: 20px;">Vos Coordonnées</h3>
-                <label for="client_name">Nom et Prénom / Société:</label>
-                <input type="text" id="client_name" name="name" required>
+                <label for="client_name">Nom et Prénom:</label>
+                <input type="text" id="client_name" name="client_name" required>
 
-                <label for="client_email">Email:</label>
-                <input type="email" id="client_email" name="email" required>
+                <label for="client_email">Courriel:</label>
+                <input type="email" id="client_email" name="client_email" required>
 
-                <label for="client_phone">Téléphone (Optionnel):</label>
-                <input type="tel" id="client_phone" name="phone">
+                <label for="client_phone">Téléphone:</label>
+                <input type="tel" id="client_phone" name="client_phone">
 
-                <label for="client_comments">Commentaires Additionnels:</label>
-                <textarea id="client_comments" name="comments"></textarea>
+                <label for="client_message">Message (optionnel):</label>
+                <textarea id="client_message" name="client_message"></textarea>
 
                 <button type="submit" id="submit-order">Envoyer la Demande de Budget</button>
                 <button type="button" onclick="closeCartModal()">Annuler et Fermer</button>
