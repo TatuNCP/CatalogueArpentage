@@ -25,7 +25,7 @@ function saveCart() {
 }
 
 // Function to update the visible cart counter (on the floating icon)
-function updateCartUI() {
+function updateCartUI() { // <-- DEFINICIÓN DE FUNCIÓN FALTANTE
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     const cartCountElement = document.getElementById('cart-count');
     const floatingButton = document.getElementById('floating-cart-button');
@@ -35,29 +35,34 @@ function updateCartUI() {
         // Muestra el botón flotante solo si hay artículos en el carrito
         floatingButton.style.display = totalItems > 0 ? 'flex' : 'none';
     }
-}
+} // <-- CIERRE DE FUNCIÓN FALTANTE
 
 // Ensure the cart is loaded when the script starts
 loadCart();
 
 // 1. DATA LOADING AND DOM READY
 document.addEventListener('DOMContentLoaded', () => {
+    // 1.1 Carga Inicial de datos
     cargarCatalogo();
 
+    // NOTA: Si tienes loadCart() en tu código, debe estar aquí:
+    // loadCart();
 
-    // El listener del formulario debe estar dentro de DOMContentLoaded
+    // 2. Configuración del formulario
     const orderForm = document.getElementById('order-form');
     if (orderForm) {
         orderForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Stop the default form submission
-            sendOrder();
+            // Llama a sendOrder PASANDO el objeto 'event'
+            sendOrder(event);
         });
     } else {
         console.error("DEBUG ERROR: Form with ID 'order-form' not found.");
     }
-    });
 
+    // 3. Otros listeners de inicialización (como el modal de carrito)
+    // El listener del modal de detalle se configura más abajo
 
+}); // <-- CIERRE CORRECTO: Cierra la función anónima y la llamada a addEventListener.
 
 function cargarCatalogo() {
     // Fetch the JSON catalog file
@@ -403,8 +408,8 @@ window.onclick = function(event) {
 }
 
 // --- ORDER SUBMISSION LOGIC ---
-
 function sendOrder(event) {
+
     if (event && event.preventDefault) {
         event.preventDefault();
     }
