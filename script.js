@@ -407,17 +407,27 @@ window.onclick = function(event) {
     }
 }
 
-// --- ORDER SUBMISSION LOGIC ---
 function sendOrder(event) {
 
     if (event && event.preventDefault) {
         event.preventDefault();
     }
 
-    const clientName = document.getElementById('client_name').value;
-    const clientEmail = document.getElementById('client_email').value;
-    const clientPhone = document.getElementById('client_phone').value;
-    const clientMessage = document.getElementById('client_message').value;
+    // 1. OBTENER EL ELEMENTO DEL FORMULARIO COMPLETO
+    // Se asume que el evento 'submit' fue disparado por el formulario 'order-form'
+    const formElement = document.getElementById('order-form');
+
+
+    if (!formElement) {
+        console.error("DEBUG: order-form no encontrado.");
+        return;
+    }
+
+    // 2. BUSCAR LOS VALORES DENTRO DEL FORMULARIO ENCONTRADO
+    const clientName = formElement.querySelector('#client_name').value;
+    const clientEmail = formElement.querySelector('#client_email').value;
+    const clientPhone = formElement.querySelector('#client_phone').value;
+    const clientMessage = formElement.querySelector('#client_message').value;
 
     if (cart.length === 0) {
         alert("Votre panier est vide. Veuillez ajouter des lots.");
