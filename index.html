@@ -62,12 +62,20 @@
     <span id="cart-icon">🛒</span>
     <span id="cart-count">0</span>
 </div>
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/v4/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script type="text/javascript">
-    emailjs.init({
-        publicKey: "frfWoBbmJwoPNo-qm"
-    });
+    (function(){
+        // Verificamos si la librería cargó antes de iniciar
+        if (window.emailjs) {
+            emailjs.init({
+                publicKey: "frfWoBbmJwoPNo-qm",
+            });
+            console.log("✅ EmailJS cargado e inicializado correctamente.");
+        } else {
+            console.error("❌ Error crítico: No se pudo cargar la librería EmailJS.");
+        }
+    })();
 </script>
 
 <script src="script.js" defer></script>
