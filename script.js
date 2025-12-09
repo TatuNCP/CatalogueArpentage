@@ -49,10 +49,23 @@ function updateCartUI() { // <-- DEFINICIÓN DE FUNCIÓN FALTANTE
 // Ensure the cart is loaded when the script starts
 loadCart();
 
+// Asegura que EmailJS se inicialice después de que el SDK tenga tiempo de cargar.
+function initializeEmailJS() {
+    // Si la función emailjs existe, inicializamos. Si no, esperamos 100ms.
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init("frfWoBbmJwoPNo-qm");
+        console.log("DEBUG: EmailJS inicializado correctamente.");
+    } else {
+        // Si no está listo, esperamos 100ms y reintentamos.
+        setTimeout(initializeEmailJS, 100);
+    }
+}
+
+
 // 1. DATA LOADING AND DOM READY
 document.addEventListener('DOMContentLoaded', () => {
     // ESTA ES LA ÚNICA LÍNEA DE INICIALIZACIÓN
-    emailjs.init("frfWoBbmJwoPNo-qm");
+    //emailjs.init("frfWoBbmJwoPNo-qm");
     // 1.1 Carga Inicial de datos
     cargarCatalogo();
 
