@@ -60,6 +60,8 @@ function initializeEmailJS() {
         setTimeout(initializeEmailJS, 100);
     }
 }
+// Llama a la inicialización fuera de cualquier evento principal
+initializeEmailJS();
 
 
 // 1. DATA LOADING AND DOM READY
