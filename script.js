@@ -52,7 +52,7 @@ loadCart();
 // 1. DATA LOADING AND DOM READY
 document.addEventListener('DOMContentLoaded', () => {
 
-    emailjs.init("frfWoBbmJwoPNo-qm");
+    //emailjs.init("frfWoBbmJwoPNo-qm");
     // 1.1 Carga Inicial de datos
     cargarCatalogo();
 
