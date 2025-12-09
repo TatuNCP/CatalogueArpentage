@@ -433,23 +433,37 @@ window.onclick = function(event) {
     }
 }
 
-// --- ORDER SUBMISSION LOGIC (EmailJS con Table HTML para estilo profesional) ---
+// --- ORDER SUBMISSION LOGIC (Actualizada con Dirección y Empresa) ---
 function sendOrder(event) {
 
     if (event && event.preventDefault) {
         event.preventDefault();
     }
 
-    // 1. OBTENER EL FORMULARIO Y LAS VALORES
+    // Comprobación de seguridad de EmailJS
+    if (typeof emailjs === 'undefined' || !emailjs.send) {
+        alert("Un instant! La page est encore en cours de chargement. Veuillez réessayer dans quelques secondes.");
+        return;
+    }
+
     const formElement = document.getElementById('order-form');
     if (!formElement) {
         console.error("DEBUG: order-form non trouvé.");
         return;
     }
 
+    // 1. OBTENER DATOS (Incluyendo los nuevos campos)
     const clientName = formElement.querySelector('#client_name').value;
+    const clientCompany = formElement.querySelector('#client_company').value || "Non spécifié"; // Nuevo
     const clientEmail = formElement.querySelector('#client_email').value;
     const clientPhone = formElement.querySelector('#client_phone').value;
+
+    // Dirección
+    const clientAddress = formElement.querySelector('#client_address').value;
+    const clientCity = formElement.querySelector('#client_city').value;
+    const clientZip = formElement.querySelector('#client_zip').value;
+    const clientCountry = formElement.querySelector('#client_country').value;
+
     const clientMessage = formElement.querySelector('#client_message').value;
 
     if (cart.length === 0) {
@@ -457,15 +471,14 @@ function sendOrder(event) {
         return;
     }
 
-    // 2. GENERAR LA TABLA HTML (Las líneas con estilo)
+    // 2. GENERAR TABLA
     let totalEstimado = 0;
-    let tableRows = ""; // Contient toutes les lignes de la table
+    let tableRows = "";
 
     cart.forEach(item => {
         const prixFormate = formatCurrency(item.prix);
         totalEstimado += item.prix;
 
-        // ESTILO DE FILA PARA LA PLANTILLA HTML
         tableRows += `
             <tr style="background-color: #fafafa;">
                 <td style="border: 1px solid #ddd; padding: 8px;">${item.lote}</td>
@@ -477,37 +490,39 @@ function sendOrder(event) {
 
     const totalFormateado = formatCurrency(totalEstimado);
 
-    // 3. CREAR EL PAYLOAD PARA EMAILJS
+    // 3. CREAR PAYLOAD (Agregamos las nuevas variables)
     const templateParams = {
         client_name: clientName,
+        client_company: clientCompany, // Variable nueva
         client_email: clientEmail,
         client_phone: clientPhone,
+        // Construimos la dirección completa en una sola variable para facilitar el template,
+        // o puedes enviarlas por separado. Aquí envío ambas opciones.
+        client_full_address: `${clientAddress}, ${clientCity}, ${clientZip}, ${clientCountry}`,
+
         client_message: clientMessage,
         total_price: totalFormateado,
-        // CLAVE CRÍTICA: El contenido HTML de las filas de la tabla
         order_table_rows: tableRows
     };
 
-    // 4. ENVIAR CON EMAILJS (LÍNEA 481)
+    // 4. ENVIAR
     const serviceID = "service_qit85uu";
     const templateID = "template_5l7jajt";
 
     emailjs.send(serviceID, templateID, templateParams)
         .then(function(response) {
-            // Succès: Afficher le message de succès
             document.getElementById('cotation-page').innerHTML = `
                 <div style="padding: 50px; text-align: center;">
                     <h2>✅ Demande Envoyée!</h2>
-                    <p>Votre demande a été envoyée avec succès. Nous vous contacterons rapidement.</p>
+                    <p>Merci ${clientName}. Nous avons bien reçu votre demande pour <strong>${clientCompany !== "Non spécifié" ? clientCompany : ""}</strong>.</p>
+                    <p>Nous vous contacterons rapidement.</p>
                 </div>
             `;
-            // Vider le panier
             cart = [];
             saveCart();
             updateCartUI();
         }, function(error) {
-            // Erreur: Afficher erreur
-            console.error('Erreur lors de l\'envoi via EmailJS:', error);
-            alert(`Échec de l'envoi de la demande. Veuillez vérifier la console.`);
+            console.error('Erreur:', error);
+            alert(`Échec de l'envoi. Erreur: ${JSON.stringify(error)}`);
         });
 }

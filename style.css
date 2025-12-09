@@ -340,16 +340,16 @@ button:hover {
 .close {
     /* CRÍTICO: Posicionamiento absoluto y fuerte */
     position: absolute;
-    top: 50px; /* Separación de la parte superior */
-    right: 50px; /* Separación del borde derecho */
+    top: 30px; /* Separación de la parte superior */
+    right: 30px; /* Separación del borde derecho */
 
     background-color: var(--color-primario); /* Fondo Azul */
     color: var(--color-blanco); /* Texto Blanco */
 
-    font-size: 60px; /* Hacemos la 'x' más grande */
-    width: 60px; /* Tamaño del círculo */
-    height: 60px;
-    line-height: 60px; /* Centra la 'x' verticalmente */
+    font-size: 35px; /* Hacemos la 'x' más grande */
+    width: 35px; /* Tamaño del círculo */
+    height: 35px;
+    line-height: 35px; /* Centra la 'x' verticalmente */
     text-align: center;
     border-radius: 50%; /* Circular */
 
