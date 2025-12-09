@@ -418,14 +418,14 @@ window.onclick = function(event) {
     }
 }
 
-// --- ORDER SUBMISSION LOGIC (EmailJS avec Table HTML pour style professionnel) ---
+// --- ORDER SUBMISSION LOGIC (EmailJS con Table HTML para estilo profesional) ---
 function sendOrder(event) {
 
     if (event && event.preventDefault) {
         event.preventDefault();
     }
 
-    // 1. OBTENIR LE FORMULAIRE ET LES VALEURS
+    // 1. OBTENER EL FORMULARIO Y LAS VALORES
     const formElement = document.getElementById('order-form');
     if (!formElement) {
         console.error("DEBUG: order-form non trouvé.");
@@ -442,7 +442,7 @@ function sendOrder(event) {
         return;
     }
 
-    // 2. GÉNÉRER LA TABLE HTML (Les lignes)
+    // 2. GENERAR LA TABLA HTML (Las líneas con estilo)
     let totalEstimado = 0;
     let tableRows = ""; // Contient toutes les lignes de la table
 
@@ -450,7 +450,7 @@ function sendOrder(event) {
         const prixFormate = formatCurrency(item.prix);
         totalEstimado += item.prix;
 
-        // CRITICAL: Ajout des styles en ligne pour la lisibilité de chaque ligne
+        // ESTILO DE FILA PARA LA PLANTILLA HTML
         tableRows += `
             <tr style="background-color: #fafafa;">
                 <td style="border: 1px solid #ddd; padding: 8px;">${item.lote}</td>
@@ -462,19 +462,18 @@ function sendOrder(event) {
 
     const totalFormateado = formatCurrency(totalEstimado);
 
-    // 3. CRÉER LE PAYLOAD POUR EMAILJS
+    // 3. CREAR EL PAYLOAD PARA EMAILJS
     const templateParams = {
         client_name: clientName,
         client_email: clientEmail,
         client_phone: clientPhone,
         client_message: clientMessage,
         total_price: totalFormateado,
-        // CLÉ CRITIQUE: Le contenu HTML des lignes de la table
+        // CLAVE CRÍTICA: El contenido HTML de las filas de la tabla
         order_table_rows: tableRows
     };
 
-    // 4. ENVOYER AVEC EMAILJS
-    // >>> REMPLACEZ CES IDs <<<
+    // 4. ENVIAR CON EMAILJS (LÍNEA 481)
     const serviceID = "service_qit85uu";
     const templateID = "template_5l7jajt";
 
