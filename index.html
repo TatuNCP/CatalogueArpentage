@@ -3,63 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue de Matériels - Proposition Préliminaire</title>
+    <title>NouvLR - Vente d'Équipement Arpentage</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header id="main-header">
-    <h1>CATALOGUE D'ÉQUIPEMENT ARPENTAGE</h1>
-    <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo de la Empresa NouvLR">
+    <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
+
+    <h1>VENTE D'ÉQUIPEMENT ARPENTAGE</h1>
+
+    <nav id="main-nav">
+        <button onclick="mostrarSeccion('home')" class="nav-btn active">Accueil</button>
+        <button onclick="mostrarSeccion('catalogo')" class="nav-btn">Catalogue</button>
+        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn">Politique de Vente</button>
+        <button onclick="mostrarSeccion('contact')" class="nav-btn">Contact</button>
+    </nav>
 </header>
 
-<div id="filter-container">
-</div>
+<section id="section-home" class="content-section">
+    <div class="hero-banner">
+        <h2>Vente de Fermeture de Projet</h2>
+        <p>Bienvenue sur le portail de liquidation des équipements d'arpentage du projet NouvLR (Réseau Express
+            Métropolitain).</p>
+        <p>Alors que nous finalisons la construction du métro de Montréal, nous mettons en vente nos équipements
+            professionnels.</p>
 
-<main id="catalogo-container">
-    <p>Chargement du catalogue...</p>
-</main>
+        <div class="hero-actions">
+            <button onclick="mostrarSeccion('catalogo')" class="big-btn">Voir le Catalogue en Ligne</button>
+            <a href="catalogue.pdf" download="Catalogue_NouvLR_Arpentage.pdf" class="download-btn">
+                📄 Télécharger le Catalogue (PDF)
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="section-catalogo" class="content-section hidden">
+    <div id="filter-container">
+    </div>
+
+    <main id="catalogo-container">
+        <p>Chargement du catalogue...</p>
+    </main>
+</section>
+
+<section id="section-disclaimer" class="content-section hidden">
+    <div class="text-container">
+        <h2>Politique de Vente et Avis de Non-Responsabilité</h2>
+
+        <div class="disclaimer-box">
+            <h3>1. Vente Finale</h3>
+            <p>
+                Afin d’assurer la transparence et la clarté, nous vous informons que <strong>toutes les ventes sont
+                finales</strong>.
+                Une fois la vente complétée, aucune modification ne pourra être effectuée.
+            </p>
+
+            <h3>2. État des Articles ("Tel quel")</h3>
+            <p>
+                Les articles sont vendus <strong>dans leur état actuel</strong> ("as is"), sans garantie additionnelle
+                et sans possibilité de retour, d’échange ou de remboursement.
+            </p>
+
+            <h3>3. Inspection Recommandée</h3>
+            <p>
+                Nous vous recommandons fortement de venir sur place pour vérifier attentivement chaque produit avant de
+                conclure la transaction.
+            </p>
+
+            <h3>4. Questions et Contact</h3>
+            <p>
+                Si vous avez des questions ou souhaitez obtenir des précisions, n’hésitez pas à nous contacter avant
+                l’achat.
+            </p>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <p style="text-align: center; font-style: italic; color: #666;">
+                Merci de votre compréhension et de votre confiance.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="section-contact" class="content-section hidden">
+    <div class="text-container">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question concernant l'état des équipements, pour planifier une inspection ou pour des demandes
+            administratives.</p>
+
+        <div class="contact-details">
+            <p><strong>📍 Adresse pour inspection (sur rendez-vous) :</strong><br>
+                Bureau de Projet NouvLR<br>
+                Montréal, Québec (Adresse complète à confirmer)</p>
+
+            <p><strong>📧 Courriel :</strong><br>
+                <a href="mailto:arpentage@nouvlr.com">arpentage@nouvlr.com</a> (Exemple)</p>
+
+            <p><strong>ℹ️ Faire une offre :</strong><br>
+                Veuillez utiliser le bouton <strong>"Ajouter à la Demande"</strong> dans le catalogue pour créer votre
+                liste d'intérêts et nous l'envoyer directement via le site.</p>
+        </div>
+    </div>
+</section>
 
 <div id="modal-detalle" class="modal">
     <div class="modal-content">
         <span class="close" onclick="cerrarModal()">&times;</span>
-        <div id="modal-body">
-        </div>
+        <div id="modal-body"></div>
     </div>
 </div>
 
 <div id="cart-modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeCartModal()">&times;</span>
-
         <section id="cotation-page">
             <h2>Votre Demande de Cotation</h2>
-            <div id="cart-summary">
-            </div>
-
+            <div id="cart-summary"></div>
             <form id="order-form">
                 <h3 style="margin-top: 20px;">Vos Coordonnées</h3>
                 <label for="client_name">Nom et Prénom:</label>
                 <input type="text" id="client_name" name="client_name" required>
-
                 <label for="client_email">Courriel:</label>
                 <input type="email" id="client_email" name="client_email" required>
-
                 <label for="client_phone">Téléphone:</label>
                 <input type="tel" id="client_phone" name="client_phone">
-
                 <label for="client_company">Nom de l'entreprise (Optionnel):</label>
                 <input type="text" id="client_company" name="client_company">
-
                 <h4 style="margin-top: 15px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">Adresse de
                     Facturation</h4>
-
                 <label for="client_address">Adresse (Rue et numéro):</label>
                 <input type="text" id="client_address" name="client_address" required>
-
                 <label for="client_city">Ville:</label>
                 <input type="text" id="client_city" name="client_city" required>
-
                 <div style="display: flex; gap: 10px;">
                     <div style="flex: 1;">
                         <label for="client_zip">Code Postal / ZIP:</label>
@@ -71,10 +148,8 @@
                                required>
                     </div>
                 </div>
-
                 <label for="client_message">Message (optionnel):</label>
                 <textarea id="client_message" name="client_message"></textarea>
-
                 <button type="submit" id="submit-order">Envoyer la Demande de Budget</button>
                 <button type="button" onclick="closeCartModal()">Annuler et Fermer</button>
             </form>
@@ -86,22 +161,16 @@
     <span id="cart-icon">🛒</span>
     <span id="cart-count">0</span>
 </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        // Verificamos si la librería cargó antes de iniciar
         if (window.emailjs) {
-            emailjs.init({
-                publicKey: "frfWoBbmJwoPNo-qm",
-            });
-            console.log("✅ EmailJS cargado e inicializado correctamente.");
-        } else {
-            console.error("❌ Error crítico: No se pudo cargar la librería EmailJS.");
+            emailjs.init({ publicKey: "frfWoBbmJwoPNo-qm" });
         }
     })();
 </script>
-
 <script src="script.js" defer></script>
+
 </body>
 </html>

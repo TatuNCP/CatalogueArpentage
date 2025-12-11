@@ -1,12 +1,11 @@
 /* ======================================= */
-/* 1. PALETA DE COLORES Y ESTILOS GLOBALES */
+/* 1. ESTILOS GLOBALES Y PALETA */
 /* ======================================= */
-
 :root {
-    --color-primario: rgba(7,40,79,0.85);     /* Azul Oscuro Corporativo (Navy Blue) */
-    --color-secundario: #4A4A4A;   /* Gris Oscuro para texto/detalles */
-    --color-acento-secundario: #7FBC42; /* Verde Corporativo */
-    --color-fondo: #F5F5F5;        /* Fondo gris muy claro */
+    --color-primario: rgba(7,40,79,0.95);     /* Azul NouvLR */
+    --color-secundario: #4A4A4A;
+    --color-acento-secundario: #7FBC42; /* Verde NouvLR */
+    --color-fondo: #F5F5F5;
     --color-texto: #333;
     --color-blanco: white;
 }
@@ -17,134 +16,224 @@ body {
     padding: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    /* Aplicamos box-sizing globalmente para evitar problemas de padding/ancho en elementos futuros */
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-
+*, *::before, *::after { box-sizing: inherit; }
 
 /* =========================== */
-/* 2. HEADER Y LOGO (NouvLR)   */
+/* 2. HEADER Y NAVEGACIÓN      */
 /* =========================== */
 #main-header {
     background-color: var(--color-primario);
-    color: var(--color-acento-secundario);
-    display: block;
-    /* CRÍTICO: Alineamos el contenido al lado derecho (para la futura navegación) */
-    text-align: right; /* <--- MODIFICAR: Alineación a la derecha */
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alineado a la derecha */
+    justify-content: center;
     position: relative;
 
-    /* Reducimos el padding superior/inferior para subir el título */
-    padding: 10px 120px; /* <--- MODIFICAR: Reducir padding superior/inferior */
+    /* AJUSTE SOLICITADO: Padding a la derecha aumentado a 80px */
+    padding: 20px 80px 20px 20px;
 
-    border-bottom: none;
-    height: auto;
-    /* Reducimos la altura mínima si el contenido es más pequeño */
-    min-height: 100px; /* <--- MODIFICAR: Altura mínima reducida */
+    min-height: 140px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-/* ESTILO DEL TÍTULO (h1) */
-#main-header h1 {
-    font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
-
-    /* CRÍTICO: Reducimos el tamaño para hacerlo más sutil */
-    /* Usamos clamp para que no exceda 2.5em y sea más pequeño en móviles */
-    font-size: clamp(1.5em, 2.5vw, 2.5em); /* <--- MODIFICAR: Tamaño más pequeño */
-
-    font-weight: bold;
-    /* CRÍTICO: Reducimos el espaciado entre letras */
-    letter-spacing: 1px; /* <--- MODIFICAR: Reducir de 2px a 1px */
-
-    margin: 0;
-    /* Eliminamos el padding superior si ya lo controlamos con el padding del header */
-    padding-top: 0; /* <--- MODIFICAR: Subimos el texto eliminando el padding */
-
-    /* Ya que el header está alineado a la derecha, no necesitamos estas propiedades */
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-    overflow-wrap: break-word;
-    padding-left: 0; /* <--- Eliminamos el padding de la solución anterior */
-}
-
-/* ESTILO DEL LOGO */
 #company-logo {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 40px;
-    max-height: 80px;
+    max-height: 90px;
     width: auto;
 }
 
+#main-header h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: clamp(1.5em, 2.5vw, 2.8em);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: var(--color-acento-secundario);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+#main-nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    color: var(--color-acento-secundario);
+    border-bottom: 2px solid var(--color-acento-secundario);
+}
+
+.nav-btn.active {
+    background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+    border-radius: 4px;
+}
+
 /* ========================================= */
-/* 3. BARRA DE FILTROS: ICONOS GRANDES Y FLOTANTES */
+/* 3. SECCIONES Y CONTENIDO */
+/* ========================================= */
+.content-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ESTILOS DE LA HOME (BIENVENIDA) */
+.hero-banner {
+    text-align: center;
+    background-color: white;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.hero-banner h2 {
+    color: var(--color-primario);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.big-btn, .download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.big-btn {
+    background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+}
+
+.download-btn {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.big-btn:hover, .download-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* ESTILOS DEL DISCLAIMER Y TEXTO */
+.text-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text-container h2 {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-acento-secundario);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.disclaimer-box h3 {
+    color: var(--color-secundario);
+    margin-top: 25px;
+}
+
+.disclaimer-box p, .contact-details p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ========================================= */
+/* 4. BARRA DE FILTROS Y CATÁLOGO */
 /* ========================================= */
 #filter-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 95%;
-    margin: 30px auto 0 auto;
-    padding: 0 10px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-/* CRÍTICO: ESTA REGLA DEBE TENER EL PUNTO AL INICIO */
 .category-button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: transparent !important;
     border: none;
-    padding: 5px 5px;
-
+    padding: 5px;
     margin: 0 5px 15px 5px;
-
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
     outline: none !important;
 
-    /* CRÍTICO: Control de Responsividad (7 columnas uniformes) */
-    flex-basis: calc(100% / 7 - 10px); /* <--- Mantiene 7 columnas */
+    /* RESPONSIVIDAD DE ICONOS: 7 Columnas */
+    flex-basis: calc(100% / 7 - 10px);
     flex-grow: 0;
     flex-shrink: 1;
-
     min-width: 90px;
 }
 
-.category-button-wrapper:hover {
-    transform: translateY(-5px);
-}
+.category-button-wrapper:hover { transform: translateY(-5px); }
 
-.category-button-wrapper.active {
-    background-color: rgba(127, 188, 66, 0.2);
-    border-radius: 10px;
-}
-
-/* CRÍTICO: Unificar la definición del icono y ELIMINAR CUALQUIER OTRA DUPLICADA */
 .category-icon-clickable {
     width: 100%;
     height: auto;
-
-    /* Mantenemos el tamaño máximo deseado */
-    max-width: 100px; /* <--- Esto reduce el tamaño */
-
+    max-width: 100px; /* Tamaño máximo icono */
     object-fit: contain;
-    transition: transform 0.2s ease-in-out;
-    outline: none !important;
     background-color: var(--color-primario);
     border-radius: 15px;
     padding: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border: none !important;
-
-    /* Mantenemos la proporción cuadrada 1:1 */
     aspect-ratio: 1 / 1;
 }
 
@@ -154,385 +243,159 @@ body {
     font-weight: bold;
     color: var(--color-texto);
     text-align: center;
-    line-height: 1.2;
 }
 
-.category-button-wrapper.active .category-text-below {
-    color: var(--color-primario);
-}
-
-
-/* ================================== */
-/* 4. BOTONES GENÉRICOS Y TARJETAS */
-/* ================================== */
-
-/* Las reglas de botón aquí deben ser fuertes para evitar conflictos */
-button {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    /*nueva*/
-    outline: none;
-}
-
-button:hover {
-    background-color: var(--color-acento-secundario);
-    color: var(--color-primario);
-}
-
-/* Contenido de Tarjetas */
+/* TARJETAS DEL CATÁLOGO */
 #catalogo-container {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 30px;
+    padding: 10px;
 }
 
 .lote-card {
-    background-color: var(--color-blanco);
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-sizing: border-box;
-
-    /* PROPIEDADES CRÍTICAS PARA POSICIONAMIENTO DEL ICONO EN LA ESQUINA */
-    position: relative !important;
-    overflow: visible !important;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.2s;
 }
 
-.lote-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.lote-card h3 {
-    margin-top: 0;
-    color: var(--color-primario);
-    font-size: 1.5em;
-}
-
-.lote-card strong {
-    display: block;
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: var(--color-texto);
-}
-
-.card-actions button {
-    margin-top: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-/* ================================== */
-/* 5. ICONO DE CATEGORÍA EN LA ESQUINA */
-/* ================================== */
+.lote-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
 
 .category-corner-icon {
-    position: absolute !important;
-    top: 5px !important;
-
-    /* SOLUCIÓN CRÍTICA: Forzar Posición y Tamaño */
-    right: 15px !important;
-    left: auto !important;
-    width: 60px !important;
-    height: 60px !important;
-
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: white;
     border-radius: 50%;
-    background-color: transparent;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*box-shadow: 0 2px 5px rgba(0,0,0,0.4);*/
+    border: 2px solid var(--color-secundario);
+    overflow: hidden;
 }
 
-.corner-icon-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain;
-    border: 3px solid var(--color-secundario);
-}
+.corner-icon-img { width: 100%; height: 100%; object-fit: cover; }
 
+.lote-card h3 { color: var(--color-primario); margin-top: 0; }
+.lote-card strong { display: block; margin: 10px 0; color: var(--color-acento-secundario); font-size: 1.2em; }
+
+.lote-card button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.lote-card button:hover { background-color: var(--color-acento-secundario); color: var(--color-primario); }
+
+
+/* =========================== */
+/* 5. MODALES Y CARRITO */
+/* =========================== */
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85);
 }
 
-/* Centrado Fijo de Modales */
 .modal-content {
-    background-color: #fefefe;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* ======================================= */
-/* MODAL DE DETALLE (VISOR LIMPIO) */
-/* ======================================= */
-
-/* AJUSTE DEL CONTENIDO DEL MODAL DE IMAGEN */
-#modal-detalle .modal-content {
-    /* Mantenemos el centrado fixed */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-width: 90%;
-    height: 90%;
-    /* CRÍTICO: Eliminamos padding para que la imagen se estire */
-    padding: 0;
-    background-color: #333;
-    overflow-y: hidden;
-}
-
-/* ESTILO DEL CUERPO (Contenedor de la imagen) */
-#modal-body {
-    /* CRÍTICO: Aseguramos que sea relativo para anclar el botón flotante */
     position: relative;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
-/* ESTILO DE LA IMAGEN */
-#modal-body img {
-    /* CRÍTICO: Forzar el ancho al 100% del contenedor y eliminar márgenes */
-    width: 100% !important;
-    height: auto;
-    max-height: 90vh; /* Máxima altura visible */
-    background-color: var(--color-blanco);
+/* Modal Detalle Imagen Full */
+#modal-detalle .modal-content {
+    background: #222;
     padding: 0;
-    margin: 0;
-    border: none;
+    width: auto;
+    max-width: 95%;
+    display: flex; justify-content: center;
+}
+
+#modal-body img {
+    max-height: 85vh;
+    max-width: 100%;
     object-fit: contain;
 }
-/* ======================================= */
-/* NUEVO: Botón Flotante Superpuesto */
-/* ======================================= */
 
 .modal-button-wrapper {
-    /* CRÍTICO: Posicionamiento absoluto sobre la imagen */
     position: absolute;
-    bottom: 20px; /* Flotar 20px desde el borde inferior */
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centrado horizontal perfecto */
-    z-index: 100; /* Asegura que esté por encima de la imagen */
-
-    /* Limitar el tamaño del botón para que no sea más grande que el espacio de la imagen */
-    width: 90%;
-    max-width: 400px;
+    transform: translateX(-50%);
 }
 
-.modal-button-wrapper button:hover {
-    /* Usamos el color de acento para el fondo */
-    background-color: var(--color-acento-secundario) !important;
-    /* Y el color primario para el texto, para contraste */
-    color: var(--color-primario) !important;
-}
-/* ESTILO DEL BOTÓN DE CIERRE (la 'X') */
-.close {
-    /* CRÍTICO: Posicionamiento absoluto y fuerte */
-    position: absolute;
-    top: 30px; /* Separación de la parte superior */
-    right: 30px; /* Separación del borde derecho */
-
-    background-color: var(--color-primario); /* Fondo Azul */
-    color: var(--color-blanco); /* Texto Blanco */
-
-    font-size: 35px; /* Hacemos la 'x' más grande */
-    width: 35px; /* Tamaño del círculo */
-    height: 35px;
-    line-height: 35px; /* Centra la 'x' verticalmente */
-    text-align: center;
-    border-radius: 50%; /* Circular */
-
-    cursor: pointer;
-    transition: background-color 0.3s;
-    opacity: 0.9;
-    z-index: 1001; /* Asegura que esté por encima de todo */
-}
-
-.close:hover,
-.close:focus {
-    /* Hover en Verde Lima */
+.modal-button-wrapper button {
+    padding: 15px 30px;
+    font-size: 1.2em;
     background-color: var(--color-acento-secundario);
-    color: var(--color-primario);
-    text-decoration: none;
-    opacity: 1;
-}
-/* Estilo para el texto dentro de la modal de detalle */
-#modal-detalle span, #modal-detalle p {
-    color: var(--color-blanco);
-}
-
-/* Precio/Lote en modal de detalle en VERDE LIMA */
-#modal-body > span {
-    font-size: 1.8em;
-    color: var(--color-acento-secundario) !important;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
-    margin-bottom: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
+.close {
+    position: absolute;
+    top: 15px; right: 20px;
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+}
+.close:hover { color: black; }
 
-/* =========================== */
-/* 7. CARRITO FLOTANTE Y FORMULARIO */
-/* =========================== */
-
+/* Botón flotante carrito */
 #floating-cart-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-#floating-cart-button:hover {
+    bottom: 30px; right: 30px;
     background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 5000;
 }
 
 #cart-count {
     position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: var(--color-acento-secundario);
-    color: var(--color-texto);
+    top: -5px; right: -5px;
+    background-color: red;
+    color: white;
     font-size: 12px;
-    padding: 3px 6px;
+    width: 20px; height: 20px;
     border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
 }
 
-/* Estilo del botón de envío */
-#submit-order {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    border: none;
-}
-
-/* --- COTATION FORM STYLING (Dentro de la modal) --- */
-#cotation-page {
-    padding: 10px;
-}
-
-#order-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#order-form input[type="text"],
-#order-form input[type="email"],
-#order-form input[type="tel"],
-#order-form textarea {
+/* FORMULARIO */
+#order-form input, #order-form textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin: 5px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#order-form button {
-    padding: 15px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 1.1em;
-    width: 100%;
-}
-
-/* Cart Summary Table */
-#cart-summary table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-#cart-summary th, #cart-summary td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-#cart-summary th {
-    background-color: #f2f2f2;
-}
-.cart-total {
-    font-weight: bold;
-    background-color: #e9e9e9;
-}
-
-/* ESTILOS PARA LA GALERÍA DE IMÁGENES DENTRO DEL MODAL */
-.gallery-container {
-    position: relative; /* Contenedor para posicionar flechas */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100; /* Por encima de la imagen */
-    font-size: 3em;
-    cursor: pointer;
-
-    /* CAMBIOS CLAVE: Color fuerte y fondo */
-    color: var(--color-acento-secundario); /* Verde Corporativo (color visible) */
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
-    border-radius: 5px; /* Bordes suaves */
-    padding: 10px 15px; /* Área de clic más grande */
-
-    transition: background-color 0.2s;
-    user-select: none;
-}
-
-.gallery-arrow:hover {
-    color: var(--color-blanco); /* Blanco al pasar el ratón */
-    background-color: var(--color-primario); /* Fondo Azul fuerte */
-}
-
-.left-arrow {
-    left: 20px; /* Separación del borde */
-}
-.right-arrow {
-    right: 20px; /* Separación del borde */
 }

@@ -532,3 +532,47 @@ function sendOrder(event) {
             alert(`Échec de l'envoi. Erreur: ${JSON.stringify(error)}`);
         });
 }
+
+/* ========================================== */
+/* LOGICA DE NAVEGACIÓN Y SECCIONES (NUEVO) */
+/* ========================================== */
+
+function mostrarSeccion(seccionId) {
+    // 1. Ocultar todas las secciones
+    const secciones = document.querySelectorAll('.content-section');
+    secciones.forEach(sec => {
+        sec.classList.add('hidden');
+    });
+
+    // 2. Quitar la clase 'active' de todos los botones del menú
+    const botonesNav = document.querySelectorAll('.nav-btn');
+    botonesNav.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // 3. Mostrar la sección seleccionada
+    const seccionActiva = document.getElementById('section-' + seccionId);
+    if (seccionActiva) {
+        seccionActiva.classList.remove('hidden');
+    }
+
+    // 4. Activar el botón correspondiente en el menú (Búsqueda simple por texto o onclick)
+    // Buscamos el botón que tiene el onclick coincidente para añadirle la clase active
+    botonesNav.forEach(btn => {
+        if(btn.getAttribute('onclick').includes(seccionId)) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Si vamos al catálogo, asegurarnos de que se vea bien el scroll
+    if (seccionId === 'catalogo') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
+// Inicializar mostrando la HOME por defecto
+document.addEventListener('DOMContentLoaded', () => {
+    // Si ya existe la función cargarCatalogo (de tu código original), se ejecuta.
+    // Aseguramos mostrar la home al inicio
+    mostrarSeccion('home');
+});
