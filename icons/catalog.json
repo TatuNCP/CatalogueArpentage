@@ -1,0 +1,1960 @@
+[
+    {
+        "lot": "9",
+        "prix": 29500.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R500",
+        "imagenes": [
+            "9.jpg"
+        ]
+    },
+    {
+        "lot": "10",
+        "prix": 29500.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R500",
+        "imagenes": [
+            "10.jpg"
+        ]
+    },
+    {
+        "lot": "16",
+        "prix": 22000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R500 + PS",
+        "imagenes": [
+            "16.jpg"
+        ]
+    },
+    {
+        "lot": "17",
+        "prix": 29100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R500 + PS",
+        "imagenes": [
+            "17.jpg"
+        ]
+    },
+    {
+        "lot": "18",
+        "prix": 29100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500",
+        "imagenes": [
+            "18.jpg"
+        ]
+    },
+    {
+        "lot": "19",
+        "prix": 29100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500",
+        "imagenes": [
+            "19.jpg"
+        ]
+    },
+    {
+        "lot": "21",
+        "prix": 29100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500",
+        "imagenes": [
+            "21.jpg"
+        ]
+    },
+    {
+        "lot": "23",
+        "prix": 25000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500 + PS",
+        "imagenes": [
+            "23.jpg"
+        ]
+    },
+    {
+        "lot": "25",
+        "prix": 20000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500 + PS",
+        "imagenes": [
+            "25.jpg"
+        ]
+    },
+    {
+        "lot": "26",
+        "prix": 25000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 I 1 R1000",
+        "imagenes": [
+            "26.jpg"
+        ]
+    },
+    {
+        "lot": "27",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500",
+        "imagenes": [
+            "27.jpg"
+        ]
+    },
+    {
+        "lot": "29",
+        "prix": 27100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 1 R1000",
+        "imagenes": [
+            "29.jpg"
+        ]
+    },
+    {
+        "lot": "31",
+        "prix": 29500.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R500",
+        "imagenes": [
+            "31.jpg"
+        ]
+    },
+    {
+        "lot": "32",
+        "prix": 29100.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 2 R500",
+        "imagenes": [
+            "32.jpg"
+        ]
+    },
+    {
+        "lot": "33",
+        "prix": 22000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R1000",
+        "imagenes": [
+            "33.jpg"
+        ]
+    },
+    {
+        "lot": "34",
+        "prix": 25000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 1 R1000",
+        "imagenes": [
+            "34.jpg"
+        ]
+    },
+    {
+        "lot": "35",
+        "prix": 25400.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 I 1 R1000",
+        "imagenes": [
+            "35.jpg"
+        ]
+    },
+    {
+        "lot": "36",
+        "prix": 25000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 I 1 R1000",
+        "imagenes": [
+            "36.jpg"
+        ]
+    },
+    {
+        "lot": "37",
+        "prix": 25000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 I 3 R1000",
+        "imagenes": [
+            "37.jpg"
+        ]
+    },
+    {
+        "lot": "38",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "38.jpg"
+        ]
+    },
+    {
+        "lot": "39",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "39.jpg"
+        ]
+    },
+    {
+        "lot": "40",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "40.jpg"
+        ]
+    },
+    {
+        "lot": "41",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "41.jpg"
+        ]
+    },
+    {
+        "lot": "42",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "42.jpg"
+        ]
+    },
+    {
+        "lot": "43",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "43.jpg"
+        ]
+    },
+    {
+        "lot": "44",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "44.jpg"
+        ]
+    },
+    {
+        "lot": "45",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "45.jpg"
+        ]
+    },
+    {
+        "lot": "46",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "46.jpg"
+        ]
+    },
+    {
+        "lot": "47",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "47.jpg"
+        ]
+    },
+    {
+        "lot": "48",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "48.jpg"
+        ]
+    },
+    {
+        "lot": "49",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "49.jpg"
+        ]
+    },
+    {
+        "lot": "50",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS16 P 3 R500",
+        "imagenes": [
+            "50.jpg"
+        ]
+    },
+    {
+        "lot": "52",
+        "prix": 55000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Total MS60 1  MultiStation",
+        "imagenes": [
+            "52.jpg"
+        ]
+    },
+    {
+        "lot": "53",
+        "prix": 55000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Total MS60 1 R2000",
+        "imagenes": [
+            "53.jpg"
+        ]
+    },
+    {
+        "lot": "54",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Total MS60 1 MultiStation",
+        "imagenes": [
+            "54.jpg"
+        ]
+    },
+    {
+        "lot": "55",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station totale MS60 I 2020",
+        "imagenes": [
+            "55.jpg"
+        ]
+    },
+    {
+        "lot": "57",
+        "prix": 62500.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Total TS60 I 0.5  R1000",
+        "imagenes": [
+            "57.jpg"
+        ]
+    },
+    {
+        "lot": "58",
+        "prix": 57000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale avec imagerie TS60 I 0.5 R1000",
+        "imagenes": [
+            "58.jpg"
+        ]
+    },
+    {
+        "lot": "59",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TS60 I 0.5 R1000 (2019)",
+        "imagenes": [
+            "59.jpg"
+        ]
+    },
+    {
+        "lot": "60",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale avec imagerie TS60 I 0.5 R1000",
+        "imagenes": [
+            "60.jpg"
+        ]
+    },
+    {
+        "lot": "61",
+        "prix": 30000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TM50 1 R1000",
+        "imagenes": [
+            "61.jpg"
+        ]
+    },
+    {
+        "lot": "62",
+        "prix": 30000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TM50 1 R1000 (2015)",
+        "imagenes": [
+            "62.jpg"
+        ]
+    },
+    {
+        "lot": "63",
+        "prix": 30000.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Totale TM50 1 R1000",
+        "imagenes": [
+            "63.jpg"
+        ]
+    },
+    {
+        "lot": "67",
+        "prix": 8000.0,
+        "categorie": "GPS",
+        "descripcion": "GS15 SmartAntenne Performance",
+        "imagenes": [
+            "67.jpg"
+        ]
+    },
+    {
+        "lot": "74",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "74.jpg"
+        ]
+    },
+    {
+        "lot": "75",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "75.jpg"
+        ]
+    },
+    {
+        "lot": "76",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "76.jpg"
+        ]
+    },
+    {
+        "lot": "77",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "77.jpg"
+        ]
+    },
+    {
+        "lot": "78",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "78.jpg"
+        ]
+    },
+    {
+        "lot": "79",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "79.jpg"
+        ]
+    },
+    {
+        "lot": "80",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "imagenes": [
+            "80.jpg"
+        ]
+    },
+    {
+        "lot": "81",
+        "prix": 20000.0,
+        "categorie": "GPS",
+        "descripcion": "GPS iCG70 T UHF iCON gps 70 T UHF Value",
+        "imagenes": [
+            "81.jpg"
+        ]
+    },
+    {
+        "lot": "84",
+        "prix": 1500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trépied Nedo",
+        "imagenes": [
+            "84.jpg"
+        ]
+    },
+    {
+        "lot": "85",
+        "prix": 1500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trépied Nedo",
+        "imagenes": [
+            "85.jpg"
+        ]
+    },
+    {
+        "lot": "86",
+        "prix": 1500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trépied Nedo",
+        "imagenes": [
+            "86.jpg"
+        ]
+    },
+    {
+        "lot": "87",
+        "prix": 7100.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau LS15 0.3mm",
+        "imagenes": [
+            "87.jpg"
+        ]
+    },
+    {
+        "lot": "88",
+        "prix": 7100.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau LS15 0.2mm",
+        "imagenes": [
+            "88.jpg"
+        ]
+    },
+    {
+        "lot": "89",
+        "prix": 7100.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau LS15 0.2mm",
+        "imagenes": [
+            "89.jpg"
+        ]
+    },
+    {
+        "lot": "96",
+        "prix": 5000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau DNA3",
+        "imagenes": [
+            "96.jpg"
+        ]
+    },
+    {
+        "lot": "96.1",
+        "prix": 9000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Mire Leica",
+        "imagenes": [
+            "96.1.jpg"
+        ]
+    },
+    {
+        "lot": "97",
+        "prix": 1500.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "DT8-05LS Théodolite numérique 5",
+        "imagenes": [
+            "97.jpg"
+        ]
+    },
+    {
+        "lot": "98",
+        "prix": 1500.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "DT8-05LS Théodolite numérique 5",
+        "imagenes": [
+            "98.jpg"
+        ]
+    },
+    {
+        "lot": "99",
+        "prix": 300.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau Topcon AT-B4R",
+        "imagenes": [
+            "99.jpg"
+        ]
+    },
+    {
+        "lot": "99.1",
+        "prix": 300.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau Topcon AT-B4R",
+        "imagenes": [
+            "99.1.jpg"
+        ]
+    },
+    {
+        "lot": "100",
+        "prix": 0.0,
+        "categorie": "Station Totale",
+        "descripcion": "Station Total Trimble",
+        "imagenes": [
+            "100.jpg"
+        ]
+    },
+    {
+        "lot": "100.1",
+        "prix": 0.0,
+        "categorie": "Accessoires",
+        "descripcion": "Ensemble pour Scan Ferroviaire",
+        "imagenes": [
+            "100.1.jpg",
+            "100.1_A.jpg",
+            "100.1_B.jpg",
+            "100.1_C.jpg",
+            "100.1_D.jpg",
+            "100.1_E.jpg",
+            "100.1_F.jpg",
+            "100.1_G.jpg"
+        ]
+    },
+    {
+        "lot": "101.2",
+        "prix": 8000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Drone DJI Matrice 300 RTK",
+        "imagenes": [
+            "101.2.jpg"
+        ]
+    },
+    {
+        "lot": "101.1",
+        "prix": 10000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Drone DJI Matrice 350 RTK",
+        "imagenes": [
+            "101.1.jpg"
+        ]
+    },
+    {
+        "lot": "101.3",
+        "prix": 3000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Drone accessoire Caméra DJI Zenmuse H20",
+        "imagenes": [
+            "101.3.jpg"
+        ]
+    },
+    {
+        "lot": "101.4",
+        "prix": 8000.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Drone accessoire Caméra DJI Zenmuse P1 avec objecOf 35 mm",
+        "imagenes": [
+            "101.4.jpg"
+        ]
+    },
+    {
+        "lot": "101.5",
+        "prix": 14500.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Lidar DJI Zenmuse L2",
+        "imagenes": [
+            "101.5.jpg"
+        ]
+    },
+    {
+        "lot": "101.6",
+        "prix": 3800.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone",
+        "imagenes": [
+            "101.6.jpg"
+        ]
+    },
+    {
+        "lot": "101.7",
+        "prix": 1800.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone Batterie TB65",
+        "imagenes": [
+            "101.7.jpg"
+        ]
+    },
+    {
+        "lot": "101.8",
+        "prix": 150.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone valisepour Batterie",
+        "imagenes": [
+            "101.8.jpg"
+        ]
+    },
+    {
+        "lot": "101.9",
+        "prix": 200.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone Batteries WB37",
+        "imagenes": [
+            "101.9.jpg"
+        ]
+    },
+    {
+        "lot": "101.10",
+        "prix": 50.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone Support Émetteur DJI C Plus",
+        "imagenes": [
+            "101.10.jpg"
+        ]
+    },
+    {
+        "lot": "101.11",
+        "prix": 200.0,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Accessoire Drone Support de caméra supérieur",
+        "imagenes": [
+            "101.11.jpg"
+        ]
+    },
+    {
+        "lot": "102",
+        "prix": 4500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Zeno 20 Android UMTS",
+        "imagenes": [
+            "102.jpg"
+        ]
+    },
+    {
+        "lot": "107",
+        "prix": 760.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trépied 2 mètre",
+        "imagenes": [
+            "107.jpg"
+        ]
+    },
+    {
+        "lot": "108",
+        "prix": 6530.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trépieds & Cannes",
+        "imagenes": [
+            "108.jpg"
+        ]
+    },
+    {
+        "lot": "109",
+        "prix": 1988.0,
+        "categorie": "Accessoires",
+        "descripcion": "Base roulante pour trépied",
+        "imagenes": [
+            "109.jpg"
+        ]
+    },
+    {
+        "lot": "111",
+        "prix": 500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Cannes 46 mètre",
+        "imagenes": [
+            "111.jpg"
+        ]
+    },
+    {
+        "lot": "112",
+        "prix": 500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Cannes à pince",
+        "imagenes": [
+            "112.jpg"
+        ]
+    },
+    {
+        "lot": "112.2",
+        "prix": 80.0,
+        "categorie": "Accessoires",
+        "descripcion": "Plumb line 8oz + Plumb line 16 oz",
+        "imagenes": [
+            "112.2.jpg"
+        ]
+    },
+    {
+        "lot": "114",
+        "prix": 400.0,
+        "categorie": "Accessoires",
+        "descripcion": "Mini Prisme Leica GMP111-0",
+        "imagenes": [
+            "114.jpg"
+        ]
+    },
+    {
+        "lot": "118",
+        "prix": 1106.7,
+        "categorie": "Accessoires",
+        "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
+        "imagenes": [
+            "118.jpg"
+        ]
+    },
+    {
+        "lot": "125.5",
+        "prix": 32000.0,
+        "categorie": "Accessoires",
+        "descripcion": "Coffre d ensemble pour embase (GVP609)",
+        "imagenes": [
+            "125.5.jpg"
+        ]
+    },
+    {
+        "lot": "125.6",
+        "prix": 3600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Coffre de porteur GZR3 avec plomb optique",
+        "imagenes": [
+            "125.6.jpg"
+        ]
+    },
+    {
+        "lot": "126",
+        "prix": 3400.0,
+        "categorie": "Accessoires",
+        "descripcion": "Coffre d ensemble pour embase (GVP609)",
+        "imagenes": [
+            "126.jpg"
+        ]
+    },
+    {
+        "lot": "126.1",
+        "prix": 10550.0,
+        "categorie": "Accessoires",
+        "descripcion": "Prisme 360 GRZ122 avec étui lot de 2",
+        "imagenes": [
+            "126.1.jpg"
+        ]
+    },
+    {
+        "lot": "126.2",
+        "prix": 1200.0,
+        "categorie": "Accessoires",
+        "descripcion": "Prisme 360 GRZ122 brisé",
+        "imagenes": [
+            "126.2.jpg"
+        ]
+    },
+    {
+        "lot": "126.3",
+        "prix": 600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Prisme 360 GRZ122 brisé",
+        "imagenes": [
+            "126.3.jpg"
+        ]
+    },
+    {
+        "lot": "128.1",
+        "prix": 75.0,
+        "categorie": "Accessoires",
+        "descripcion": "Support aimanté pour prisme",
+        "imagenes": [
+            "128.1.jpg"
+        ]
+    },
+    {
+        "lot": "129",
+        "prix": 125.0,
+        "categorie": "Accessoires",
+        "descripcion": "Ancrage et support pour cible réfléchissante",
+        "imagenes": [
+            "129.jpg"
+        ]
+    },
+    {
+        "lot": "129.1",
+        "prix": 85.0,
+        "categorie": "Accessoires",
+        "descripcion": "Ancrage et support pour cible réfléchissante",
+        "imagenes": [
+            "129.1.jpg"
+        ]
+    },
+    {
+        "lot": "130",
+        "prix": 600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Support pour cible ajustable de type serre",
+        "imagenes": [
+            "130.jpg"
+        ]
+    },
+    {
+        "lot": "131",
+        "prix": 715.408,
+        "categorie": "Accessoires",
+        "descripcion": "Sabot Magnétique & Mini-Prisme",
+        "imagenes": [
+            "131.jpg"
+        ]
+    },
+    {
+        "lot": "131.1",
+        "prix": 360.0,
+        "categorie": "Accessoires",
+        "descripcion": "Mini prism Leica GMP101",
+        "imagenes": [
+            "131.1.jpg"
+        ]
+    },
+    {
+        "lot": "131.2",
+        "prix": 1820.0,
+        "categorie": "Accessoires",
+        "descripcion": "Leica Crochet & Porteur",
+        "imagenes": [
+            "131.2.jpg"
+        ]
+    },
+    {
+        "lot": "131.4",
+        "prix": 400.0,
+        "categorie": "Accessoires",
+        "descripcion": "Adaptateur Leica GAD31",
+        "imagenes": [
+            "131.4.jpg"
+        ]
+    },
+    {
+        "lot": "131.5",
+        "prix": 90.0,
+        "categorie": "Accessoires",
+        "descripcion": "Bulle ajustable pour canne",
+        "imagenes": [
+            "131.5.jpg"
+        ]
+    },
+    {
+        "lot": "131.8",
+        "prix": 200.0,
+        "categorie": "Accessoires",
+        "descripcion": "Gabarit de levé pour socle d ancrage",
+        "imagenes": [
+            "131.8.jpg"
+        ]
+    },
+    {
+        "lot": "131.9",
+        "prix": 2500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Prisme rail Monitoring + Side rail clip",
+        "imagenes": [
+            "131.9.jpg"
+        ]
+    },
+    {
+        "lot": "132",
+        "prix": 1100.0,
+        "categorie": "Accessoires",
+        "descripcion": "Monitoring System Data",
+        "imagenes": [
+            "132.jpg"
+        ]
+    },
+    {
+        "lot": "133",
+        "prix": 1600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Monitoring System Data",
+        "imagenes": [
+            "133.jpg"
+        ]
+    },
+    {
+        "lot": "134",
+        "prix": 1600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Monitoring System Data",
+        "imagenes": [
+            "134.jpg"
+        ]
+    },
+    {
+        "lot": "135",
+        "prix": 500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Monitoring System Data",
+        "imagenes": [
+            "135.jpg"
+        ]
+    },
+    {
+        "lot": "136.1",
+        "prix": 250.0,
+        "categorie": "Accessoires",
+        "descripcion": "Convertisseur 2000 watts",
+        "imagenes": [
+            "136.1.jpg"
+        ]
+    },
+    {
+        "lot": "137",
+        "prix": 1477.98,
+        "categorie": "Accessoires",
+        "descripcion": "Laser rotatif Rugby 640 pente manuelle",
+        "imagenes": [
+            "137.jpg"
+        ]
+    },
+    {
+        "lot": "138",
+        "prix": 1500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser rotatif Topcon RL-SV2S",
+        "imagenes": [
+            "138.jpg"
+        ]
+    },
+    {
+        "lot": "138.1",
+        "prix": 200.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser Leica en croix",
+        "imagenes": [
+            "138.1.jpg"
+        ]
+    },
+    {
+        "lot": "138.2",
+        "prix": 500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser Bosch GRL 500H",
+        "imagenes": [
+            "138.2.jpg"
+        ]
+    },
+    {
+        "lot": "138.3",
+        "prix": 500.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser Hilti PR 2-HS A12",
+        "imagenes": [
+            "138.3.jpg"
+        ]
+    },
+    {
+        "lot": "139",
+        "prix": 1000.0,
+        "categorie": "Accessoires",
+        "descripcion": "Détecteur de métal",
+        "imagenes": [
+            "139.jpg"
+        ]
+    },
+    {
+        "lot": "140",
+        "prix": 1000.0,
+        "categorie": "Accessoires",
+        "descripcion": "Détecteur de métal avec afficheur",
+        "imagenes": [
+            "140.jpg"
+        ]
+    },
+    {
+        "lot": "141",
+        "prix": 80.0,
+        "categorie": "Accessoires",
+        "descripcion": "Niveau 4 pi",
+        "imagenes": [
+            "141.jpg"
+        ]
+    },
+    {
+        "lot": "143",
+        "prix": 300.0,
+        "categorie": "Accessoires",
+        "descripcion": "Niveau électronique 4 pi",
+        "imagenes": [
+            "143.jpg"
+        ]
+    },
+    {
+        "lot": "144",
+        "prix": 260.0,
+        "categorie": "Accessoires",
+        "descripcion": "Ruban à Mesurer",
+        "imagenes": [
+            "144.jpg"
+        ]
+    },
+    {
+        "lot": "144.1",
+        "prix": 80.0,
+        "categorie": "Accessoires",
+        "descripcion": "Roue à mesurer Keson RRT12M",
+        "imagenes": [
+            "144.1.jpg"
+        ]
+    },
+    {
+        "lot": "145",
+        "prix": 200.0,
+        "categorie": "Accessoires",
+        "descripcion": "Sac pour piquet Seco",
+        "imagenes": [
+            "145.jpg"
+        ]
+    },
+    {
+        "lot": "146",
+        "prix": 800.0,
+        "categorie": "Accessoires",
+        "descripcion": "Étoile de plancher pour trépied",
+        "imagenes": [
+            "146.jpg"
+        ]
+    },
+    {
+        "lot": "148",
+        "prix": 2200.0,
+        "categorie": "Accessoires",
+        "descripcion": "Chargeur multiple Type GKL 341",
+        "imagenes": [
+            "148.jpg"
+        ]
+    },
+    {
+        "lot": "149",
+        "prix": 400.0,
+        "categorie": "Accessoires",
+        "descripcion": "Chargeur GKL 221",
+        "imagenes": [
+            "149.jpg"
+        ]
+    },
+    {
+        "lot": "150",
+        "prix": 600.0,
+        "categorie": "Accessoires",
+        "descripcion": "Chargeur GKL 311",
+        "imagenes": [
+            "150.jpg"
+        ]
+    },
+    {
+        "lot": "151",
+        "prix": 120.0,
+        "categorie": "Accessoires",
+        "descripcion": "Chargeur GEV276",
+        "imagenes": [
+            "151.jpg"
+        ]
+    },
+    {
+        "lot": "152",
+        "prix": 750.0,
+        "categorie": "Accessoires",
+        "descripcion": "Chargeur GKL311 mural",
+        "imagenes": [
+            "152.jpg"
+        ]
+    },
+    {
+        "lot": "153",
+        "prix": 250.0,
+        "categorie": "Accessoires",
+        "descripcion": "Adapteur Leica",
+        "imagenes": [
+            "153.jpg"
+        ]
+    },
+    {
+        "lot": "200",
+        "prix": 450.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Génératrice Inverter Ducar 2000 Watts",
+        "imagenes": [
+            "200.jpg"
+        ]
+    },
+    {
+        "lot": "201",
+        "prix": 125.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Chargeur multiple Milwake",
+        "imagenes": [
+            "201.jpg"
+        ]
+    },
+    {
+        "lot": "202",
+        "prix": 225.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee impact- Gun 1/2",
+        "imagenes": [
+            "202.jpg"
+        ]
+    },
+    {
+        "lot": "203",
+        "prix": 225.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
+        "imagenes": [
+            "203.jpg"
+        ]
+    },
+    {
+        "lot": "203.1",
+        "prix": 120.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
+        "imagenes": [
+            "203.1.jpg"
+        ]
+    },
+    {
+        "lot": "204",
+        "prix": 225.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee Rectifieuse Meuleuse",
+        "imagenes": [
+            "204.jpg"
+        ]
+    },
+    {
+        "lot": "205",
+        "prix": 225.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee Rectifieuse Meuleuse",
+        "imagenes": [
+            "205.jpg"
+        ]
+    },
+    {
+        "lot": "206",
+        "prix": 240.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwakee ensemble de lumière DEL à batterie",
+        "imagenes": [
+            "206.jpg"
+        ]
+    },
+    {
+        "lot": "207",
+        "prix": 120.0,
+        "categorie": "Outils électriques",
+        "descripcion": "DeWalt perseuse 3/8 20 Volt Max",
+        "imagenes": [
+            "207.jpg"
+        ]
+    },
+    {
+        "lot": "208",
+        "prix": 80.0,
+        "categorie": "Outils électriques",
+        "descripcion": "DeWalt perseuse 3/8 XR 20 Volt Max",
+        "imagenes": [
+            "208.jpg"
+        ]
+    },
+    {
+        "lot": "210",
+        "prix": 1000.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti PS 50 détecteur acier armature",
+        "imagenes": [
+            "210.jpg"
+        ]
+    },
+    {
+        "lot": "211",
+        "prix": 160.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Ensemble meuleuse sans fil AG 600-A36",
+        "imagenes": [
+            "211.jpg"
+        ]
+    },
+    {
+        "lot": "212",
+        "prix": 500.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perseuse SF-BT 22-A",
+        "imagenes": [
+            "212.jpg"
+        ]
+    },
+    {
+        "lot": "213",
+        "prix": 525.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perceuse SF-10W 22-A",
+        "imagenes": [
+            "213.jpg"
+        ]
+    },
+    {
+        "lot": "213.1",
+        "prix": 525.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perceuse SF-10W 22-A",
+        "imagenes": [
+            "213.1.jpg"
+        ]
+    },
+    {
+        "lot": "213.2",
+        "prix": 525.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perceuse SF-10W 22-A",
+        "imagenes": [
+            "213.2.jpg"
+        ]
+    },
+    {
+        "lot": "214",
+        "prix": 350.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Impact SW 22-A",
+        "imagenes": [
+            "214.jpg"
+        ]
+    },
+    {
+        "lot": "214.2",
+        "prix": 400.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Impact SW 22-A",
+        "imagenes": [
+            "214.2.jpg"
+        ]
+    },
+    {
+        "lot": "214.3",
+        "prix": 350.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Impact SW 22-A",
+        "imagenes": [
+            "214.3.jpg"
+        ]
+    },
+    {
+        "lot": "218.1",
+        "prix": 250.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perseuse TE 6-A36",
+        "imagenes": [
+            "218.1.jpg"
+        ]
+    },
+    {
+        "lot": "219",
+        "prix": 1150.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Perseuse TE 60-A36 AVR",
+        "imagenes": [
+            "219.jpg"
+        ]
+    },
+    {
+        "lot": "220",
+        "prix": 500.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti récupérateur de poussière TE DRS-6-A",
+        "imagenes": [
+            "220.jpg"
+        ]
+    },
+    {
+        "lot": "221",
+        "prix": 200.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Aspirateur VC75-1-A22",
+        "imagenes": [
+            "221.jpg"
+        ]
+    },
+    {
+        "lot": "222",
+        "prix": 200.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti ensemble de lumière à batterie",
+        "imagenes": [
+            "222.jpg"
+        ]
+    },
+    {
+        "lot": "223",
+        "prix": 150.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Laser magnétique PMC 46",
+        "imagenes": [
+            "223.jpg"
+        ]
+    },
+    {
+        "lot": "300",
+        "prix": 1000.0,
+        "categorie": "Outils légers",
+        "descripcion": "Escaliers plateform pour enjamber jersey",
+        "imagenes": [
+            "300.jpg"
+        ]
+    },
+    {
+        "lot": "301",
+        "prix": 400.0,
+        "categorie": "Outils légers",
+        "descripcion": "Échelle ajustable jusquà 21 pied aluminium",
+        "imagenes": [
+            "301.jpg"
+        ]
+    },
+    {
+        "lot": "302",
+        "prix": 1080.0,
+        "categorie": "Outils légers",
+        "descripcion": "Outils divers",
+        "imagenes": [
+            "302.jpg"
+        ]
+    },
+    {
+        "lot": "400",
+        "prix": 9182.24,
+        "categorie": "Quincailleries",
+        "descripcion": "Divers elements ancrages tiges billes",
+        "imagenes": [
+            "400.jpg",
+            "400_A.jpg",
+            "400_B.jpg",
+            "400_C.jpg",
+            "400_D.jpg",
+            "400_E.jpg"
+        ]
+    },
+    {
+        "lot": "400.1",
+        "prix": 9264.24,
+        "categorie": "Quincailleries",
+        "descripcion": "Forêts Béton",
+        "imagenes": [
+            "400.1.jpg"
+        ]
+    },
+    {
+        "lot": "400.2",
+        "prix": 6600.0,
+        "categorie": "Quincailleries",
+        "descripcion": "Boites de 100 Goujon Filete",
+        "imagenes": [
+            "400.2.jpg"
+        ]
+    },
+    {
+        "lot": "401",
+        "prix": 646.28,
+        "categorie": "Quincailleries",
+        "descripcion": "lot de différentes douilles",
+        "imagenes": [
+            "401.jpg",
+            "401_A.jpg"
+        ]
+    },
+    {
+        "lot": "403",
+        "prix": 50.0,
+        "categorie": "Quincailleries",
+        "descripcion": "Sac d outils assortis",
+        "imagenes": [
+            "403.jpg"
+        ]
+    },
+    {
+        "lot": "405",
+        "prix": 1600.0,
+        "categorie": "Quincailleries",
+        "descripcion": "Parasol",
+        "imagenes": [
+            "405.jpg"
+        ]
+    },
+    {
+        "lot": "504.1",
+        "prix": 9180.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 55Po",
+        "imagenes": [
+            "504.1.jpg"
+        ]
+    },
+    {
+        "lot": "504.2",
+        "prix": 1800.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 44Po",
+        "imagenes": [
+            "504.2.jpg"
+        ]
+    },
+    {
+        "lot": "504.3",
+        "prix": 1130.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 12Po",
+        "imagenes": [
+            "504.3.jpg"
+        ]
+    },
+    {
+        "lot": "504.4",
+        "prix": 900.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 24Po",
+        "imagenes": [
+            "504.4.jpg"
+        ]
+    },
+    {
+        "lot": "504.5",
+        "prix": 900.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 55Po",
+        "imagenes": [
+            "504.5.jpg"
+        ]
+    },
+    {
+        "lot": "504.6",
+        "prix": 340.0,
+        "categorie": "Monuments",
+        "descripcion": "Monument piédestal acier 59Po",
+        "imagenes": [
+            "504.6.jpg"
+        ]
+    },
+    {
+        "lot": "504.7",
+        "prix": 750.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 36-37Po",
+        "imagenes": [
+            "504.7.jpg"
+        ]
+    },
+    {
+        "lot": "504.8",
+        "prix": 260.0,
+        "categorie": "Monuments",
+        "descripcion": "Monument piédestal acier 36Po",
+        "imagenes": [
+            "504.8.jpg"
+        ]
+    },
+    {
+        "lot": "504.9",
+        "prix": 1800.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 60Po",
+        "imagenes": [
+            "504.9.jpg"
+        ]
+    },
+    {
+        "lot": "505",
+        "prix": 1800.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 72Po",
+        "imagenes": [
+            "505.jpg"
+        ]
+    },
+    {
+        "lot": "505.1",
+        "prix": 855.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 48Po",
+        "imagenes": [
+            "505.1.jpg"
+        ]
+    },
+    {
+        "lot": "505.2",
+        "prix": 8400.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 54-56Po",
+        "imagenes": [
+            "505.2.jpg"
+        ]
+    },
+    {
+        "lot": "505.3",
+        "prix": 5100.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 48-54Po",
+        "imagenes": [
+            "505.3.jpg"
+        ]
+    },
+    {
+        "lot": "505.4",
+        "prix": 2380.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 72Po",
+        "imagenes": [
+            "505.4.jpg"
+        ]
+    },
+    {
+        "lot": "505.5",
+        "prix": 1500.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 36Po",
+        "imagenes": [
+            "505.5.jpg"
+        ]
+    },
+    {
+        "lot": "505.6",
+        "prix": 300.0,
+        "categorie": "Monuments",
+        "descripcion": "Monument piédestal acier 54-56Po",
+        "imagenes": [
+            "505.6.jpg"
+        ]
+    },
+    {
+        "lot": "505.7",
+        "prix": 1500.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 48-54 Po",
+        "imagenes": [
+            "505.7.jpg"
+        ]
+    },
+    {
+        "lot": "505.8",
+        "prix": 6075.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments Équerre acier 10X12",
+        "imagenes": [
+            "505.8.jpg"
+        ]
+    },
+    {
+        "lot": "505.9",
+        "prix": 675.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments Équerre acier 16X12",
+        "imagenes": [
+            "505.9.jpg"
+        ]
+    },
+    {
+        "lot": "506",
+        "prix": 675.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments Équerre acier 12X12",
+        "imagenes": [
+            "506.jpg"
+        ]
+    },
+    {
+        "lot": "506.1",
+        "prix": 2500.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments aluminium 12x10",
+        "imagenes": [
+            "506.1.jpg"
+        ]
+    },
+    {
+        "lot": "506.2",
+        "prix": 600.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 48-54Po",
+        "imagenes": [
+            "506.2.jpg"
+        ]
+    },
+    {
+        "lot": "506.4",
+        "prix": 900.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments pour top mur",
+        "imagenes": [
+            "506.4.jpg"
+        ]
+    },
+    {
+        "lot": "506.5",
+        "prix": 1500.0,
+        "categorie": "Monuments",
+        "descripcion": "Monuments piédestal acier 30Po",
+        "imagenes": [
+            "506.5.jpg"
+        ]
+    },
+    {
+        "lot": "600",
+        "prix": 250.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Système électrique pour véhicule électrique",
+        "imagenes": [
+            "600.jpg"
+        ]
+    },
+    {
+        "lot": "601",
+        "prix": 35000.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Véhicule Électrique Ferroviaire léger",
+        "imagenes": [
+            "601.jpg"
+        ]
+    },
+    {
+        "lot": "602",
+        "prix": 10656.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Drapeau et tige de support",
+        "imagenes": [
+            "602.jpg"
+        ]
+    },
+    {
+        "lot": "603",
+        "prix": 2784.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Chariot pour outils",
+        "imagenes": [
+            "603.jpg"
+        ]
+    },
+    {
+        "lot": "604",
+        "prix": 460.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Caméra GoPro Héro12",
+        "imagenes": [
+            "604.jpg"
+        ]
+    },
+    {
+        "lot": "604.1",
+        "prix": 150.0,
+        "categorie": "Véhicule Électrique",
+        "descripcion": "Caméra GoPro Héro10",
+        "imagenes": [
+            "604.1.jpg"
+        ]
+    },
+    {
+        "lot": "700",
+        "prix": 15000.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "KIT complet MSA XTIRPA",
+        "imagenes": [
+            "700.jpg"
+        ]
+    },
+    {
+        "lot": "702",
+        "prix": 100.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Cone orange 18 po bande réfléchissante",
+        "imagenes": [
+            "702.jpg"
+        ]
+    },
+    {
+        "lot": "703",
+        "prix": 450.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Back Rack tubulaire",
+        "imagenes": [
+            "703.jpg"
+        ]
+    },
+    {
+        "lot": "704",
+        "prix": 150.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Appareil de levage magnétique pour couvercle de regard",
+        "imagenes": [
+            "704.jpg"
+        ]
+    },
+    {
+        "lot": "705",
+        "prix": 100.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ensemble de sangles en caoutchouc & tendeur d élastique",
+        "imagenes": [
+            "705.jpg"
+        ]
+    },
+    {
+        "lot": "706",
+        "prix": 200.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Corde de sécurité",
+        "imagenes": [
+            "706.jpg"
+        ]
+    },
+    {
+        "lot": "707",
+        "prix": 300.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage pivotante",
+        "imagenes": [
+            "707.jpg"
+        ]
+    },
+    {
+        "lot": "708",
+        "prix": 1200.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage à dé pour béton",
+        "imagenes": [
+            "708.jpg"
+        ]
+    },
+    {
+        "lot": "709",
+        "prix": 400.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage à béton",
+        "imagenes": [
+            "709.jpg"
+        ]
+    },
+    {
+        "lot": "710",
+        "prix": 225.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Coulisseau de sécurité",
+        "imagenes": [
+            "710.jpg"
+        ]
+    },
+    {
+        "lot": "711",
+        "prix": 50.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Mousqueton",
+        "imagenes": [
+            "711.jpg"
+        ]
+    },
+    {
+        "lot": "712",
+        "prix": 1500.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage pour rail anti-chute",
+        "imagenes": [
+            "712.jpg"
+        ]
+    },
+    {
+        "lot": "712.1",
+        "prix": 1800.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage pour rail anti-chute",
+        "imagenes": [
+            "712.1.jpg"
+        ]
+    },
+    {
+        "lot": "713",
+        "prix": 6783.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Divers items de sécurité",
+        "imagenes": [
+            "713.jpg",
+            "713_A.jpg"
+        ]
+    },
+    {
+        "lot": "714",
+        "prix": 20.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Adapteur d harnais",
+        "imagenes": [
+            "714.jpg"
+        ]
+    },
+    {
+        "lot": "715",
+        "prix": 770.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Ancrage pour poutre en I",
+        "imagenes": [
+            "715.jpg"
+        ]
+    },
+    {
+        "lot": "716",
+        "prix": 100.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Garde-corps magnétique autoportant temporaire",
+        "imagenes": [
+            "716.jpg"
+        ]
+    },
+    {
+        "lot": "717",
+        "prix": 140.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Lumière rouge de sécurité",
+        "imagenes": [
+            "717.jpg"
+        ]
+    },
+    {
+        "lot": "718",
+        "prix": 25.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Lumière de sécurité Kosto",
+        "imagenes": [
+            "718.jpg"
+        ]
+    },
+    {
+        "lot": "719",
+        "prix": 100.0,
+        "categorie": "Matériels de Sécurité",
+        "descripcion": "Girofard",
+        "imagenes": [
+            "719.jpg"
+        ]
+    },
+    {
+        "lot": "800",
+        "prix": 3000.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur dimension 8 X8 finition tôle",
+        "imagenes": [
+            "800.jpg"
+        ]
+    },
+    {
+        "lot": "801",
+        "prix": 12000.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur de dimension 10X20 isolée",
+        "imagenes": [
+            "801.jpg"
+        ]
+    },
+    {
+        "lot": "802",
+        "prix": 17053.55,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur 8 X10 pas isolée",
+        "imagenes": [
+            "802.jpg"
+        ]
+    },
+    {
+        "lot": "900",
+        "prix": 50000.0,
+        "categorie": "Véhicule",
+        "descripcion": "Ford Transit 250 AWD",
+        "imagenes": [
+            "900.jpg"
+        ]
+    },
+    {
+        "lot": "901",
+        "prix": 20000.0,
+        "categorie": "Véhicule",
+        "descripcion": "Remorque 2 essieux",
+        "imagenes": [
+            "901.jpg"
+        ]
+    }
+]
