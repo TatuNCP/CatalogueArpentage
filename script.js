@@ -355,7 +355,11 @@ function showCotationModal() {
 
 function closeCartModal() {
     cartModal.style.display = 'none';
+    if (pedidoEnviadoExitosamente) {
+        window.location.reload();
+    }
 }
+
 
 // RENDER CART SUMMARY (Currency CAD)
 function renderCartSummary() {
@@ -508,6 +512,7 @@ function sendOrder(event) {
     // 4. ENVIAR
     const serviceID = "service_qit85uu";
     const templateID = "template_5l7jajt";
+    let pedidoEnviadoExitosamente = false;
 
     emailjs.send(serviceID, templateID, templateParams)
         .then(function(response) {
@@ -521,6 +526,7 @@ function sendOrder(event) {
             cart = [];
             saveCart();
             updateCartUI();
+            pedidoEnviadoExitosamente = true;
         }, function(error) {
             console.error('Erreur:', error);
             alert(`Échec de l'envoi. Erreur: ${JSON.stringify(error)}`);

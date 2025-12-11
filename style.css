@@ -24,63 +24,76 @@ body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+
+
 /* =========================== */
 /* 2. HEADER Y LOGO (NouvLR)   */
 /* =========================== */
-
 #main-header {
     background-color: var(--color-primario);
     color: var(--color-acento-secundario);
     display: block;
-    text-align: center;
+    /* CRÍTICO: Alineamos el contenido al lado derecho (para la futura navegación) */
+    text-align: right; /* <--- MODIFICAR: Alineación a la derecha */
     position: relative;
-    padding: 20px 40px;
+
+    /* Reducimos el padding superior/inferior para subir el título */
+    padding: 10px 120px; /* <--- MODIFICAR: Reducir padding superior/inferior */
+
     border-bottom: none;
-    height: 180px;
+    height: auto;
+    /* Reducimos la altura mínima si el contenido es más pequeño */
+    min-height: 100px; /* <--- MODIFICAR: Altura mínima reducida */
 }
 
 /* ESTILO DEL TÍTULO (h1) */
 #main-header h1 {
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 3em;
+
+    /* CRÍTICO: Reducimos el tamaño para hacerlo más sutil */
+    /* Usamos clamp para que no exceda 2.5em y sea más pequeño en móviles */
+    font-size: clamp(1.5em, 2.5vw, 2.5em); /* <--- MODIFICAR: Tamaño más pequeño */
+
     font-weight: bold;
-    letter-spacing: 2px;
-    margin: 10;
+    /* CRÍTICO: Reducimos el espaciado entre letras */
+    letter-spacing: 1px; /* <--- MODIFICAR: Reducir de 2px a 1px */
 
+    margin: 0;
+    /* Eliminamos el padding superior si ya lo controlamos con el padding del header */
+    padding-top: 0; /* <--- MODIFICAR: Subimos el texto eliminando el padding */
 
-    padding-top: 30px;
+    /* Ya que el header está alineado a la derecha, no necesitamos estas propiedades */
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-wrap: break-word;
+    padding-left: 0; /* <--- Eliminamos el padding de la solución anterior */
 }
-
 
 /* ESTILO DEL LOGO */
 #company-logo {
     position: absolute;
-    top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 40px;
-    max-height: 120px;
+    max-height: 80px;
     width: auto;
 }
-
-
 
 /* ========================================= */
 /* 3. BARRA DE FILTROS: ICONOS GRANDES Y FLOTANTES */
 /* ========================================= */
-
 #filter-container {
     display: flex;
-    /* CAMBIO CRÍTICO 1: Centrar los iconos en el espacio disponible */
     justify-content: center;
-
-    /* CRÍTICO 2: Permite que los iconos salten de línea si no caben */
     flex-wrap: wrap;
-
-    /* Ancho completo y centrado */
     width: 95%;
     margin: 30px auto 0 auto;
     padding: 0 10px;
 }
 
+/* CRÍTICO: ESTA REGLA DEBE TENER EL PUNTO AL INICIO */
 .category-button-wrapper {
     display: flex;
     flex-direction: column;
@@ -89,13 +102,20 @@ body {
 
     background-color: transparent !important;
     border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
+    padding: 5px 5px;
+
+    margin: 0 5px 15px 5px;
+
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     outline: none !important;
+
+    /* CRÍTICO: Control de Responsividad (7 columnas uniformes) */
+    flex-basis: calc(100% / 7 - 10px); /* <--- Mantiene 7 columnas */
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 1;
+
+    min-width: 90px;
 }
 
 .category-button-wrapper:hover {
@@ -107,10 +127,14 @@ body {
     border-radius: 10px;
 }
 
-/* Estilo del Icono (la imagen en sí) */
+/* CRÍTICO: Unificar la definición del icono y ELIMINAR CUALQUIER OTRA DUPLICADA */
 .category-icon-clickable {
-    width: 195px;
-    height: 195px;
+    width: 100%;
+    height: auto;
+
+    /* Mantenemos el tamaño máximo deseado */
+    max-width: 100px; /* <--- Esto reduce el tamaño */
+
     object-fit: contain;
     transition: transform 0.2s ease-in-out;
     outline: none !important;
@@ -118,17 +142,15 @@ body {
     border-radius: 15px;
     padding: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
     border: none !important;
-}
 
-.category-button-wrapper:hover .category-icon-clickable {
-    background-color: var(--color-acento-secundario);
+    /* Mantenemos la proporción cuadrada 1:1 */
+    aspect-ratio: 1 / 1;
 }
 
 .category-text-below {
     margin-top: 8px;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
     color: var(--color-texto);
     text-align: center;
