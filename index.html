@@ -15,20 +15,26 @@
     <h1>VENTE D'ÉQUIPEMENT ARPENTAGE</h1>
 
     <nav id="main-nav">
-        <button onclick="mostrarSeccion('home')" class="nav-btn active">Accueil</button>
-        <button onclick="mostrarSeccion('catalogo')" class="nav-btn">Catalogue</button>
-        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn">Politique de Vente</button>
-        <button onclick="mostrarSeccion('contact')" class="nav-btn">Contact</button>
+        <button onclick="mostrarSeccion('home')" class="nav-btn active" data-i18n="nav_home">Accueil</button>
+        <button onclick="mostrarSeccion('catalogo')" class="nav-btn" data-i18n="nav_catalog">Catalogue</button>
+        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn" data-i18n="nav_disclaimer">Politique de Vente
+        </button>
+        <button onclick="mostrarSeccion('contact')" class="nav-btn" data-i18n="nav_contact">Contact</button>
+        <button onclick="toggleLanguage()" class="nav-btn" id="lang-toggle"
+                style="border: 1px solid white; margin-left:10px;">EN
+        </button>
     </nav>
 </header>
 
 <section id="section-home" class="content-section">
     <div class="hero-banner">
-        <h2>Portail de Liquidation d'Actifs - Projet NouvLR</h2>
-        <p>Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de géomatique met en
-            vente son parc d'équipements topographiques excédentaires.</p>
+        <h2 data-i18n="hero_title">Portail de Liquidation d'Actifs - Projet NouvLR</h2>
+        <p data-i18n="hero_desc">Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de
+            géomatique met en vente son parc d'équipements topographiques excédentaires.</p>
         <div class="hero-actions">
-            <button onclick="mostrarSeccion('catalogo')" class="big-btn">Consulter le Catalogue</button>
+            <button onclick="mostrarSeccion('catalogo')" class="big-btn" data-i18n="btn_catalog">Consulter le
+                Catalogue
+            </button>
             <a href="catalogue.pdf" download="Catalogue_NouvLR.pdf" class="download-btn">📄 Télécharger PDF</a>
         </div>
         <p style="margin-top: 20px; font-size: 0.9em; color: #888;">*Vente réservée aux professionnels.</p>
@@ -51,61 +57,72 @@
 
 <section id="section-disclaimer" class="content-section hidden">
     <div class="text-container">
-        <h2>Politique de Vente et Avis de Non-Responsabilité</h2>
 
-        <div class="disclaimer-box">
-            <h3>1. Vente Finale</h3>
-            <p>
-                Afin d’assurer la transparence et la clarté, nous vous informons que <strong>toutes les ventes sont
-                finales</strong>.
-                Une fois la vente complétée, aucune modification ne pourra être effectuée.
-            </p>
-
-            <h3>2. État des Articles ("Tel quel")</h3>
-            <p>
-                Les articles sont vendus <strong>dans leur état actuel</strong> ("as is"), sans garantie additionnelle
-                et sans possibilité de retour, d’échange ou de remboursement.
-            </p>
-
-            <h3>3. Inspection Recommandée</h3>
-            <p>
-                Nous vous recommandons fortement de venir sur place pour vérifier attentivement chaque produit avant de
-                conclure la transaction.
-            </p>
-
-            <h3>4. Questions et Contact</h3>
-            <p>
-                Si vous avez des questions ou souhaitez obtenir des précisions, n’hésitez pas à nous contacter avant
-                l’achat.
-            </p>
-
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-
-            <p style="text-align: center; font-style: italic; color: #666;">
-                Merci de votre compréhension et de votre confiance.
-            </p>
+        <div data-lang-content="fr">
+            <h2>Politique de Vente et Avis de Non-Responsabilité</h2>
+            <div class="disclaimer-box">
+                <h3>1. Vente Finale</h3>
+                <p>Afin d’assurer la transparence et la clarté, nous vous informons que <strong>toutes les ventes sont
+                    finales</strong>. Une fois la vente complétée, aucune modification ne pourra être effectuée.</p>
+                <h3>2. État des Articles ("Tel quel")</h3>
+                <p>Les articles sont vendus <strong>dans leur état actuel</strong> ("as is"), sans garantie
+                    additionnelle et sans possibilité de retour, d’échange ou de remboursement.</p>
+                <h3>3. Inspection Recommandée</h3>
+                <p>Nous vous recommandons fortement de venir sur place pour vérifier attentivement chaque produit avant
+                    de conclure la transaction.</p>
+            </div>
         </div>
+
+        <div data-lang-content="en" style="display:none;">
+            <h2>Sales Policy and Disclaimer</h2>
+            <div class="disclaimer-box">
+                <h3>1. Final Sale</h3>
+                <p>To ensure transparency and clarity, please be advised that <strong>all sales are final</strong>. Once
+                    the sale is completed, no changes can be made.</p>
+                <h3>2. Item Condition ("As Is")</h3>
+                <p>Items are sold <strong>in their current condition</strong> ("as is"), without additional warranty and
+                    without possibility of return, exchange, or refund.</p>
+                <h3>3. Inspection Recommended</h3>
+                <p>We strongly recommend visiting us to carefully inspect each product before concluding the
+                    transaction.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
+<
 <section id="section-contact" class="content-section hidden">
     <div class="text-container">
-        <h2>Contactez-nous</h2>
-        <p>Pour toute question concernant l'état des équipements, pour planifier une inspection ou pour des demandes
-            administratives.</p>
 
-        <div class="contact-details">
-            <p><strong>📍 Adresse pour inspection (sur rendez-vous) :</strong><br>
-                Bureau de Projet NouvLR<br>
-                Montréal, Québec (Adresse complète à confirmer)</p>
-
-            <p><strong>📧 Courriel :</strong><br>
-                <a href="mailto:arpentage@nouvlr.com">arpentage@nouvlr.com</a> (Exemple)</p>
-
-            <p><strong>ℹ️ Faire une offre :</strong><br>
-                Veuillez utiliser le bouton <strong>"Ajouter à la Demande"</strong> dans le catalogue pour créer votre
-                liste d'intérêts et nous l'envoyer directement via le site.</p>
+        <div data-lang-content="fr">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question concernant l'état des équipements, pour planifier une inspection ou pour des demandes
+                administratives.</p>
+            <div class="contact-details">
+                <p><strong>📍 Adresse pour inspection (sur rendez-vous) :</strong><br>
+                    Bureau de Projet NouvLR<br>Montréal, Québec</p>
+                <p><strong>📧 Courriel :</strong><br><a href="mailto:arpentage@nouvlr.com">arpentage@nouvlr.com</a></p>
+                <p><strong>ℹ️ Faire une offre :</strong><br>
+                    Veuillez utiliser le bouton <strong>"Ajouter à la Demande"</strong> dans le catalogue pour créer
+                    votre liste.</p>
+            </div>
         </div>
+
+        <div data-lang-content="en" style="display:none;">
+            <h2>Contact Us</h2>
+            <p>For any questions regarding equipment condition, to schedule an inspection, or for administrative
+                inquiries.</p>
+            <div class="contact-details">
+                <p><strong>📍 Inspection Address (by appointment):</strong><br>
+                    NouvLR Project Office<br>Montreal, Quebec</p>
+                <p><strong>📧 Email:</strong><br><a href="mailto:arpentage@nouvlr.com">arpentage@nouvlr.com</a></p>
+                <p><strong>ℹ️ Make an Offer:</strong><br>
+                    Please use the <strong>"Add to Quote"</strong> button in the catalog to build your interest list.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -124,20 +141,30 @@
     <div class="modal-content">
         <span class="close" onclick="closeCartModal()">&times;</span>
         <section id="cotation-page">
-            <h2 style="color:var(--color-primario);">Votre Demande de Cotation</h2>
+            <h2 style="color:var(--color-primario);" data-i18n="cart_title">Votre Demande de Cotation</h2>
 
             <div id="cart-summary"></div>
 
-            <div class="form-disclaimer">
-                <strong>⚠️ Note importante :</strong> Les prix affichés n'incluent ni les taxes ni les frais de
-                transport. Le prix final sera confirmé dans la proposition officielle que nous vous enverrons par
-                courriel.
+            <div data-lang-content="fr">
+                <div class="form-disclaimer">
+                    <strong>⚠️ Note importante :</strong> Les prix affichés n'incluent ni les taxes ni les frais de
+                    transport. Le prix final sera confirmé dans la proposition officielle.
+                </div>
+                <div class="form-info-box">
+                    <strong>ℹ️ Lots partiels :</strong> Si vous souhaitez acquérir uniquement un élément spécifique d'un
+                    lot, veuillez l'indiquer dans le message.
+                </div>
             </div>
 
-            <div class="form-info-box">
-                <strong>ℹ️ Lots partiels :</strong> Si vous souhaitez acquérir uniquement un élément spécifique d'un lot
-                (ex: seulement le GPS, sans le contrôleur), veuillez l'indiquer clairement dans le champ "Message"
-                ci-dessous.
+            <div data-lang-content="en" style="display:none;">
+                <div class="form-disclaimer">
+                    <strong>⚠️ Important Note:</strong> Displayed prices do not include taxes or shipping costs. Final
+                    price will be confirmed in the official proposal.
+                </div>
+                <div class="form-info-box">
+                    <strong>ℹ️ Partial Lots:</strong> If you wish to acquire only a specific item from a lot, please
+                    indicate it clearly in the message below.
+                </div>
             </div>
 
             <form id="order-form">
