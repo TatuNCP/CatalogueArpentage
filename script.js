@@ -18,7 +18,8 @@ const translations = {
         nav_disclaimer: "Politique",
         nav_contact: "Contact",
         hero_title: "Portail de Liquidation d'Actifs - Projet NouvLR",
-        hero_desc: "Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de géomatique met en vente son parc d'équipements topographiques excédentaires.",
+        //hero_desc: "Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de géomatique met en vente son parc d'équipements topographiques excédentaires.",
+        hero_desc: "NouvLR met à la disposition les actifs du département de support Technique de Construction et d'Arpentage. Grâce à une bibliothèque complète d'articles classés par catégorie conçu pour soutenir vos opérations et optimiser votre efficacité au quotidien.",
         btn_catalog: "Consulter le Catalogue",
         search_placeholder: "🔍 Rechercher (ex: TS16, Trépied...)",
 
@@ -75,7 +76,8 @@ const translations = {
         nav_disclaimer: "Policy",
         nav_contact: "Contact",
         hero_title: "Asset Liquidation Portal - NouvLR Project",
-        hero_desc: "As part of the REM infrastructure project completion, the geomatics department is selling its surplus topographical equipment.",
+        //hero_desc: "As part of the REM infrastructure project completion, the geomatics department is selling its surplus topographical equipment.",
+        hero_desc: "NouvLR makes the assets of the Construction Technical Support and Surveying department available. Featuring a complete library of items classified by category, designed to support your operations and optimize your daily efficiency.",
         btn_catalog: "View Catalog",
         search_placeholder: "🔍 Search (e.g., TS16, Tripod...)",
 
@@ -508,12 +510,32 @@ function updateCartUI() {
     if (floatBtn) floatBtn.style.display = cart.length > 0 ? 'flex' : 'none';
 }
 
+// Función para mostrar sección y actualizar el menú activo
 function mostrarSeccion(id) {
+    // 1. Ocultar todas las secciones
     document.querySelectorAll('.content-section').forEach(s => s.classList.add('hidden'));
+
+    // 2. Mostrar la sección deseada
     const sec = document.getElementById('section-' + id);
     if (sec) sec.classList.remove('hidden');
+
+    // 3. GESTIÓN DE BOTONES DEL MENÚ (Lo que faltaba)
+    // Primero: Quitamos la clase 'active' (verde) de TODOS los botones
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+
+        // Segundo: Si el botón apunta a la sección actual, le ponemos el verde
+        // Leemos el atributo onclick para ver si coincide con el id actual
+        const funcionOnclick = btn.getAttribute('onclick');
+        if (funcionOnclick && funcionOnclick.includes(`'${id}'`)) {
+            btn.classList.add('active');
+        }
+    });
+
+    // 4. Scroll arriba suave
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
 function cerrarModal() { document.getElementById('modal-detalle').style.display = 'none'; }
 function closeCartModal() { document.getElementById('cart-modal').style.display = 'none'; }
