@@ -364,6 +364,7 @@ function verDetalle(lotID) {
     currentImageSet = lote.imagenes && lote.imagenes.length > 0 ? lote.imagenes : ['default.jpg'];
     currentImageIndex = 0;
 
+    // 1. Botón Manual
     let manualBtnHTML = '';
     if (lote.manual_url) {
         manualBtnHTML = `
@@ -372,6 +373,31 @@ function verDetalle(lotID) {
             </a>
         `;
     }
+
+    // ===============================================
+    // 2. LÓGICA DE VIDEO (YOUTUBE) - AQUÍ LA DEFINES
+    // ===============================================
+    let videoHTML = '';
+
+    // Si es el lote 601, preparamos el reproductor
+    if (lote.lot === '601') {
+        const youtubeID = "_XwrQ_zNwZU"; // Tu video real
+
+        videoHTML = `
+            <div style="margin-top: 20px; text-align: center;">
+                <h4 style="margin: 0 0 10px 0; color: var(--color-primario);">🎥 Démonstration Vidéo</h4>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <iframe
+                        src="https://www.youtube.com/embed/${youtubeID}?rel=0"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 75%; border:0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        `;
+    }
+    // ===============================================
 
     const detallesTexto = lote.detalles ? lote.detalles : "Aucun détail supplémentaire.";
 
@@ -385,6 +411,7 @@ function verDetalle(lotID) {
 
     modalBody.innerHTML = `
         <div class="modal-flex-container">
+
             <div class="modal-col-left">
                 ${currentImageSet.length > 1 ? '<span class="gallery-arrow left-arrow" onclick="imagenAnterior()">&#10094;</span>' : ''}
                 <img id="modal-product-image" src="img/${currentImageSet[0]}" alt="Lot ${lote.lot}" onerror="this.src='img/default.jpg'">
@@ -392,9 +419,11 @@ function verDetalle(lotID) {
             </div>
 
             <div class="modal-col-right">
-                <span style="font-size:0.9em; color:#999; text-transform:uppercase; letter-spacing:1px;">${lote.categorie}</span>
+                <span style="font-size:0.9em; color:#999; text-transform:uppercase; letter-spacing:1px;">
+                    ${translations[currentLang].categories[lote.categorie] || lote.categorie}
+                </span>
                 <h2 class="modal-title">Lot ${lote.lot}</h2>
-                <<h3 class="modal-subtitle">${traducirTitulo(lote.descripcion)}</h3>
+                <h3 class="modal-subtitle">${traducirTitulo(lote.descripcion)}</h3>
 
                 <div class="details-box-styled">
                     <h4>${getText('modal_details_title')}</h4>
@@ -414,6 +443,8 @@ function verDetalle(lotID) {
                         ${lote.prix === 0 ? 'disabled' : ''}>
                         ${btnText}
                     </button>
+
+                    ${videoHTML}
                 </div>
             </div>
         </div>
