@@ -3,234 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NouvLR - Vente d'Équipement Arpentage</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Vente d'Actifs - Projet NouvLR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- RESET --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Abel', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER AZUL (Igual que Arpentage) --- */
+        header {
+            background-color: rgba(7,40,79,0.95); /* AZUL NOUVLR */
+            color: white; /* TEXTO BLANCO */
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Separa el Bloque Izquierdo del Botón */
+        }
+
+        /* BLOQUE IZQUIERDO (Logo + Títulos) */
+        .branding {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* LOGO BLANCO */
+        #company-logo {
+            height: 60px; /* Tamaño ajustado */
+            width: auto;
+        }
+
+        /* TÍTULOS (Al lado del logo) */
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid rgba(255,255,255,0.3); /* Línea sutil separadora */
+            padding-left: 20px;
+        }
+
+        .header-titles h1 {
+            font-family: 'Abel', sans-serif;
+            font-size: 28px;
+            color: #ffffff; /* Blanco */
+            margin: 0;
+            line-height: 1;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .header-titles p {
+            font-family: 'Abel', sans-serif;
+            font-size: 16px;
+            color: #7FBC42; /* VERDE NOUVLR (Para resaltar el proyecto) */
+            margin: 5px 0 0 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* BOTÓN IDIOMA */
+        .lang-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-family: 'Abel', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            background-color: white;
+            color: #002D72;
+        }
+
+        /* --- PORTADA PRINCIPAL --- */
+        .portada-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        /* MENSAJE BIENVENIDA */
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .welcome-message h2 {
+            font-size: 2rem;
+            color: #333;
+            font-weight: 300;
+        }
+
+        /* GRID ICONOS */
+        .icons-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+        }
+
+        /* ITEM */
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px; /* Un poco más ancho */
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        /* IMAGEN - ESTILO SQUIRCLE (Cuadrado redondeado elegante) */
+        .img-wrapper {
+            width: 160px;
+            height: 160px;
+            border-radius: 24px; /* Bordes redondeados modernos */
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra difusa */
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote suave */
+        }
+
+        .icon-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        /* LABEL - Nombre debajo */
+        .icon-label {
+            margin-top: 15px;
+            font-weight: 700;
+            color: #002D72; /* Azul NouvLR */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0;
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            font-size: 13px;
+        }
+
+        /* --- HOVER STATES --- */
+
+        /* Al pasar el mouse por el ACTIVO */
+        .icon-item.active:hover .img-wrapper {
+            transform: translateY(-10px); /* Sube */
+            border-color: #7FBC42; /* Borde verde */
+            box-shadow: 0 20px 40px rgba(7, 40, 79, 0.2); /* Sombra azulada elegante */
+        }
+
+        /* Zoom suave en la imagen interna */
+        .icon-item.active:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Mostrar texto */
+        .icon-item.active:hover .icon-label {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* INACTIVOS */
+        .icon-item.inactive {
+            opacity: 0.6;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+        }
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .branding { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .header-titles { border-left: none; padding-left: 0; }
+            .header-titles h1 { font-size: 22px; }
+            #company-logo { height: 40px; }
+            .icons-grid { gap: 20px; }
+        }
+    </style>
 </head>
 <body>
 
-<header id="main-header">
-    <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
+    <header id="main-header">
+        <div class="header-container">
 
-    <h1>VENTE D'ÉQUIPEMENT ARPENTAGE</h1>
+            <div class="branding">
+                <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
 
-    <nav id="main-nav">
-        <button onclick="mostrarSeccion('home')" class="nav-btn active" data-i18n="nav_home">Accueil</button>
-        <button onclick="mostrarSeccion('catalogo')" class="nav-btn" data-i18n="nav_catalog">Catalogue</button>
-        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn" data-i18n="nav_disclaimer">Politique de Vente
-        </button>
-        <button onclick="mostrarSeccion('contact')" class="nav-btn" data-i18n="nav_contact">Contact</button>
-        <button onclick="toggleLanguage()" class="nav-btn" id="lang-toggle"
-                style="border: 1px solid white; margin-left:10px;">EN
-        </button>
-    </nav>
-</header>
+                <div class="header-titles">
+                    <h1 id="h-title">VENTE D'ACTIFS</h1>
+                    <p id="h-subtitle">PROJET NOUVLR</p>
+                </div>
+            </div>
 
-<section id="section-home" class="content-section">
-    <div class="hero-banner">
-        <h2 data-i18n="hero_title">Portail de Liquidation d'Actifs - Projet NouvLR</h2>
-        <p data-i18n="hero_desc">Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de
-            géomatique met en vente son parc d'équipements topographiques excédentaires.</p>
-        <div class="hero-actions">
-            <button onclick="mostrarSeccion('catalogo')" class="big-btn" data-i18n="btn_catalog">Consulter le
-                Catalogue
-            </button>
-            <a href="catalogue.pdf" download="Catalogue_NouvLR.pdf" class="download-btn">📄 Télécharger PDF</a>
+            <button id="language-toggle" class="lang-btn">ENGLISH</button>
         </div>
-        <p style="margin-top: 20px; font-size: 0.9em; color: #888;">*Vente réservée aux professionnels.</p>
-    </div>
-</section>
+    </header>
 
-<section id="section-catalogo" class="content-section hidden">
-    <div id="search-container" style="text-align: center; margin-bottom: 20px;">
-        <input type="text" id="search-input" placeholder="🔍 Rechercher (ex: TS16, Trépied, Leica...)"
-               onkeyup="filtrarPorBusqueda()"
-               style="padding: 12px; width: 90%; max-width: 500px; border: 1px solid #ccc; border-radius: 25px; font-size: 1.1em; outline: none;">
-    </div>
-    <div id="filter-container">
-    </div>
+    <main class="portada-main">
 
-    <main id="catalogo-container">
-        <p>Chargement du catalogue...</p>
+        <div class="welcome-message">
+            <h2 id="welcome-text">SÉLECTIONNEZ UNE <span style="color:#7FBC42; font-weight:bold;">CATÉGORIE</span></h2>
+        </div>
+
+        <div class="icons-grid">
+
+            <a href="arpentage.html" class="icon-item active" id="icon-1">
+                <div class="img-wrapper">
+                    <img src="icons/IconF1.jpg" id="img-1" alt="Arpentage">
+                </div>
+                <div class="icon-label" id="lbl-1">Arpentage</div>
+            </a>
+
+            <div class="icon-item inactive" id="icon-2"><div class="img-wrapper"><img src="icons/IconF2.jpg" id="img-2"></div></div>
+            <div class="icon-item inactive" id="icon-3"><div class="img-wrapper"><img src="icons/IconF3.jpg" id="img-3"></div></div>
+            <div class="icon-item inactive" id="icon-4"><div class="img-wrapper"><img src="icons/IconF4.jpg" id="img-4"></div></div>
+
+            <div class="icon-item inactive" id="icon-5"><div class="img-wrapper"><img src="icons/IconF5.jpg" id="img-5"></div></div>
+            <div class="icon-item inactive" id="icon-6"><div class="img-wrapper"><img src="icons/IconF6.jpg" id="img-6"></div></div>
+            <div class="icon-item inactive" id="icon-7"><div class="img-wrapper"><img src="icons/IconF7.jpg" id="img-7"></div></div>
+            <div class="icon-item inactive" id="icon-8"><div class="img-wrapper"><img src="icons/IconF8.jpg" id="img-8"></div></div>
+
+        </div>
     </main>
-</section>
 
-<section id="section-disclaimer" class="content-section hidden">
-    <div class="text-container">
+    <footer>
+        &copy; 2026 NouvLR. Tous droits réservés.
+    </footer>
 
-        <div data-lang-content="fr">
-            <h2>Politique de Vente et Avis de Non-Responsabilité</h2>
-            <div class="disclaimer-box">
-                <h3>1. Vente Finale</h3>
-                <p>Afin d’assurer la transparence et la clarté, nous vous informons que <strong>toutes les ventes sont
-                    finales</strong>. Une fois la vente complétée, aucune modification ne pourra être effectuée.</p>
-                <h3>2. État des Articles ("Tel quel")</h3>
-                <p>Les articles sont vendus <strong>dans leur état actuel</strong> ("as is"), sans garantie
-                    additionnelle et sans possibilité de retour, d’échange ou de remboursement.</p>
-                <h3>3. Inspection Recommandée</h3>
-                <p>Nous vous recommandons fortement de venir sur place pour vérifier attentivement chaque produit avant
-                    de conclure la transaction.</p>
-            </div>
-        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('language-toggle');
+            const hTitle = document.getElementById('h-title');
+            const hSubtitle = document.getElementById('h-subtitle');
+            const welcome = document.getElementById('welcome-text');
+            const lbl1 = document.getElementById('lbl-1');
 
-        <div data-lang-content="en" style="display:none;">
-            <h2>Sales Policy and Disclaimer</h2>
-            <div class="disclaimer-box">
-                <h3>1. Final Sale</h3>
-                <p>To ensure transparency and clarity, please be advised that <strong>all sales are final</strong>. Once
-                    the sale is completed, no changes can be made.</p>
-                <h3>2. Item Condition ("As Is")</h3>
-                <p>Items are sold <strong>in their current condition</strong> ("as is"), without additional warranty and
-                    without possibility of return, exchange, or refund.</p>
-                <h3>3. Inspection Recommended</h3>
-                <p>We strongly recommend visiting us to carefully inspect each product before concluding the
-                    transaction.</p>
-            </div>
-        </div>
+            const txt = {
+                fr: {
+                    h1: "VENTE D'ACTIFS",
+                    sub: "PROJET NOUVLR",
+                    wel: "SÉLECTIONNEZ UNE <span style='color:#7FBC42; font-weight:bold;'>CATÉGORIE</span>",
+                    l1: "Arpentage",
+                    btn: "ENGLISH"
+                },
+                en: {
+                    h1: "ASSET SALE",
+                    sub: "PROJECT NOUVLR",
+                    wel: "SELECT A <span style='color:#7FBC42; font-weight:bold;'>CATEGORY</span>",
+                    l1: "Surveying",
+                    btn: "FRANÇAIS"
+                }
+            };
 
-    </div>
-</section>
+            let lang = localStorage.getItem('preferredLanguage') || 'fr';
 
-<section id="section-contact" class="content-section hidden">
-    <div class="text-container">
+            function update() {
+                hTitle.textContent = txt[lang].h1;
+                hSubtitle.textContent = txt[lang].sub;
+                welcome.innerHTML = txt[lang].wel;
+                lbl1.textContent = txt[lang].l1;
+                btn.textContent = txt[lang].btn;
 
-        <div data-lang-content="fr">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question concernant l'état des équipements, pour planifier une inspection ou pour des demandes
-                administratives.</p>
+                const prefix = (lang === 'fr') ? 'IconF' : 'IconE';
+                for (let i = 1; i <= 8; i++) {
+                    const img = document.getElementById(`img-${i}`);
+                    if (img) img.src = `icons/${prefix}${i}.jpg`;
+                }
 
-            <div class="contact-details">
-                <p><strong>👤 Contact :</strong> Sophie Georges<br>
-                    <strong>📱 Cellulaire :</strong> 438-356-6264</p>
+                localStorage.setItem('preferredLanguage', lang);
+                document.documentElement.lang = lang;
+            }
 
-                <p><strong>📍 Adresse pour inspection (sur rendez-vous) :</strong><br>
-                    Bureau de Projet NouvLR<br>Montréal, Québec</p>
+            btn.addEventListener('click', () => {
+                lang = (lang === 'fr') ? 'en' : 'fr';
+                update();
+            });
 
-                <p><strong>📧 Courriel :</strong><br>
-                    <a href="mailto:Sophie.Georges@nouvlr.com">Sophie.Georges@nouvlr.com</a></p>
-
-                <p><strong>ℹ️ Faire une offre :</strong><br>
-                    Veuillez utiliser le bouton <strong>"Ajouter à la Demande"</strong> dans le catalogue pour créer
-                    votre liste.</p>
-            </div>
-        </div>
-
-        <div data-lang-content="en" style="display:none;">
-            <h2>Contact Us</h2>
-            <p>For any questions regarding equipment condition, to schedule an inspection, or for administrative
-                inquiries.</p>
-
-            <div class="contact-details">
-                <p><strong>👤 Contact:</strong> Sophie Georges<br>
-                    <strong>📱 Cell:</strong> 438-356-6264</p>
-
-                <p><strong>📍 Inspection Address (by appointment):</strong><br>
-                    NouvLR Project Office<br>Montreal, Quebec</p>
-
-                <p><strong>📧 Email:</strong><br>
-                    <a href="mailto:Sophie.Georges@nouvlr.com">Sophie.Georges@nouvlr.com</a></p>
-
-                <p><strong>ℹ️ Make an Offer:</strong><br>
-                    Please use the <strong>"Add to Quote"</strong> button in the catalog to build your interest list.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-<div id="modal-detalle" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="cerrarModal()">&times;</span>
-        <div id="modal-body"></div>
-    </div>
-</div>
-
-<div id="floating-cart-button" onclick="showCotationModal()">
-    <span id="cart-icon">🛒</span>
-    <span id="cart-count">0</span>
-</div>
-<div id="cart-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeCartModal()">&times;</span>
-        <section id="cotation-page">
-            <h2 style="color:var(--color-primario);" data-i18n="cart_title">Votre Demande de Cotation</h2>
-
-            <div id="cart-summary"></div>
-
-            <div data-lang-content="fr">
-                <div class="form-disclaimer">
-                    <strong>⚠️ Note importante :</strong> Les prix affichés n'incluent ni les taxes ni les frais de
-                    transport. Le prix final sera confirmé dans la proposition officielle.
-                </div>
-                <div class="form-info-box">
-                    <strong>ℹ️ Lots partiels :</strong> Si vous souhaitez acquérir uniquement un élément spécifique d'un
-                    lot, veuillez l'indiquer dans le message.
-                </div>
-            </div>
-
-            <div data-lang-content="en" style="display:none;">
-                <div class="form-disclaimer">
-                    <strong>⚠️ Important Note:</strong> Displayed prices do not include taxes or shipping costs. Final
-                    price will be confirmed in the official proposal.
-                </div>
-                <div class="form-info-box">
-                    <strong>ℹ️ Partial Lots:</strong> If you wish to acquire only a specific item from a lot, please
-                    indicate it clearly in the message below.
-                </div>
-            </div>
-
-            <form id="order-form">
-                <h3 style="margin-top: 20px; border-bottom:1px solid #ccc; padding-bottom:5px;">Vos Coordonnées</h3>
-
-                <label for="client_name">Nom et Prénom:</label>
-                <input type="text" id="client_name" name="client_name" required placeholder="Votre nom complet">
-
-                <label for="client_email">Courriel:</label>
-                <input type="email" id="client_email" name="client_email" required placeholder="exemple@entreprise.com">
-
-                <label for="client_phone">Téléphone:</label>
-                <input type="tel" id="client_phone" name="client_phone" placeholder="514-...">
-
-                <label for="client_company">Nom de l'entreprise (Optionnel):</label>
-                <input type="text" id="client_company" name="client_company" placeholder="Nom de votre compagnie">
-
-                <h4 style="margin-top: 15px; color:var(--color-primario);">Adresse de Facturation</h4>
-                <label for="client_address">Adresse (Rue et numéro):</label>
-                <input type="text" id="client_address" name="client_address" required>
-
-                <div style="display: flex; gap: 10px;">
-                    <div style="flex: 1;">
-                        <label for="client_city">Ville:</label>
-                        <input type="text" id="client_city" name="client_city" required>
-                    </div>
-                    <div style="flex: 1;">
-                        <label for="client_zip">Code Postal / ZIP:</label>
-                        <input type="text" id="client_zip" name="client_zip" required>
-                    </div>
-                </div>
-                <label for="client_country">Pays:</label>
-                <input type="text" id="client_country" name="client_country" placeholder="Ex: Canada" required>
-
-                <label for="client_message">Message / Demandes Spéciales:</label>
-                <textarea id="client_message" name="client_message" rows="4"
-                          placeholder="Indiquez ici si vous voulez des articles individuels ou avez des questions spécifiques..."></textarea>
-
-                <button type="submit" id="submit-order">Envoyer la Demande de Budget</button>
-                <button type="button" id="cancel-order" onclick="closeCartModal()">Annuler et Fermer</button>
-            </form>
-        </section>
-    </div>
-</div>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function(){
-        if (window.emailjs) {
-            emailjs.init({ publicKey: "frfWoBbmJwoPNo-qm" });
-        }
-    })();
-</script>
-<script src="script.js" defer></script>
-
+            update();
+        });
+    </script>
 </body>
 </html>
