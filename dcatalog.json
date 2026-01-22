@@ -4,7 +4,9 @@
     "prix": 29500.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R500",
-    "imagenes": ["9.jpg"],
+    "imagenes": [
+      "9.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R500 (2016) <br> Poignée radio RH16 <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2018) <br> Chargeur GKL341 <br> Prisme 360 GRZ4 <br> Canne GNSS SECO & Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -13,7 +15,9 @@
     "prix": 29500.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R500",
-    "imagenes": ["10.jpg"],
+    "imagenes": [
+      "10.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R500 <br> Poignée radio RH16 (2018) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2018) <br> Chargeur GKL341 <br> Prisme 360 GRZ4 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -22,7 +26,9 @@
     "prix": 22000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R500 + PS",
-    "imagenes": ["16.jpg"],
+    "imagenes": [
+      "16.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R500 (2018) <br> Système robotique complet <br> Captivate TS/MS",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -31,7 +37,9 @@
     "prix": 29100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R500 + PS",
-    "imagenes": ["17.jpg"],
+    "imagenes": [
+      "17.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R500 (2019) <br> Antenne RH16 <br> Contrôleur CS20 3.75G Disto <br> Chargeur GKL341 <br> Prisme 360 GRZ4 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -40,7 +48,9 @@
     "prix": 29100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500",
-    "imagenes": ["18.jpg"],
+    "imagenes": [
+      "18.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Poignée radio RH17 <br> Embase GDF321 <br> Contrôleur CS20 LTE <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -49,7 +59,9 @@
     "prix": 29100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500",
-    "imagenes": ["19.jpg"],
+    "imagenes": [
+      "19.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Poignée radio RH17 <br> Embase GDF321 <br> Contrôleur CS20 <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -58,7 +70,9 @@
     "prix": 29100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500",
-    "imagenes": ["21.jpg"],
+    "imagenes": [
+      "21.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Tablette iCON CC80 & Logiciels <br> Poignée radio RH16 <br> Chargeur CBC13 & Batterie CBA2 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -67,7 +81,9 @@
     "prix": 25000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500 + PS",
-    "imagenes": ["23.jpg"],
+    "imagenes": [
+      "23.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Captivate TS/MS <br> GeoCom Robotique <br> Antenne RH16",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -76,7 +92,9 @@
     "prix": 20000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500 + PS",
-    "imagenes": ["25.jpg"],
+    "imagenes": [
+      "25.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3 R500 (2015) <br> Captivate TS/MS <br> Antenne RH16",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -85,7 +103,9 @@
     "prix": 25000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 I 1 R1000",
-    "imagenes": ["26.jpg"],
+    "imagenes": [
+      "26.jpg"
+    ],
     "detalles": "Station Totale TS16 I 1 R1000 (2018) <br> Poignée radio RH16 <br> Embase GDF321 <br> Chargeur <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -94,7 +114,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500",
-    "imagenes": ["27.jpg"],
+    "imagenes": [
+      "27.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Contrôleur CS20 3.75G <br> Embase GDF321 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -103,7 +125,9 @@
     "prix": 27100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 1 R1000",
-    "imagenes": ["29.jpg"],
+    "imagenes": [
+      "29.jpg"
+    ],
     "detalles": "Station Totale TS16 1 R1000 (2018) <br> Poignée radio RH16 (2019) <br> Contrôleur CS20 3.75G (2019) <br> Embase GDF321 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -112,7 +136,9 @@
     "prix": 29500.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R500",
-    "imagenes": ["31.jpg"],
+    "imagenes": [
+      "31.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R500 (2019) <br> Poignée Radio RH16 <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2015) <br> Prisme 360 GRZ4 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -121,7 +147,9 @@
     "prix": 29100.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 2 R500",
-    "imagenes": ["32.jpg"],
+    "imagenes": [
+      "32.jpg"
+    ],
     "detalles": "Station Totale TS16 P 2 R500 (2020) <br> Poignée Radio RH16 <br> Embase GDF321 <br> Contrôleur CS20 LTE (2019) <br> Prisme 360 GRZ4 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -130,7 +158,9 @@
     "prix": 22000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R1000",
-    "imagenes": ["33.jpg"],
+    "imagenes": [
+      "33.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R1000 (2016) <br> Poignée radio RH16 <br> Embase GDF321 <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -139,7 +169,9 @@
     "prix": 25000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 1 R1000",
-    "imagenes": ["34.jpg"],
+    "imagenes": [
+      "34.jpg"
+    ],
     "detalles": "Station Totale TS16 P 1 R1000 (2018) <br> Poignée radio RH16 <br> Embase GDF321 <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -148,7 +180,9 @@
     "prix": 25400.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 I 1 R1000",
-    "imagenes": ["35.jpg"],
+    "imagenes": [
+      "35.jpg"
+    ],
     "detalles": "Station Totale TS16 I 1 R1000 (2018) <br> Poignée radio RH16 (2025) <br> Embase GDF321 <br> Chargeur <br> Prisme 360 GRZ4 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -157,7 +191,9 @@
     "prix": 25000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 I 1 R1000",
-    "imagenes": ["36.jpg"],
+    "imagenes": [
+      "36.jpg"
+    ],
     "detalles": "Station Totale TS16 I 1 R1000 (2018) <br> Poignée Radio RH16 <br> Embase GDF321 <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -166,7 +202,9 @@
     "prix": 25000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 I 3 R1000",
-    "imagenes": ["37.jpg"],
+    "imagenes": [
+      "37.jpg"
+    ],
     "detalles": "Station Totale TS16 I 3 R1000 (2018) <br> Antenne RH16 <br> Embase GDF321 <br> Chargeur <br> Prisme 360 GRZ122 <br> Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -175,7 +213,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["38.jpg"],
+    "imagenes": [
+      "38.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3 R500 (2020) <br> Contrôleur CS20 3.75G <br> Embase GDF321 <br> Prisme 360 GRZ122 <br> Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -184,7 +224,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["39.jpg"],
+    "imagenes": [
+      "39.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Attache GHT63 & Support GHT66 <br> Canne SECO 1.5 à 2.5m <br> Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -193,7 +235,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["40.jpg"],
+    "imagenes": [
+      "40.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Attache GHT63 & Support GHT66 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -202,7 +246,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["41.jpg"],
+    "imagenes": [
+      "41.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Attache GHT63 & Support GHT66 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -211,7 +257,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["42.jpg"],
+    "imagenes": [
+      "42.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -220,7 +268,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["43.jpg"],
+    "imagenes": [
+      "43.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -229,7 +279,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["44.jpg"],
+    "imagenes": [
+      "44.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -238,7 +290,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["45.jpg"],
+    "imagenes": [
+      "45.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -247,7 +301,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["46.jpg"],
+    "imagenes": [
+      "46.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -256,7 +312,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["47.jpg"],
+    "imagenes": [
+      "47.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -265,7 +323,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["48.jpg"],
+    "imagenes": [
+      "48.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -274,7 +334,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["49.jpg"],
+    "imagenes": [
+      "49.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -283,7 +345,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS16 P 3 R500",
-    "imagenes": ["50.jpg"],
+    "imagenes": [
+      "50.jpg"
+    ],
     "detalles": "Station Totale TS16 P 3\" R500 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied GST120-9",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx"
   },
@@ -292,7 +356,9 @@
     "prix": 55000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Total MS60 1  MultiStation",
-    "imagenes": ["52.jpg"],
+    "imagenes": [
+      "52.jpg"
+    ],
     "detalles": "Station MS60 1\" MultiStation (2020) <br> Antenne RH16 (2020) <br> Contrôleur CS20 3.75G (2020) <br> Chargeur GKL341 <br> GPS GS16 3.75G & UHF <br> Prisme 360 GRZ122 <br> Canne SECO & Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx"
   },
@@ -301,7 +367,9 @@
     "prix": 55000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Total MS60 1 R2000",
-    "imagenes": ["53.jpg"],
+    "imagenes": [
+      "53.jpg"
+    ],
     "detalles": "Station MS60 1\" MultiStation (2020) <br> Poignée radio RH16 (2018) <br> Contrôleur CS20 LTE (2019) <br> Captivate TS/MS <br> Prisme 360 GRZ122 <br> Canne à prisme SECO & Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx"
   },
@@ -310,7 +378,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Total MS60 1 MultiStation",
-    "imagenes": ["54.jpg"],
+    "imagenes": [
+      "54.jpg"
+    ],
     "detalles": "Station totale MS60 I 1\" MultiStation (2020) <br> Poignée radio RH16 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Canne à prisme SECO & Trépied",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx"
   },
@@ -319,7 +389,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station totale MS60 I 2020",
-    "imagenes": ["55.jpg"],
+    "imagenes": [
+      "55.jpg"
+    ],
     "detalles": "Station totale MS60 I 1\" MultiStation (2020) <br> Poignée radio RH16 (2020) <br> Embase GDF321 <br> Contrôleur CS20 3.75G (2020) <br> Chargeur GKL341 <br> Prisme 360 GRZ122 <br> Mini Prisme + 3 sections <br> Canne à prisme SECO",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx"
   },
@@ -328,7 +400,9 @@
     "prix": 62500.0,
     "categorie": "Station Totale",
     "descripcion": "Station Total TS60 I 0.5  R1000",
-    "imagenes": ["57.jpg"],
+    "imagenes": [
+      "57.jpg"
+    ],
     "detalles": "Station Totale avec imagerie TS60 I 0.5\" <br> GeoCom Robotique TS/MS <br> Poignée radio RH16 (2019) <br> Embase GDF321",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ts60_ds.ashx"
   },
@@ -337,7 +411,9 @@
     "prix": 57000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale avec imagerie TS60 I 0.5 R1000",
-    "imagenes": ["58.jpg"],
+    "imagenes": [
+      "58.jpg"
+    ],
     "detalles": "Station Totale avec imagerie TS60 I 0.5\" R1000",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ts60_ds.ashx"
   },
@@ -346,7 +422,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TS60 I 0.5 R1000 (2019)",
-    "imagenes": ["59.jpg"],
+    "imagenes": [
+      "59.jpg"
+    ],
     "detalles": "Station Totale TS60 I 0.5\" R1000 (2019) <br> GeoCom <br> Embase GDF321 <br> Poignée radio",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ts60_ds.ashx"
   },
@@ -355,7 +433,9 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale avec imagerie TS60 I 0.5 R1000",
-    "imagenes": ["60.jpg"],
+    "imagenes": [
+      "60.jpg"
+    ],
     "detalles": "Station totale TS60 I 0.5\" R1000 (2020) <br> GeoCom Robotique <br> Chargeur de batterie <br> Odomètre Meilan",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ts60_ds.ashx"
   },
@@ -364,7 +444,9 @@
     "prix": 30000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TM50 1 R1000",
-    "imagenes": ["61.jpg"],
+    "imagenes": [
+      "61.jpg"
+    ],
     "detalles": "Station Totale TM50 1\" R1000 (2015) <br> SmartWorx Viva Full",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_tm50_ds.ashx"
   },
@@ -373,7 +455,9 @@
     "prix": 30000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TM50 1 R1000 (2015)",
-    "imagenes": ["62.jpg"],
+    "imagenes": [
+      "62.jpg"
+    ],
     "detalles": "Station Totale TM50 1\" R1000 (2015) <br> SmartWorx Viva Full",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_tm50_ds.ashx"
   },
@@ -382,7 +466,9 @@
     "prix": 30000.0,
     "categorie": "Station Totale",
     "descripcion": "Station Totale TM50 1 R1000",
-    "imagenes": ["63.jpg"],
+    "imagenes": [
+      "63.jpg"
+    ],
     "detalles": "Station Totale TM50 1\" R1000 (2015) <br> SmartWorx Viva Full",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_tm50_ds.ashx"
   },
@@ -391,7 +477,9 @@
     "prix": 8000.0,
     "categorie": "GPS",
     "descripcion": "GS15 SmartAntenne Performance",
-    "imagenes": ["67.jpg"],
+    "imagenes": [
+      "67.jpg"
+    ],
     "detalles": "GS15 SmartAntenne Performance (2011) <br> Canne fibre de verre Leica",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs15_ds.ashx"
   },
@@ -400,7 +488,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["74.jpg"],
+    "imagenes": [
+      "74.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA <br> Contrôleur CS20 LTE (2018) <br> Adapteur pour antenne GPS <br> Canne fibre carbone SECO 2.2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -409,7 +499,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["75.jpg"],
+    "imagenes": [
+      "75.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA (2020) <br> Contrôleur CS20 LTE (2015) <br> Adapteur pour antenne GPS <br> Canne à prisme en fibre de carbone SECO 2,2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -418,7 +510,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["76.jpg"],
+    "imagenes": [
+      "76.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -427,7 +521,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["77.jpg"],
+    "imagenes": [
+      "77.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA (2020) <br> Contrôleur CS20 LTE (2016) <br> Adapteur pour antenne GPS <br> Canne à prisme en fibre de carbone SECO 2,2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -436,7 +532,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["78.jpg"],
+    "imagenes": [
+      "78.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA <br> Contrôleur CS20 LTE (2018) <br> Adapteur pour antenne GPS <br> Canne à prisme en fibre de carbone SECO 2,2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -445,7 +543,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["79.jpg"],
+    "imagenes": [
+      "79.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA (2020) <br> Contrôleur CS20 LTE (2015) <br> Adapteur pour antenne GPS <br> Canne à prisme en fibre de carbone SECO 2,2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -454,7 +554,9 @@
     "prix": 19500.0,
     "categorie": "GPS",
     "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-    "imagenes": ["80.jpg"],
+    "imagenes": [
+      "80.jpg"
+    ],
     "detalles": "GS16 3.75G & UHF Performance NAFTA (2020) <br> Contrôleur CS20 LTE (2015) <br> Armoire de rangement produits inflammables <br> Adapteur pour antenne GPS <br> Canne à prisme en fibre de carbone SECO 2,2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx"
   },
@@ -463,7 +565,9 @@
     "prix": 20000.0,
     "categorie": "GPS",
     "descripcion": "GPS iCG70 T UHF iCON gps 70 T UHF Value",
-    "imagenes": ["81.jpg"],
+    "imagenes": [
+      "81.jpg"
+    ],
     "detalles": "GPS iCG70 T UHF iCON (2020) <br> Tablette Panasonic FZ-M1 (2020) <br> Station d'accueil CBC13 & Batterie CBA2",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_icon_gps_70_series_ds.ashx"
   },
@@ -472,7 +576,9 @@
     "prix": 1500.0,
     "categorie": "Accessoires",
     "descripcion": "Trépied Nedo",
-    "imagenes": ["84.jpg"],
+    "imagenes": [
+      "84.jpg"
+    ],
     "detalles": "Trépied Nedo Industrial Line Elevatin",
     "manual_url": null
   },
@@ -481,7 +587,9 @@
     "prix": 1500.0,
     "categorie": "Accessoires",
     "descripcion": "Trépied Nedo",
-    "imagenes": ["85.jpg"],
+    "imagenes": [
+      "85.jpg"
+    ],
     "detalles": "Trépied Nedo Industrial Line Elevatin",
     "manual_url": null
   },
@@ -490,7 +598,9 @@
     "prix": 1500.0,
     "categorie": "Accessoires",
     "descripcion": "Trépied Nedo",
-    "imagenes": ["86.jpg"],
+    "imagenes": [
+      "86.jpg"
+    ],
     "detalles": "Trépied Nedo Industrial Line Elevatin",
     "manual_url": null
   },
@@ -499,7 +609,9 @@
     "prix": 7100.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau LS15 0.3mm",
-    "imagenes": ["87.jpg"],
+    "imagenes": [
+      "87.jpg"
+    ],
     "detalles": "Niveau LS15 0.3mm (2019) <br> Chargeur GKL311 <br> Base pour mire GPLE / GPCL <br> Mire GKNL4M <br> Trépied <br> Mire Invar GWCL92 0.92m <br> Mire Invar GPCL2 2m",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx"
   },
@@ -508,7 +620,9 @@
     "prix": 7100.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau LS15 0.2mm",
-    "imagenes": ["88.jpg"],
+    "imagenes": [
+      "88.jpg"
+    ],
     "detalles": "Niveau LS15 0,2mm (2019) <br> Chargeur GKL311 <br> Câble de transfert GEV267 <br> Mire aluminium 3,5m code barre",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx"
   },
@@ -517,7 +631,9 @@
     "prix": 7100.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau LS15 0.2mm",
-    "imagenes": ["89.jpg"],
+    "imagenes": [
+      "89.jpg"
+    ],
     "detalles": "Niveau LS15 0,2mm (2019) <br> Chargeur GKL311 <br> Câble de transfert GEV267 <br> Mire aluminium 3,5m code barre",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx"
   },
@@ -526,7 +642,9 @@
     "prix": 5000.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau DNA3",
-    "imagenes": ["96.jpg"],
+    "imagenes": [
+      "96.jpg"
+    ],
     "detalles": "Niveau Digital DNA03",
     "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_dna_ds.ashx"
   },
@@ -535,7 +653,9 @@
     "prix": 9000.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Mire Leica",
-    "imagenes": ["96.1.jpg"],
+    "imagenes": [
+      "96.1.jpg"
+    ],
     "detalles": "Mire Leica de précision Invar 2 avec bipod ajustable calibrée",
     "manual_url": null
   },
@@ -544,7 +664,9 @@
     "prix": 1500.0,
     "categorie": "Appareil de mesure",
     "descripcion": "DT8-05LS Théodolite numérique 5",
-    "imagenes": ["97.jpg"],
+    "imagenes": [
+      "97.jpg"
+    ],
     "detalles": "Théodolite numérique 5\" visée laser, plomb optique",
     "manual_url": null
   },
@@ -553,7 +675,9 @@
     "prix": 1500.0,
     "categorie": "Appareil de mesure",
     "descripcion": "DT8-05LS Théodolite numérique 5",
-    "imagenes": ["98.jpg"],
+    "imagenes": [
+      "98.jpg"
+    ],
     "detalles": "Théodolite numérique 5\" visée laser, plomb optique <br> Trépied David White",
     "manual_url": null
   },
@@ -562,7 +686,9 @@
     "prix": 300.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau Topcon AT-B4R",
-    "imagenes": ["99.jpg"],
+    "imagenes": [
+      "99.jpg"
+    ],
     "detalles": "Niveau Topcon AT-B4R <br> Mire en bois",
     "manual_url": null
   },
@@ -571,7 +697,9 @@
     "prix": 300.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Niveau Topcon AT-B4R",
-    "imagenes": ["99.1.jpg"],
+    "imagenes": [
+      "99.1.jpg"
+    ],
     "detalles": "Niveau Topcon AT-B4R <br> Mire en bois",
     "manual_url": null
   },
@@ -580,16 +708,36 @@
     "prix": 0.0,
     "categorie": "Station Totale",
     "descripcion": "Station Total Trimble",
-    "imagenes": ["100.jpg"],
+    "imagenes": [
+      "100.jpg"
+    ],
     "detalles": "Ensemble & Accessoire pour scan voie ferroviaire GEDO CE 2.0 <br> Station Total Trimble S9",
     "manual_url": "https://geospatial.trimble.com/en/products/hardware/trimble-s9"
+  },
+  {
+    "lot": "101.1",
+    "prix": 10000.0,
+    "categorie": "Appareil de mesure",
+    "descripcion": "Drone DJI Matrice 350 RTK",
+    "imagenes": [
+      "101.1.jpg"
+    ],
+    "detalles": "DJI Matrice 350 RTK (2024) <br> 2x Batteries TB65 (2024) <br> Emetteur DJI RC Plus <br> Chargeur BS65",
+    "manual_url": "https://dl.djicdn.com/downloads/matrice_350_rtk/20230518/Matrice_350_RTK_User_Manual_v1.0_EN.pdf"
   },
   {
     "lot": "100.1",
     "prix": 0.0,
     "categorie": "Accessoires",
     "descripcion": "Ensemble pour Scan Ferroviaire",
-    "imagenes": ["100.1.jpg", "100.1_A.jpg", "100.1_B.jpg", "100.1_C.jpg", "100.1_D.jpg", "100.1_E.jpg"],
+    "imagenes": [
+      "100.1.jpg",
+      "100.1_A.jpg",
+      "100.1_B.jpg",
+      "100.1_C.jpg",
+      "100.1_D.jpg",
+      "100.1_E.jpg"
+    ],
     "detalles": "Ensemble pour scan voie ferroviaire",
     "manual_url": null
   },
@@ -598,25 +746,20 @@
     "prix": 8000.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Drone DJI Matrice 300 RTK",
-    "imagenes": ["101.2.jpg"],
+    "imagenes": [
+      "101.2.jpg"
+    ],
     "detalles": "DJI Matrice 300 RTK (2021) <br> Emetteur DJI Smart Controller Enterprise <br> Chargeur BS60",
     "manual_url": "https://dl.djicdn.com/downloads/matrice-300/20200507/M300_RTK_Specs_EN.pdf"
-  },
-  {
-    "lot": "101.1",
-    "prix": 10000.0,
-    "categorie": "Appareil de mesure",
-    "descripcion": "Drone DJI Matrice 350 RTK",
-    "imagenes": ["101.1.jpg"],
-    "detalles": "DJI Matrice 350 RTK (2024) <br> 2x Batteries TB65 (2024) <br> Emetteur DJI RC Plus <br> Chargeur BS65",
-    "manual_url": "https://dl.djicdn.com/downloads/matrice_350_rtk/20230518/Matrice_350_RTK_User_Manual_v1.0_EN.pdf"
   },
   {
     "lot": "101.3",
     "prix": 3000.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Drone accessoire Caméra DJI Zenmuse H20",
-    "imagenes": ["101.3.jpg"],
+    "imagenes": [
+      "101.3.jpg"
+    ],
     "detalles": "Caméra DJI Zenmuse H20 (2021) <br> Grand Angle Zoom 23x optique",
     "manual_url": "https://dl.djicdn.com/downloads/zenmuse_h20/20200507/Zenmuse_H20_Series_User_Manual_v1.0_EN.pdf"
   },
@@ -625,7 +768,9 @@
     "prix": 8000.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Drone accessoire Caméra DJI Zenmuse P1 avec objectif 35 mm",
-    "imagenes": ["101.4.jpg"],
+    "imagenes": [
+      "101.4.jpg"
+    ],
     "detalles": "Caméra DJI Zenmuse P1 (2021) <br> Objectif 35 mm <br> Photogrammétrie",
     "manual_url": "https://dl.djicdn.com/downloads/zenmuse_p1/20210125/Zenmuse_P1_User_Manual_v1.0_EN.pdf"
   },
@@ -634,7 +779,9 @@
     "prix": 14500.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Lidar DJI Zenmuse L2",
-    "imagenes": ["101.5.jpg"],
+    "imagenes": [
+      "101.5.jpg"
+    ],
     "detalles": "Lidar DJI Zenmuse L2 (2024)",
     "manual_url": "https://dl.djicdn.com/downloads/zenmuse_l2/20231018/Zenmuse_L2_User_Manual_v1.0_EN.pdf"
   },
@@ -643,7 +790,9 @@
     "prix": 3800.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone",
-    "imagenes": ["101.6.jpg"],
+    "imagenes": [
+      "101.6.jpg"
+    ],
     "detalles": "AVSS PRS-M350 parachute (2021) <br> Homologué par Transports Canada",
     "manual_url": null
   },
@@ -652,7 +801,9 @@
     "prix": 1800.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone Batterie TB65",
-    "imagenes": ["101.7.jpg"],
+    "imagenes": [
+      "101.7.jpg"
+    ],
     "detalles": "Batterie TB65",
     "manual_url": null
   },
@@ -661,7 +812,9 @@
     "prix": 150.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone valise pour Batterie",
-    "imagenes": ["101.8.jpg"],
+    "imagenes": [
+      "101.8.jpg"
+    ],
     "detalles": "Valise de transport pour Batterie TB60/TB65",
     "manual_url": null
   },
@@ -670,7 +823,9 @@
     "prix": 200.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone Batteries WB37",
-    "imagenes": ["101.9.jpg"],
+    "imagenes": [
+      "101.9.jpg"
+    ],
     "detalles": "Batterie WB37 (2021) - Lot de 5 unités",
     "manual_url": null
   },
@@ -679,7 +834,9 @@
     "prix": 50.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone Support Émetteur DJI C Plus",
-    "imagenes": ["101.10.jpg"],
+    "imagenes": [
+      "101.10.jpg"
+    ],
     "detalles": "Courroie et support pour émetteur DJI RC Plus (2024)",
     "manual_url": null
   },
@@ -688,7 +845,9 @@
     "prix": 200.0,
     "categorie": "Appareil de mesure",
     "descripcion": "Accessoire Drone Support de caméra supérieur",
-    "imagenes": ["101.11.jpg"],
+    "imagenes": [
+      "101.11.jpg"
+    ],
     "detalles": "Support de connecteur de cardan de caméra supérieur (2021)",
     "manual_url": null
   },
@@ -697,7 +856,9 @@
     "prix": 4500.0,
     "categorie": "Accessoires",
     "descripcion": "Zeno 20 Android UMTS",
-    "imagenes": ["102.jpg"],
+    "imagenes": [
+      "102.jpg"
+    ],
     "detalles": "Zeno 20 Android UMTS",
     "manual_url": null
   },
@@ -706,7 +867,9 @@
     "prix": 760.0,
     "categorie": "Accessoires",
     "descripcion": "Trépied 2 mètre",
-    "imagenes": ["107.jpg"],
+    "imagenes": [
+      "107.jpg"
+    ],
     "detalles": "Trépied 2 mètre",
     "manual_url": null
   },
@@ -715,7 +878,9 @@
     "prix": 6530.0,
     "categorie": "Accessoires",
     "descripcion": "Trépieds & Cannes",
-    "imagenes": ["108.jpg"],
+    "imagenes": [
+      "108.jpg"
+    ],
     "detalles": "Bipod pour canne à prisme <br> Canne aluminium Séco <br> Canne fibre pour GPS",
     "manual_url": null
   },
@@ -724,7 +889,9 @@
     "prix": 1988.0,
     "categorie": "Accessoires",
     "descripcion": "Base roulante pour trépied",
-    "imagenes": ["109.jpg"],
+    "imagenes": [
+      "109.jpg"
+    ],
     "detalles": "Base roulante pour trépied",
     "manual_url": null
   },
@@ -733,7 +900,9 @@
     "prix": 500.0,
     "categorie": "Accessoires",
     "descripcion": "Cannes 4.6 mètre",
-    "imagenes": ["111.jpg"],
+    "imagenes": [
+      "111.jpg"
+    ],
     "detalles": "Cannes 4.6 mètre",
     "manual_url": null
   },
@@ -742,7 +911,9 @@
     "prix": 500.0,
     "categorie": "Accessoires",
     "descripcion": "Cannes à pince",
-    "imagenes": ["112.jpg"],
+    "imagenes": [
+      "112.jpg"
+    ],
     "detalles": "Cannes à pince",
     "manual_url": null
   },
@@ -751,7 +922,9 @@
     "prix": 80.0,
     "categorie": "Accessoires",
     "descripcion": "Plumb line 8oz + Plumb line 16 oz",
-    "imagenes": ["112.2.jpg"],
+    "imagenes": [
+      "112.2.jpg"
+    ],
     "detalles": "3x Plumb line 8oz <br> 1x Plumb line 16oz",
     "manual_url": null
   },
@@ -760,7 +933,9 @@
     "prix": 400.0,
     "categorie": "Accessoires",
     "descripcion": "Mini Prisme Leica GMP111-0",
-    "imagenes": ["114.jpg"],
+    "imagenes": [
+      "114.jpg"
+    ],
     "detalles": "Mini Prisme Leica GMP111-0",
     "manual_url": null
   },
@@ -769,7 +944,9 @@
     "prix": 1106.7,
     "categorie": "Accessoires",
     "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
-    "imagenes": ["118.jpg"],
+    "imagenes": [
+      "118.jpg"
+    ],
     "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread",
     "manual_url": null
   },
@@ -778,7 +955,9 @@
     "prix": 32000.0,
     "categorie": "Accessoires",
     "descripcion": "Coffre d ensemble pour embase (GVP609)",
-    "imagenes": ["125.5.jpg"],
+    "imagenes": [
+      "125.5.jpg"
+    ],
     "detalles": "Coffre d'ensemble pour embase (GVP609) <br> Embase sans plomb optique (GDF321) <br> Porteur avec plomb optique (GZR103) <br> Prisme circulaire Pro (GPR121)",
     "manual_url": null
   },
@@ -787,7 +966,9 @@
     "prix": 3600.0,
     "categorie": "Accessoires",
     "descripcion": "Coffre de porteur GZR3 avec plomb optique",
-    "imagenes": ["125.6.jpg"],
+    "imagenes": [
+      "125.6.jpg"
+    ],
     "detalles": "Coffre de porteur GZR3 avec plomb optique <br> Porteur GZR3",
     "manual_url": null
   },
@@ -796,7 +977,9 @@
     "prix": 3400.0,
     "categorie": "Accessoires",
     "descripcion": "Coffre d ensemble pour embase (GVP609)",
-    "imagenes": ["126.jpg"],
+    "imagenes": [
+      "126.jpg"
+    ],
     "detalles": "Porteur avec plomb optique (GZR103) <br> Prisme circulaire Pro (GPR121) <br> Prisme 360 GRZ122",
     "manual_url": null
   },
@@ -805,7 +988,9 @@
     "prix": 10550.0,
     "categorie": "Accessoires",
     "descripcion": "Prisme 360 GRZ122 avec étui lot de 2",
-    "imagenes": ["126.1.jpg"],
+    "imagenes": [
+      "126.1.jpg"
+    ],
     "detalles": "Prisme 360 GRZ122 avec étui",
     "manual_url": null
   },
@@ -814,7 +999,9 @@
     "prix": 1200.0,
     "categorie": "Accessoires",
     "descripcion": "Prisme 360 GRZ122 brisé",
-    "imagenes": ["126.2.jpg"],
+    "imagenes": [
+      "126.2.jpg"
+    ],
     "detalles": "Prisme 360 GRZ122 (brisé)",
     "manual_url": null
   },
@@ -823,7 +1010,9 @@
     "prix": 600.0,
     "categorie": "Accessoires",
     "descripcion": "Prisme 360 GRZ122 brisé",
-    "imagenes": ["126.3.jpg"],
+    "imagenes": [
+      "126.3.jpg"
+    ],
     "detalles": "Prisme 360 GRZ122 (brisé)",
     "manual_url": null
   },
@@ -832,7 +1021,9 @@
     "prix": 75.0,
     "categorie": "Accessoires",
     "descripcion": "Support aimanté pour prisme",
-    "imagenes": ["128.1.jpg"],
+    "imagenes": [
+      "128.1.jpg"
+    ],
     "detalles": "Support aimanté pour prisme",
     "manual_url": null
   },
@@ -841,7 +1032,9 @@
     "prix": 125.0,
     "categorie": "Accessoires",
     "descripcion": "Ancrage et support pour cible réfléchissante",
-    "imagenes": ["129.jpg"],
+    "imagenes": [
+      "129.jpg"
+    ],
     "detalles": "Ancrage et support pour cible réfléchissante",
     "manual_url": null
   },
@@ -850,7 +1043,9 @@
     "prix": 85.0,
     "categorie": "Accessoires",
     "descripcion": "Ancrage et support pour cible réfléchissante",
-    "imagenes": ["129.1.jpg"],
+    "imagenes": [
+      "129.1.jpg"
+    ],
     "detalles": "Ancrage et support pour cible réfléchissante",
     "manual_url": null
   },
@@ -859,7 +1054,9 @@
     "prix": 600.0,
     "categorie": "Accessoires",
     "descripcion": "Support pour cible ajustable de type serre",
-    "imagenes": ["130.jpg"],
+    "imagenes": [
+      "130.jpg"
+    ],
     "detalles": "Support pour cible ajustable de type serre <br> Tige usinée stainless 300mm",
     "manual_url": null
   },
@@ -868,7 +1065,9 @@
     "prix": 715.408,
     "categorie": "Accessoires",
     "descripcion": "Sabot Magnétique & Mini-Prisme",
-    "imagenes": ["131.jpg"],
+    "imagenes": [
+      "131.jpg"
+    ],
     "detalles": "Sabot Magnétique pour rail Leica <br> Mini-prisme GMP101",
     "manual_url": null
   },
@@ -877,7 +1076,9 @@
     "prix": 360.0,
     "categorie": "Accessoires",
     "descripcion": "Mini prism Leica GMP101",
-    "imagenes": ["131.1.jpg"],
+    "imagenes": [
+      "131.1.jpg"
+    ],
     "detalles": "Mini Prism GMP101",
     "manual_url": null
   },
@@ -886,7 +1087,9 @@
     "prix": 1820.0,
     "categorie": "Accessoires",
     "descripcion": "Leica Crochet & Porteur",
-    "imagenes": ["131.2.jpg"],
+    "imagenes": [
+      "131.2.jpg"
+    ],
     "detalles": "Leica crochet de hauteur GZS4-1 <br> Leica GRT146 porteur avec 5/8 filet <br> Ruban à mesurer",
     "manual_url": null
   },
@@ -895,7 +1098,9 @@
     "prix": 400.0,
     "categorie": "Accessoires",
     "descripcion": "Adaptateur Leica GAD31",
-    "imagenes": ["131.4.jpg"],
+    "imagenes": [
+      "131.4.jpg"
+    ],
     "detalles": "Adaptateur Leica GAD31 5/8",
     "manual_url": null
   },
@@ -904,7 +1109,9 @@
     "prix": 90.0,
     "categorie": "Accessoires",
     "descripcion": "Bulle ajustable pour canne",
-    "imagenes": ["131.5.jpg"],
+    "imagenes": [
+      "131.5.jpg"
+    ],
     "detalles": "Bulle ajustable pour canne",
     "manual_url": null
   },
@@ -913,8 +1120,10 @@
     "prix": 200.0,
     "categorie": "Accessoires",
     "descripcion": "Gabarit de levé pour socle d ancrage",
-    "imagenes": ["131.8.jpg"],
-    "detalles": "Gabarit de levé pour socle d’ancrage",
+    "imagenes": [
+      "131.8.jpg"
+    ],
+    "detalles": "Gabarit de levé pour socle dancrage",
     "manual_url": null
   },
   {
@@ -922,7 +1131,9 @@
     "prix": 2500.0,
     "categorie": "Accessoires",
     "descripcion": "Prisme rail Monitoring + Side rail clip",
-    "imagenes": ["131.9.jpg"],
+    "imagenes": [
+      "131.9.jpg"
+    ],
     "detalles": "Prisme rail Monitoring <br> Side rail clip",
     "manual_url": null
   },
@@ -931,7 +1142,9 @@
     "prix": 1100.0,
     "categorie": "Accessoires",
     "descripcion": "Monitoring System Data",
-    "imagenes": ["132.jpg"],
+    "imagenes": [
+      "132.jpg"
+    ],
     "detalles": "Système Monitoring",
     "manual_url": null
   },
@@ -940,7 +1153,9 @@
     "prix": 1600.0,
     "categorie": "Accessoires",
     "descripcion": "Monitoring System Data",
-    "imagenes": ["133.jpg"],
+    "imagenes": [
+      "133.jpg"
+    ],
     "detalles": "Monitoring System Data (2022) <br> Assemblage modulaire transmission données <br> Modem carte Sim <br> Base météo",
     "manual_url": null
   },
@@ -949,7 +1164,9 @@
     "prix": 1600.0,
     "categorie": "Accessoires",
     "descripcion": "Monitoring System Data",
-    "imagenes": ["134.jpg"],
+    "imagenes": [
+      "134.jpg"
+    ],
     "detalles": "Monitoring System Data (2022) <br> Assemblage modulaire transmission données <br> Modem carte Sim <br> Base météo",
     "manual_url": null
   },
@@ -958,7 +1175,9 @@
     "prix": 500.0,
     "categorie": "Accessoires",
     "descripcion": "Monitoring System Data",
-    "imagenes": ["135.jpg"],
+    "imagenes": [
+      "135.jpg"
+    ],
     "detalles": "Monitoring System Data",
     "manual_url": null
   },
@@ -967,7 +1186,9 @@
     "prix": 250.0,
     "categorie": "Accessoires",
     "descripcion": "Convertisseur 2000 watts",
-    "imagenes": ["136.1.jpg"],
+    "imagenes": [
+      "136.1.jpg"
+    ],
     "detalles": "Convertisseur 2000 watts",
     "manual_url": null
   },
@@ -976,7 +1197,9 @@
     "prix": 1477.98,
     "categorie": "Accessoires",
     "descripcion": "Laser rotatif Rugby 640 pente manuelle",
-    "imagenes": ["137.jpg"],
+    "imagenes": [
+      "137.jpg"
+    ],
     "detalles": "Laser rotatif Rugby 640 pente manuelle <br> Capteur laser de base avec support <br> Chargeur Li-ion",
     "manual_url": null
   },
@@ -985,7 +1208,9 @@
     "prix": 1500.0,
     "categorie": "Accessoires",
     "descripcion": "Laser rotatif Topcon RL-SV2S",
-    "imagenes": ["138.jpg"],
+    "imagenes": [
+      "138.jpg"
+    ],
     "detalles": "Laser rotatif Topcon RL-SV2S <br> Capteur de signal Topcon",
     "manual_url": null
   },
@@ -994,7 +1219,9 @@
     "prix": 200.0,
     "categorie": "Accessoires",
     "descripcion": "Laser Leica en croix",
-    "imagenes": ["138.1.jpg"],
+    "imagenes": [
+      "138.1.jpg"
+    ],
     "detalles": "Laser Leica en croix",
     "manual_url": null
   },
@@ -1003,7 +1230,9 @@
     "prix": 500.0,
     "categorie": "Accessoires",
     "descripcion": "Laser Bosch GRL 500H",
-    "imagenes": ["138.2.jpg"],
+    "imagenes": [
+      "138.2.jpg"
+    ],
     "detalles": "Laser Bosch GRL 500H <br> Contrôleur",
     "manual_url": null
   },
@@ -1012,7 +1241,9 @@
     "prix": 500.0,
     "categorie": "Accessoires",
     "descripcion": "Laser Hilti PR 2-HS A12",
-    "imagenes": ["138.3.jpg"],
+    "imagenes": [
+      "138.3.jpg"
+    ],
     "detalles": "Laser Hilti PR 2-HS A12 <br> Contrôleur <br> Chargeur",
     "manual_url": null
   },
@@ -1021,7 +1252,9 @@
     "prix": 1000.0,
     "categorie": "Accessoires",
     "descripcion": "Détecteur de métal",
-    "imagenes": ["139.jpg"],
+    "imagenes": [
+      "139.jpg"
+    ],
     "detalles": "Détecteur de métal (2022)",
     "manual_url": null
   },
@@ -1030,7 +1263,9 @@
     "prix": 1000.0,
     "categorie": "Accessoires",
     "descripcion": "Détecteur de métal avec afficheur",
-    "imagenes": ["140.jpg"],
+    "imagenes": [
+      "140.jpg"
+    ],
     "detalles": "Détecteur magnétique avec afficheur",
     "manual_url": null
   },
@@ -1039,7 +1274,9 @@
     "prix": 80.0,
     "categorie": "Accessoires",
     "descripcion": "Niveau 4 pi",
-    "imagenes": ["141.jpg"],
+    "imagenes": [
+      "141.jpg"
+    ],
     "detalles": "Niveau 4 pi",
     "manual_url": null
   },
@@ -1048,7 +1285,9 @@
     "prix": 300.0,
     "categorie": "Accessoires",
     "descripcion": "Niveau électronique 4 pi",
-    "imagenes": ["143.jpg"],
+    "imagenes": [
+      "143.jpg"
+    ],
     "detalles": "Niveau Stabila Level Type 96m 48",
     "manual_url": null
   },
@@ -1057,7 +1296,9 @@
     "prix": 260.0,
     "categorie": "Accessoires",
     "descripcion": "Ruban à Mesurer",
-    "imagenes": ["144.jpg"],
+    "imagenes": [
+      "144.jpg"
+    ],
     "detalles": "Ruban Keson 30 NR / 50 NR / 60 NR <br> Ruban Lufkin vinyle 30m <br> Ruban Starrett 30m",
     "manual_url": null
   },
@@ -1066,7 +1307,9 @@
     "prix": 80.0,
     "categorie": "Accessoires",
     "descripcion": "Roue à mesurer Keson RRT12M",
-    "imagenes": ["144.1.jpg"],
+    "imagenes": [
+      "144.1.jpg"
+    ],
     "detalles": "Roue à mesurer Keson RRT12M",
     "manual_url": null
   },
@@ -1075,7 +1318,9 @@
     "prix": 200.0,
     "categorie": "Accessoires",
     "descripcion": "Sac pour piquet Seco",
-    "imagenes": ["145.jpg"],
+    "imagenes": [
+      "145.jpg"
+    ],
     "detalles": "Sac pour piquet Seco",
     "manual_url": null
   },
@@ -1084,7 +1329,9 @@
     "prix": 800.0,
     "categorie": "Accessoires",
     "descripcion": "Étoile de plancher pour trépied",
-    "imagenes": ["146.jpg"],
+    "imagenes": [
+      "146.jpg"
+    ],
     "detalles": "Étoile de plancher pour trépied (2020) Leica GST4",
     "manual_url": null
   },
@@ -1093,7 +1340,9 @@
     "prix": 2200.0,
     "categorie": "Accessoires",
     "descripcion": "Chargeur multiple Type GKL 341",
-    "imagenes": ["148.jpg"],
+    "imagenes": [
+      "148.jpg"
+    ],
     "detalles": "Chargeur multiple Type GKL 341 <br> Chargeur multiple Type GKL 221",
     "manual_url": null
   },
@@ -1102,7 +1351,9 @@
     "prix": 400.0,
     "categorie": "Accessoires",
     "descripcion": "Chargeur GKL 221",
-    "imagenes": ["149.jpg"],
+    "imagenes": [
+      "149.jpg"
+    ],
     "detalles": "Chargeur GKL 221",
     "manual_url": null
   },
@@ -1111,7 +1362,9 @@
     "prix": 600.0,
     "categorie": "Accessoires",
     "descripcion": "Chargeur GKL 311",
-    "imagenes": ["150.jpg"],
+    "imagenes": [
+      "150.jpg"
+    ],
     "detalles": "Chargeur GKL 311",
     "manual_url": null
   },
@@ -1120,7 +1373,9 @@
     "prix": 120.0,
     "categorie": "Accessoires",
     "descripcion": "Chargeur GEV276",
-    "imagenes": ["151.jpg"],
+    "imagenes": [
+      "151.jpg"
+    ],
     "detalles": "Chargeur GEV276",
     "manual_url": null
   },
@@ -1129,7 +1384,9 @@
     "prix": 750.0,
     "categorie": "Accessoires",
     "descripcion": "Chargeur GKL311 mural",
-    "imagenes": ["152.jpg"],
+    "imagenes": [
+      "152.jpg"
+    ],
     "detalles": "Chargeur GKL311 mural <br> Chargeur GKL311 véhicule",
     "manual_url": null
   },
@@ -1138,7 +1395,9 @@
     "prix": 250.0,
     "categorie": "Accessoires",
     "descripcion": "Adapteur Leica",
-    "imagenes": ["153.jpg"],
+    "imagenes": [
+      "153.jpg"
+    ],
     "detalles": "Adapteur Leica",
     "manual_url": null
   },
@@ -1147,7 +1406,9 @@
     "prix": 450.0,
     "categorie": "Outils électriques",
     "descripcion": "Génératrice Inverter Ducar 2000 Watts",
-    "imagenes": ["200.jpg"],
+    "imagenes": [
+      "200.jpg"
+    ],
     "detalles": "Génératrice Inverter Ducar 2000 Watts (2023)",
     "manual_url": null
   },
@@ -1156,7 +1417,9 @@
     "prix": 125.0,
     "categorie": "Outils électriques",
     "descripcion": "Chargeur multiple Milwake",
-    "imagenes": ["201.jpg"],
+    "imagenes": [
+      "201.jpg"
+    ],
     "detalles": "Chargeur multiple Milwaukee M18",
     "manual_url": null
   },
@@ -1165,7 +1428,9 @@
     "prix": 225.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwaukee impact- Gun 1/2",
-    "imagenes": ["202.jpg"],
+    "imagenes": [
+      "202.jpg"
+    ],
     "detalles": "Milwaukee impact- Gun 1/2 <br> Chargeur M12-M18 <br> 2x Batterie XC5.0",
     "manual_url": null
   },
@@ -1174,7 +1439,9 @@
     "prix": 225.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
-    "imagenes": ["203.jpg"],
+    "imagenes": [
+      "203.jpg"
+    ],
     "detalles": "Milwaukee Drill driver- Gun 1/2 Fuel <br> Milwaukee impact- Gun 1/2 Fuel 18 volt <br> Chargeur M12-M18 <br> 2x Batterie XC5.0",
     "manual_url": null
   },
@@ -1183,7 +1450,9 @@
     "prix": 120.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
-    "imagenes": ["203.1.jpg"],
+    "imagenes": [
+      "203.1.jpg"
+    ],
     "detalles": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
     "manual_url": null
   },
@@ -1192,7 +1461,9 @@
     "prix": 225.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwaukee Rectifieuse Meuleuse",
-    "imagenes": ["204.jpg"],
+    "imagenes": [
+      "204.jpg"
+    ],
     "detalles": "Milwaukee Rectifieuse Meuleuse <br> Chargeur M12-M18 <br> 2x Batterie XC5.0 Lithium",
     "manual_url": null
   },
@@ -1201,7 +1472,9 @@
     "prix": 225.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwaukee Rectifieuse Meuleuse",
-    "imagenes": ["205.jpg"],
+    "imagenes": [
+      "205.jpg"
+    ],
     "detalles": "Milwaukee Rectifieuse Meuleuse <br> Chargeur M12-M18 <br> 2x Batterie XC5.0 Lithium",
     "manual_url": null
   },
@@ -1210,7 +1483,9 @@
     "prix": 240.0,
     "categorie": "Outils électriques",
     "descripcion": "Milwakee ensemble de lumière DEL à batterie",
-    "imagenes": ["206.jpg"],
+    "imagenes": [
+      "206.jpg"
+    ],
     "detalles": "Milwakee ensemble de lumière DEL à batterie",
     "manual_url": null
   },
@@ -1219,7 +1494,9 @@
     "prix": 120.0,
     "categorie": "Outils électriques",
     "descripcion": "DeWalt perseuse 3/8 20 Volt Max",
-    "imagenes": ["207.jpg"],
+    "imagenes": [
+      "207.jpg"
+    ],
     "detalles": "Perceuse DeWalt 3/8 20 Volt Max <br> Chargeur DCB101 <br> 2x Batterie 20v Max 3.0 ah",
     "manual_url": null
   },
@@ -1228,7 +1505,9 @@
     "prix": 80.0,
     "categorie": "Outils électriques",
     "descripcion": "DeWalt perseuse 3/8 XR 20 Volt Max",
-    "imagenes": ["208.jpg"],
+    "imagenes": [
+      "208.jpg"
+    ],
     "detalles": "DeWalt perseuse 3/8 XR 20 Volt Max",
     "manual_url": null
   },
@@ -1237,7 +1516,9 @@
     "prix": 1000.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti PS 50 détecteur acier armature",
-    "imagenes": ["210.jpg"],
+    "imagenes": [
+      "210.jpg"
+    ],
     "detalles": "Hilti PS 50 détecteur acier armature (2020)",
     "manual_url": null
   },
@@ -1246,7 +1527,9 @@
     "prix": 160.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Ensemble meuleuse sans fil AG 600-A36",
-    "imagenes": ["211.jpg"],
+    "imagenes": [
+      "211.jpg"
+    ],
     "detalles": "Hilti Ensemble meuleuse sans fil AG 600-A36",
     "manual_url": null
   },
@@ -1255,7 +1538,9 @@
     "prix": 500.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perseuse SF-BT 22-A",
-    "imagenes": ["212.jpg"],
+    "imagenes": [
+      "212.jpg"
+    ],
     "detalles": "Hilti Perceuse SF-BT 22-A (2020) <br> Hilti Perceuse SFC 22-A (2020) <br> 3x Batterie B22 4.0 ah",
     "manual_url": null
   },
@@ -1264,7 +1549,9 @@
     "prix": 525.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perceuse SF-10W 22-A",
-    "imagenes": ["213.jpg"],
+    "imagenes": [
+      "213.jpg"
+    ],
     "detalles": "Hilti Perceuse SF-10W 22-A (2020) <br> Hilti Impact SW 22-A (2020) <br> Hilti Perceuse TE 6-A36 (2020) <br> Chargeur batterie C4/36-350 <br> Chargeur batterie C4/36-90",
     "manual_url": null
   },
@@ -1273,7 +1560,9 @@
     "prix": 525.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perceuse SF-10W 22-A",
-    "imagenes": ["213.1.jpg"],
+    "imagenes": [
+      "213.1.jpg"
+    ],
     "detalles": "Hilti Perceuse SF-10W 22-A (2020) <br> Hilti Impact SW 22-A (2020) <br> Hilti Perceuse TE 6-A36 (2020) <br> Chargeur batterie C4/36-350 <br> Chargeur batterie C4/36-90",
     "manual_url": null
   },
@@ -1282,7 +1571,9 @@
     "prix": 525.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perceuse SF-10W 22-A",
-    "imagenes": ["213.2.jpg"],
+    "imagenes": [
+      "213.2.jpg"
+    ],
     "detalles": "Hilti Perceuse SF-10W 22-A (2020) <br> Hilti Impact SW 22-A (2020) <br> Hilti Perceuse TE 6-A36 (2020) <br> Chargeur batterie C4/36-350 <br> Chargeur batterie C4/36-90",
     "manual_url": null
   },
@@ -1291,7 +1582,9 @@
     "prix": 350.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Impact SW 22-A",
-    "imagenes": ["214.jpg"],
+    "imagenes": [
+      "214.jpg"
+    ],
     "detalles": "Hilti Impact SW 22-A (2020) <br> Hilti Perceuse TE 6-A36 (2020) <br> Chargeur batterie C4/36-350",
     "manual_url": null
   },
@@ -1300,7 +1593,9 @@
     "prix": 400.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Impact SW 22-A",
-    "imagenes": ["214.2.jpg"],
+    "imagenes": [
+      "214.2.jpg"
+    ],
     "detalles": "Hilti Impact SW 22-A (2020) <br> Hilti Perceuse TE 6-A36 (2020) <br> Chargeur batterie C4/36-350",
     "manual_url": null
   },
@@ -1309,7 +1604,9 @@
     "prix": 350.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Impact SW 22-A",
-    "imagenes": ["214.3.jpg"],
+    "imagenes": [
+      "214.3.jpg"
+    ],
     "detalles": "Hilti Impact SW 22-A (2020)",
     "manual_url": null
   },
@@ -1318,7 +1615,9 @@
     "prix": 250.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perseuse TE 6-A36",
-    "imagenes": ["218.1.jpg"],
+    "imagenes": [
+      "218.1.jpg"
+    ],
     "detalles": "Hilti Perceuse TE 6-A22 (2020) <br> Chargeur batterie C4/36-350 <br> Batterie B36 5.2 ah",
     "manual_url": null
   },
@@ -1327,7 +1626,9 @@
     "prix": 1150.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Perseuse TE 60-A36 AVR",
-    "imagenes": ["219.jpg"],
+    "imagenes": [
+      "219.jpg"
+    ],
     "detalles": "Hilti Perseuse TE 60-A36 AVR <br> 2x Chargeur batterie C4/36-350 <br> 2x Batterie B36 9.0 ah",
     "manual_url": null
   },
@@ -1336,7 +1637,9 @@
     "prix": 500.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti récupérateur de poussière TE DRS-6-A",
-    "imagenes": ["220.jpg"],
+    "imagenes": [
+      "220.jpg"
+    ],
     "detalles": "Hilti récupérateur de poussière TE DRS-6-A (2020) <br> 12x Filtre à poussière",
     "manual_url": null
   },
@@ -1345,7 +1648,9 @@
     "prix": 200.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti Aspirateur VC75-1-A22",
-    "imagenes": ["221.jpg"],
+    "imagenes": [
+      "221.jpg"
+    ],
     "detalles": "Hilti Aspirateur VC75-1-A22",
     "manual_url": null
   },
@@ -1354,7 +1659,9 @@
     "prix": 200.0,
     "categorie": "Outils électriques",
     "descripcion": "Hilti ensemble de lumière à batterie",
-    "imagenes": ["222.jpg"],
+    "imagenes": [
+      "222.jpg"
+    ],
     "detalles": "Hilti ensemble de lumière à batterie SL 6-A22 <br> Batterie B 22/5,2 Li-ion <br> Chargeur",
     "manual_url": null
   },
@@ -1363,7 +1670,9 @@
     "prix": 150.0,
     "categorie": "Outils électriques",
     "descripcion": "Laser magnétique PMC 46",
-    "imagenes": ["223.jpg"],
+    "imagenes": [
+      "223.jpg"
+    ],
     "detalles": "Laser magnétique PMC 46",
     "manual_url": null
   },
@@ -1372,7 +1681,9 @@
     "prix": 1000.0,
     "categorie": "Outils légers",
     "descripcion": "Escaliers plateform pour enjamber jersey",
-    "imagenes": ["300.jpg"],
+    "imagenes": [
+      "300.jpg"
+    ],
     "detalles": "Escaliers plateforme pour enjamber jersey 100% aluminium",
     "manual_url": null
   },
@@ -1380,53 +1691,70 @@
     "lot": "301",
     "prix": 400.0,
     "categorie": "Outils légers",
-    "descripcion": "Échelle ajustable jusqu’à 21 pied aluminium",
-    "imagenes": ["301.jpg"],
-    "detalles": "Echelle ajustable jusqu’à 21 pied aluminium <br> Escabeau Featherlite 375",
+    "descripcion": "Échelle ajustable jusquà 21 pied aluminium",
+    "imagenes": [
+      "301.jpg"
+    ],
+    "detalles": "Echelle ajustable jusquà 21 pied aluminium <br> Escabeau Featherlite 375",
     "manual_url": null
   },
   {
     "lot": "302",
-    "prix": 1080.0,
+    "prix": 697.5,
     "categorie": "Outils légers",
     "descripcion": "Outils divers",
-    "imagenes": ["302.jpg"],
+    "imagenes": [
+      "302.jpg"
+    ],
     "detalles": "Pelle ronde et carrée <br> Pioche fiberglass 36 po <br> Escabeau 5 pieds aluminium",
     "manual_url": null
   },
   {
     "lot": "400",
-    "prix": 9182.24,
+    "prix": 3256.31,
     "categorie": "Quincailleries",
-    "descripcion": "Divers elements ancrages tiges billes…",
-    "imagenes": ["400.jpg", "400_A.jpg", "400_B.jpg", "400_C.jpg", "400_D.jpg", "400_E.jpg"],
+    "descripcion": "Divers elements ancrages tiges billes",
+    "imagenes": [
+      "400.jpg",
+      "400_A.jpg",
+      "400_B.jpg",
+      "400_C.jpg",
+      "400_D.jpg"
+    ],
     "detalles": "Ancrages à béton <br> Coil Threaded Drop-In Anchor <br> Wedge Anchor <br> Billes nivellement <br> Vis à béton",
     "manual_url": null
   },
   {
     "lot": "400.1",
-    "prix": 9264.24,
+    "prix": 1836.99,
     "categorie": "Quincailleries",
     "descripcion": "Forêts Béton",
-    "imagenes": ["400.1.jpg"],
+    "imagenes": [
+      "400.1.jpg"
+    ],
     "detalles": "Forêts Béton",
     "manual_url": null
   },
   {
     "lot": "400.2",
-    "prix": 6600.0,
+    "prix": 3300.0,
     "categorie": "Quincailleries",
     "descripcion": "Boites de 100 Goujon Filete",
-    "imagenes": ["400.2.jpg"],
+    "imagenes": [
+      "400.2.jpg"
+    ],
     "detalles": "Goujon Fileté S-BT-EF HC HL pour connecteur électrique Hilti",
     "manual_url": null
   },
   {
     "lot": "401",
-    "prix": 646.28,
+    "prix": 827.38,
     "categorie": "Quincailleries",
     "descripcion": "lot de différentes douilles",
-    "imagenes": ["401.jpg", "401_A.jpg"],
+    "imagenes": [
+      "401.jpg",
+      "401_A.jpg"
+    ],
     "detalles": "lot de différentes douilles",
     "manual_url": null
   },
@@ -1435,232 +1763,284 @@
     "prix": 50.0,
     "categorie": "Quincailleries",
     "descripcion": "Sac d outils assortis",
-    "imagenes": ["403.jpg"],
+    "imagenes": [
+      "403.jpg"
+    ],
     "detalles": "Sac d'outils assortis <br> Clefs hexagonale <br> Pince Vis Grip <br> Tourne vis <br> Clefs à molette",
     "manual_url": null
   },
   {
     "lot": "405",
-    "prix": 1600.0,
+    "prix": 1175.0,
     "categorie": "Quincailleries",
     "descripcion": "Parasol",
-    "imagenes": ["405.jpg"],
-    "detalles": "2x Parasol 8’ x 10’",
+    "imagenes": [
+      "405.jpg"
+    ],
+    "detalles": "2x Parasol 8 x 10",
     "manual_url": null
   },
   {
     "lot": "504.1",
-    "prix": 9180.0,
+    "prix": 4590.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 55Po",
-    "imagenes": ["504.1.jpg"],
+    "imagenes": [
+      "504.1.jpg"
+    ],
     "detalles": "Monuments piédestal acier 55Po",
     "manual_url": null
   },
   {
     "lot": "504.2",
-    "prix": 1800.0,
+    "prix": 800.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 44Po",
-    "imagenes": ["504.2.jpg"],
+    "imagenes": [
+      "504.2.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 44Po Base 12x12po",
     "manual_url": null
   },
   {
     "lot": "504.3",
-    "prix": 1130.0,
+    "prix": 565.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 12Po",
-    "imagenes": ["504.3.jpg"],
+    "imagenes": [
+      "504.3.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 12Po Base 6x6 Po",
     "manual_url": null
   },
   {
     "lot": "504.4",
-    "prix": 900.0,
+    "prix": 450.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 24Po",
-    "imagenes": ["504.4.jpg"],
+    "imagenes": [
+      "504.4.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 24Po",
     "manual_url": null
   },
   {
     "lot": "504.5",
-    "prix": 900.0,
+    "prix": 510.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 55Po",
-    "imagenes": ["504.5.jpg"],
+    "imagenes": [
+      "504.5.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 55Po",
     "manual_url": null
   },
   {
     "lot": "504.6",
-    "prix": 340.0,
+    "prix": 170.0,
     "categorie": "Monuments",
     "descripcion": "Monument piédestal acier 59Po",
-    "imagenes": ["504.6.jpg"],
+    "imagenes": [
+      "504.6.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 59Po",
     "manual_url": null
   },
   {
     "lot": "504.7",
-    "prix": 750.0,
+    "prix": 375.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 36-37Po",
-    "imagenes": ["504.7.jpg"],
+    "imagenes": [
+      "504.7.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 36-37Po Base 8x8 Po",
     "manual_url": null
   },
   {
     "lot": "504.8",
-    "prix": 260.0,
+    "prix": 130.0,
     "categorie": "Monuments",
     "descripcion": "Monument piédestal acier 36Po",
-    "imagenes": ["504.8.jpg"],
+    "imagenes": [
+      "504.8.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 36Po",
     "manual_url": null
   },
   {
     "lot": "504.9",
-    "prix": 1800.0,
+    "prix": 900.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 60Po",
-    "imagenes": ["504.9.jpg"],
+    "imagenes": [
+      "504.9.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 60Po Base 12x12Po",
     "manual_url": null
   },
   {
     "lot": "505",
-    "prix": 1800.0,
+    "prix": 637.5,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 72Po",
-    "imagenes": ["505.jpg"],
+    "imagenes": [
+      "505.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 72Po",
     "manual_url": null
   },
   {
     "lot": "505.1",
-    "prix": 855.0,
+    "prix": 840.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 48Po",
-    "imagenes": ["505.1.jpg"],
+    "imagenes": [
+      "505.1.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 48Po Base 10x10Po",
     "manual_url": null
   },
   {
     "lot": "505.2",
-    "prix": 8400.0,
+    "prix": 4250.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 54-56Po",
-    "imagenes": ["505.2.jpg"],
+    "imagenes": [
+      "505.2.jpg"
+    ],
     "detalles": "Monuments piédestal acier 54-56Po",
     "manual_url": null
   },
   {
     "lot": "505.3",
-    "prix": 5100.0,
+    "prix": 2550.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 48-54Po",
-    "imagenes": ["505.3.jpg"],
+    "imagenes": [
+      "505.3.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 48 Po à 54Po",
     "manual_url": null
   },
   {
     "lot": "505.4",
-    "prix": 2380.0,
+    "prix": 1487.5,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 72Po",
-    "imagenes": ["505.4.jpg"],
+    "imagenes": [
+      "505.4.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 72Po",
     "manual_url": null
   },
   {
     "lot": "505.5",
-    "prix": 1500.0,
+    "prix": 975.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 36Po",
-    "imagenes": ["505.5.jpg"],
+    "imagenes": [
+      "505.5.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 36Po Base 12x12Po",
     "manual_url": null
   },
   {
     "lot": "505.6",
-    "prix": 300.0,
+    "prix": 170.0,
     "categorie": "Monuments",
     "descripcion": "Monument piédestal acier 54-56Po",
-    "imagenes": ["505.6.jpg"],
+    "imagenes": [
+      "505.6.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 54Po à 56Po",
     "manual_url": null
   },
   {
     "lot": "505.7",
-    "prix": 1500.0,
+    "prix": 750.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 48-54 Po",
-    "imagenes": ["505.7.jpg"],
+    "imagenes": [
+      "505.7.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 48Po à 54Po",
     "manual_url": null
   },
   {
     "lot": "505.8",
-    "prix": 6075.0,
+    "prix": 3037.5,
     "categorie": "Monuments",
     "descripcion": "Monuments Équerre acier 10X12",
-    "imagenes": ["505.8.jpg"],
+    "imagenes": [
+      "505.8.jpg"
+    ],
     "detalles": "Monument Equerre acier 12x10x8Po",
     "manual_url": null
   },
   {
     "lot": "505.9",
-    "prix": 675.0,
+    "prix": 337.5,
     "categorie": "Monuments",
     "descripcion": "Monuments Équerre acier 16X12",
-    "imagenes": ["505.9.jpg"],
+    "imagenes": [
+      "505.9.jpg"
+    ],
     "detalles": "Monument Equerre acier 16x12Po inclinée 15°",
     "manual_url": null
   },
   {
     "lot": "506",
-    "prix": 675.0,
+    "prix": 337.5,
     "categorie": "Monuments",
     "descripcion": "Monuments Équerre acier 12X12",
-    "imagenes": ["506.jpg"],
+    "imagenes": [
+      "506.jpg"
+    ],
     "detalles": "Monument Equerre acier con plaque de serrage 12x12Po",
     "manual_url": null
   },
   {
     "lot": "506.1",
-    "prix": 2500.0,
+    "prix": 1250.0,
     "categorie": "Monuments",
     "descripcion": "Monuments aluminium 12x10",
-    "imagenes": ["506.1.jpg"],
+    "imagenes": [
+      "506.1.jpg"
+    ],
     "detalles": "Monument Equerre aluminium 12x10x8Po",
     "manual_url": null
   },
   {
     "lot": "506.2",
-    "prix": 600.0,
+    "prix": 687.5,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 48-54Po",
-    "imagenes": ["506.2.jpg"],
+    "imagenes": [
+      "506.2.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 48Po à 54Po",
     "manual_url": null
   },
   {
     "lot": "506.4",
-    "prix": 900.0,
+    "prix": 350.0,
     "categorie": "Monuments",
     "descripcion": "Monuments pour top mur",
-    "imagenes": ["506.4.jpg"],
+    "imagenes": [
+      "506.4.jpg"
+    ],
     "detalles": "Monument pour top mur de béton",
     "manual_url": null
   },
   {
     "lot": "506.5",
-    "prix": 1500.0,
+    "prix": 825.0,
     "categorie": "Monuments",
     "descripcion": "Monuments piédestal acier 30Po",
-    "imagenes": ["506.5.jpg"],
+    "imagenes": [
+      "506.5.jpg"
+    ],
     "detalles": "Monument piédestal acier <br> Longueur 30Po Base 12x12po",
     "manual_url": null
   },
@@ -1669,7 +2049,9 @@
     "prix": 250.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Système électrique pour véhicule électrique",
-    "imagenes": ["600.jpg"],
+    "imagenes": [
+      "600.jpg"
+    ],
     "detalles": "Système électrique pour véhicule électrique <br> 2x Chargeur 48 V <br> 3x Batterie Lithium 48 V",
     "manual_url": null
   },
@@ -1678,7 +2060,9 @@
     "prix": 35000.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Véhicule Électrique Ferroviaire léger",
-    "imagenes": ["601.jpg"],
+    "imagenes": [
+      "601.jpg"
+    ],
     "detalles": "Véhicule Électrique Ferroviaire léger",
     "manual_url": null
   },
@@ -1687,7 +2071,9 @@
     "prix": 10656.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Drapeau et tige de support",
-    "imagenes": ["602.jpg"],
+    "imagenes": [
+      "602.jpg"
+    ],
     "detalles": "10x Drapeau et tige de support <br> Nolan PD-6 Dérailleur Portable",
     "manual_url": null
   },
@@ -1696,7 +2082,9 @@
     "prix": 2784.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Chariot pour outils",
-    "imagenes": ["603.jpg"],
+    "imagenes": [
+      "603.jpg"
+    ],
     "detalles": "Chariot pour outils et fourniture",
     "manual_url": null
   },
@@ -1705,7 +2093,9 @@
     "prix": 460.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Caméra GoPro Héro12",
-    "imagenes": ["604.jpg"],
+    "imagenes": [
+      "604.jpg"
+    ],
     "detalles": "2x Caméra GoPro Héro12 27MP <br> Support de fixation",
     "manual_url": null
   },
@@ -1714,7 +2104,9 @@
     "prix": 150.0,
     "categorie": "Véhicule Électrique",
     "descripcion": "Caméra GoPro Héro10",
-    "imagenes": ["604.1.jpg"],
+    "imagenes": [
+      "604.1.jpg"
+    ],
     "detalles": "Caméra GoPro Héro10",
     "manual_url": null
   },
@@ -1723,7 +2115,9 @@
     "prix": 15000.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "KIT complet MSA XTIRPA",
-    "imagenes": ["700.jpg"],
+    "imagenes": [
+      "700.jpg"
+    ],
     "detalles": "KIT complet MSA XTIRPA",
     "manual_url": null
   },
@@ -1732,7 +2126,9 @@
     "prix": 100.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Cone orange 18 po bande réfléchissante",
-    "imagenes": ["702.jpg"],
+    "imagenes": [
+      "702.jpg"
+    ],
     "detalles": "Cone orange 18 po bande réfléchissante",
     "manual_url": null
   },
@@ -1741,7 +2137,9 @@
     "prix": 450.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Back Rack tubulaire",
-    "imagenes": ["703.jpg"],
+    "imagenes": [
+      "703.jpg"
+    ],
     "detalles": "Back Rack tubulaire",
     "manual_url": null
   },
@@ -1750,7 +2148,9 @@
     "prix": 150.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Appareil de levage magnétique pour couvercle de regard",
-    "imagenes": ["704.jpg"],
+    "imagenes": [
+      "704.jpg"
+    ],
     "detalles": "Appareil de levage magnétique pour couvercle de regard VEVOR",
     "manual_url": null
   },
@@ -1759,7 +2159,9 @@
     "prix": 100.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ensemble de sangles en caoutchouc & tendeur d élastique",
-    "imagenes": ["705.jpg"],
+    "imagenes": [
+      "705.jpg"
+    ],
     "detalles": "Ensemble de sangles en caoutchouc & tendeur d élastique",
     "manual_url": null
   },
@@ -1768,7 +2170,9 @@
     "prix": 200.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Corde de sécurité",
-    "imagenes": ["706.jpg"],
+    "imagenes": [
+      "706.jpg"
+    ],
     "detalles": "Corde de sécurité",
     "manual_url": null
   },
@@ -1777,7 +2181,9 @@
     "prix": 300.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage pivotante",
-    "imagenes": ["707.jpg"],
+    "imagenes": [
+      "707.jpg"
+    ],
     "detalles": "Ancrage pivotante",
     "manual_url": null
   },
@@ -1786,7 +2192,9 @@
     "prix": 1200.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage à dé pour béton",
-    "imagenes": ["708.jpg"],
+    "imagenes": [
+      "708.jpg"
+    ],
     "detalles": "Ancrage en dé pour béton",
     "manual_url": null
   },
@@ -1795,7 +2203,9 @@
     "prix": 400.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage à béton",
-    "imagenes": ["709.jpg"],
+    "imagenes": [
+      "709.jpg"
+    ],
     "detalles": "Ancrage à béton",
     "manual_url": null
   },
@@ -1804,7 +2214,9 @@
     "prix": 225.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Coulisseau de sécurité",
-    "imagenes": ["710.jpg"],
+    "imagenes": [
+      "710.jpg"
+    ],
     "detalles": "Coulisseau de sécurité 5/8 3M",
     "manual_url": null
   },
@@ -1813,7 +2225,9 @@
     "prix": 50.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Mousqueton",
-    "imagenes": ["711.jpg"],
+    "imagenes": [
+      "711.jpg"
+    ],
     "detalles": "Mousqueton",
     "manual_url": null
   },
@@ -1822,7 +2236,9 @@
     "prix": 1500.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage pour rail anti-chute",
-    "imagenes": ["712.jpg"],
+    "imagenes": [
+      "712.jpg"
+    ],
     "detalles": "Ancrage de rail",
     "manual_url": null
   },
@@ -1831,7 +2247,9 @@
     "prix": 1800.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage pour rail anti-chute",
-    "imagenes": ["712.1.jpg"],
+    "imagenes": [
+      "712.1.jpg"
+    ],
     "detalles": "Ancrage pour rail",
     "manual_url": null
   },
@@ -1840,7 +2258,10 @@
     "prix": 6783.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Divers items de sécurité",
-    "imagenes": ["713.jpg", "713_A.jpg"],
+    "imagenes": [
+      "713.jpg",
+      "713_A.jpg"
+    ],
     "detalles": "Harnais de sécurité <br> Longe de sécurité (yoyo) MSA & DBI SALA <br> Extension pour harnais <br> Veste de flottaison Mustang",
     "manual_url": null
   },
@@ -1849,7 +2270,9 @@
     "prix": 20.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Adapteur d harnais",
-    "imagenes": ["714.jpg"],
+    "imagenes": [
+      "714.jpg"
+    ],
     "detalles": "Adapteur harnais",
     "manual_url": null
   },
@@ -1858,7 +2281,9 @@
     "prix": 770.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Ancrage pour poutre en I",
-    "imagenes": ["715.jpg"],
+    "imagenes": [
+      "715.jpg"
+    ],
     "detalles": "Ancrage pour poutre en I",
     "manual_url": null
   },
@@ -1867,7 +2292,9 @@
     "prix": 100.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Garde-corps magnétique autoportant temporaire",
-    "imagenes": ["716.jpg"],
+    "imagenes": [
+      "716.jpg"
+    ],
     "detalles": "Garde-corps magnétique 4 morceaux",
     "manual_url": null
   },
@@ -1876,7 +2303,9 @@
     "prix": 140.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Lumière rouge de sécurité",
-    "imagenes": ["717.jpg"],
+    "imagenes": [
+      "717.jpg"
+    ],
     "detalles": "Lumière rouge pour support ferroviaire",
     "manual_url": null
   },
@@ -1885,7 +2314,9 @@
     "prix": 25.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Lumière de sécurité Kosto",
-    "imagenes": ["718.jpg"],
+    "imagenes": [
+      "718.jpg"
+    ],
     "detalles": "Lumière de sécurité Kosto",
     "manual_url": null
   },
@@ -1894,7 +2325,9 @@
     "prix": 100.0,
     "categorie": "Matériels de Sécurité",
     "descripcion": "Girofard",
-    "imagenes": ["719.jpg"],
+    "imagenes": [
+      "719.jpg"
+    ],
     "detalles": "Girofard Ambre",
     "manual_url": null
   },
@@ -1903,7 +2336,9 @@
     "prix": 3000.0,
     "categorie": "Entrepôt Conteneur",
     "descripcion": "Conteneur dimension 8 X8 finition tôle",
-    "imagenes": ["800.jpg"],
+    "imagenes": [
+      "800.jpg"
+    ],
     "detalles": "Conteneur dimension 8 X8 <br> Unité de chauffage Ouellet",
     "manual_url": null
   },
@@ -1912,7 +2347,9 @@
     "prix": 12000.0,
     "categorie": "Entrepôt Conteneur",
     "descripcion": "Conteneur de dimension 10X20 isolée",
-    "imagenes": ["801.jpg"],
+    "imagenes": [
+      "801.jpg"
+    ],
     "detalles": "Conteneur de dimension 10X20 isolée",
     "manual_url": null
   },
@@ -1921,8 +2358,10 @@
     "prix": 17053.55,
     "categorie": "Entrepôt Conteneur",
     "descripcion": "Conteneur 8 X10 pas isolée",
-    "imagenes": ["802.jpg"],
-    "detalles": "Conteneur 8’x10’ (2019) Aménagé",
+    "imagenes": [
+      "802.jpg"
+    ],
+    "detalles": "Conteneur 8x10 (2019) Aménagé",
     "manual_url": null
   },
   {
@@ -1930,7 +2369,9 @@
     "prix": 50000.0,
     "categorie": "Véhicule",
     "descripcion": "Ford Transit 250 AWD",
-    "imagenes": ["900.jpg"],
+    "imagenes": [
+      "900.jpg"
+    ],
     "detalles": "Ford Transit 250 AWD <br> Excellente condition A-1",
     "manual_url": null
   },
@@ -1939,7 +2380,9 @@
     "prix": 20000.0,
     "categorie": "Véhicule",
     "descripcion": "Remorque 2 essieux",
-    "imagenes": ["901.jpg"],
+    "imagenes": [
+      "901.jpg"
+    ],
     "detalles": "Remorque 2 essieux Deal Cargo 20' X 7' <br> Espace de travail aménagé <br> Alimentation électrique 110 volt",
     "manual_url": null
   }

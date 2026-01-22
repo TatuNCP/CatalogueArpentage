@@ -234,54 +234,77 @@ function cargarCatalogo() {
                 '<p style="color:red; text-align:center;">Erreur de chargement. Vérifiez le fichier JSON.</p>';
         });
 }
+// 1. Variable global para controlar el tiempo (IMPORTANTE: Ponla fuera de la función)
+let searchTimeout;
 
-// BARRA DE BÚSQUEDA
 function filtrarPorBusqueda() {
-    const input = document.getElementById('search-input');
-    let texto = input.value.toLowerCase();
+    // 2. Si el usuario escribe otra letra antes de 300ms, cancelamos la búsqueda anterior
+    clearTimeout(searchTimeout);
 
-    const sinonimos = {
-        "tripod": "trépied",
-        "pole": "canne",
-        "charger": "chargeur",
-        "battery": "batterie",
-        "level": "niveau",
-        "nail": "clou",
-        "paint": "peinture",
-        "safety": "sécurité",
-        "total station": "station totale",
-        "truck": "camion",
-        "trailer": "remorque"
-    };
+    // 3. Iniciamos la cuenta atrás. La búsqueda solo ocurrirá si el usuario para de escribir por 0.3 segundos.
+    searchTimeout = setTimeout(() => {
 
-    let terminoBusqueda = texto;
-    if (sinonimos[texto]) {
-        terminoBusqueda = sinonimos[texto];
-    }
+        // --- AQUÍ EMPIEZA TU CÓDIGO ORIGINAL (INTACTO) ---
+        const input = document.getElementById('search-input');
 
-    const modelosLeica = ['ts16', 'ms60', 'ts60', 'tm50', 'ls15', 'gs15', 'gs16', 'icg70', 'dna03', 'leica'];
-    let esBusquedaLeica = (texto === 'leica');
+        // Verificación de seguridad por si el input no existe
+        if (!input) return;
 
-    document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
+        let texto = input.value.toLowerCase();
 
-    if (texto === "") {
-        generarTarjetas(catalogoData);
-        return;
-    }
+        const sinonimos = {
+            "tripod": "trépied",
+            "pole": "canne",
+            "charger": "chargeur",
+            "battery": "batterie",
+            "level": "niveau",
+            "nail": "clou",
+            "paint": "peinture",
+            "safety": "sécurité",
+            "total station": "station totale",
+            "truck": "camion",
+            "trailer": "remorque"
+        };
 
-    const filtrados = catalogoData.filter(item => {
-        const todoElTexto = (item.lot + " " + item.descripcion + " " + item.categorie + " " + item.detalles).toLowerCase();
-
-        if (esBusquedaLeica) {
-            if (todoElTexto.includes('trimble')) return false;
-            return modelosLeica.some(modelo => todoElTexto.includes(modelo));
+        let terminoBusqueda = texto;
+        if (sinonimos[texto]) {
+            terminoBusqueda = sinonimos[texto];
         }
 
-        return todoElTexto.includes(texto) || todoElTexto.includes(terminoBusqueda);
-    });
+        const modelosLeica = ['ts16', 'ms60', 'ts60', 'tm50', 'ls15', 'gs15', 'gs16', 'icg70', 'dna03', 'leica'];
+        let esBusquedaLeica = (texto === 'leica');
 
-    generarTarjetas(filtrados);
+        // Esta parte manipula el DOM, es bueno que ahora esté dentro del timeout
+        document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
+
+        if (texto === "") {
+            generarTarjetas(catalogoData);
+            return;
+        }
+
+        const filtrados = catalogoData.filter(item => {
+            // Un pequeño truco de optimización: verificar nulo antes de concatenar
+            const lote = item.lot || "";
+            const desc = item.descripcion || "";
+            const cat = item.categorie || "";
+            const det = item.detalles || "";
+
+            const todoElTexto = (lote + " " + desc + " " + cat + " " + det).toLowerCase();
+
+            if (esBusquedaLeica) {
+                if (todoElTexto.includes('trimble')) return false;
+                return modelosLeica.some(modelo => todoElTexto.includes(modelo));
+            }
+
+            return todoElTexto.includes(texto) || todoElTexto.includes(terminoBusqueda);
+        });
+
+        generarTarjetas(filtrados);
+        // --- FIN DE TU CÓDIGO ORIGINAL ---
+
+    }, 300); // 300 milisegundos de espera (Ajustable)
 }
+
 
 // GENERAR TARJETAS
 function generarTarjetas(lotes) {
