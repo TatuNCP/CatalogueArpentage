@@ -7,6 +7,8 @@ let currentImageSet = []; // Imágenes del lote actual
 let currentImageIndex = 0; // Índice imagen actual
 let cart = []; // Carrito
 const CART_KEY = 'cotationCart';
+// --- NUEVO: Variable para control de unidades ---
+let unitSelections = {};
 
 /* ========================================== */
 /* 2. SISTEMA DE IDIOMAS (i18n)               */
@@ -218,7 +220,7 @@ function getText(key) {
 // CARGAR DATOS
 function cargarCatalogo() {
     // IMPORTANTE: Asegúrate de que este nombre sea el correcto (dcatalog.json o catalogo_final_ocr.json)
-    fetch('dcatalog.json')
+    fetch('catalog.json')
         .then(response => {
             if (!response.ok) throw new Error('Error loading JSON');
             return response.json();
@@ -307,6 +309,7 @@ function filtrarPorBusqueda() {
 
 
 // GENERAR TARJETAS
+// GENERAR TARJETAS (NUEVA VERSIÓN)
 function generarTarjetas(lotes) {
     const container = document.getElementById('catalogo-container');
     container.innerHTML = '';
@@ -316,69 +319,109 @@ function generarTarjetas(lotes) {
         return;
     }
 
-    lotes.forEach(lote => {
-        const esGratis = lote.prix === 0;
-        const precioDisplay = esGratis
-            ? `<span style="color:#d9534f; font-size:0.9em;">${getText('card_price_free')}</span>`
-            : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(lote.prix);
+    // Generamos el HTML de cada tarjeta usando la nueva función auxiliar
+    const htmlTotal = lotes.map(lote => generarTarjetaHTML(lote)).join('');
+    container.innerHTML = htmlTotal;
+}
 
-        const btnState = esGratis ? 'disabled' : ''; // Eliminamos estilo inline, usamos CSS
-        const btnText = esGratis ? getText('card_btn_unavailable') : getText('card_btn_add');
+// NUEVA FUNCIÓN AUXILIAR QUE CREA EL HTML DE UNA SOLA TARJETA
+function generarTarjetaHTML(item) {
+    // 1. Inicializar contador de unidades
+    if (unitSelections[item.lot] === undefined) {
+        unitSelections[item.lot] = 0;
+    }
 
-        const iconName = (lote.categorie || 'default')
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-            .replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+    // 2. Lógica de Iconos y Badges (Conservando tu estilo original)
+    const iconName = (item.categorie || 'default')
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
 
-        let badgesHTML = '';
-        const categoriasPrincipales = ['Station Totale', 'GPS', 'Appareil de mesure', 'Drones'];
+    let badgesHTML = '';
+    const categoriasPrincipales = ['Station Totale', 'GPS', 'Appareil de mesure', 'Drones'];
+    if (categoriasPrincipales.some(cat => (item.categorie || '').includes(cat))) {
+        const keywords = [
+            { key: 'trépied', label: getText('tag_tripod') },
+            { key: 'canne', label: getText('tag_pole') },
+            { key: 'cs20', label: '📱 CS20' },
+            { key: 'tablette', label: getText('tag_tablet') },
+            { key: 'chargeur', label: getText('tag_charger') },
+            { key: 'prisme', label: getText('tag_prism') },
+            { key: 'rh16', label: getText('tag_radio') }
+        ];
+        const detallesLower = (item.detalles || '').toLowerCase();
+        keywords.forEach(k => {
+            if (detallesLower.includes(k.key)) {
+                badgesHTML += `<span class="tech-badge">${k.label}</span>`;
+            }
+        });
+    }
 
-        if (categoriasPrincipales.some(cat => lote.categorie.includes(cat))) {
-            const keywords = [
-                { key: 'trépied', label: getText('tag_tripod') },
-                { key: 'canne', label: getText('tag_pole') },
-                { key: 'cs20', label: '📱 CS20' },
-                { key: 'tablette', label: getText('tag_tablet') },
-                { key: 'chargeur', label: getText('tag_charger') },
-                { key: 'prisme', label: getText('tag_prism') },
-                { key: 'rh16', label: getText('tag_radio') }
-            ];
-            const detallesLower = (lote.detalles || '').toLowerCase();
-            keywords.forEach(k => {
-                if (detallesLower.includes(k.key)) {
-                    badgesHTML += `<span class="tech-badge">${k.label}</span>`;
-                }
-            });
-        }
+    // 3. Lógica de Precios y Unidades
+    const esGratis = item.prix === 0;
+    const precioDisplay = esGratis
+        ? `<span style="color:#d9534f; font-size:0.9em;">${getText('card_price_free')}</span>`
+        : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(item.prix);
 
-        const html = `
-            <div class="lote-card">
-                <div class="category-corner-icon">
-                    <img src="icons/${iconName}.jpg" class="corner-icon-img" onerror="this.src='icons/default.jpg'">
+    // Detectar si es divisible (tiene unidades y precio unitario)
+    const esDivisible = (item.units_available > 1 && item.unit_price > 0);
+
+    let unitSelectorHTML = '';
+
+    if (esDivisible) {
+        const precioUnidad = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(item.unit_price);
+        unitSelectorHTML = `
+            <div class="unit-controls" style="margin: 10px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 5px;">
+                <div style="font-size: 0.85em; margin-bottom: 5px; color:#002D72; font-weight:bold;">
+                    Acheter à l'unité: ${precioUnidad} / un.
                 </div>
-
-                <h3>Lot ${lote.lot}</h3>
-                <h4>${traducirTitulo(lote.descripcion)}</h4>
-
-                <div class="badge-container">${badgesHTML}</div>
-
-                <p style="font-size:0.85em; color:#666;">
-                    ${translations[currentLang].categories[lote.categorie] || lote.categorie}
-                </p>
-
-                <strong style="display:block; margin:10px 0; font-size:1.3em;">${precioDisplay}</strong>
-
-                <div class="card-actions">
-                    <button onclick="verDetalle('${lote.lot}')" style="background:#444;">${getText('card_btn_view')}</button>
-                    <button onclick="anadirAlCarrito('${lote.lot}', '${(lote.descripcion||'').replace(/'/g, "\\'")}', ${lote.prix})" ${btnState}>
-                        ${btnText}
-                    </button>
+                <div style="display: flex; align-items: center; justify-content: space-between; max-width: 120px; margin: 0 auto;">
+                    <button onclick="cambiarCantidad('${item.lot}', -1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">-</button>
+                    <span id="count-${item.lot}" style="font-weight:bold; font-size:1.1em;">0</span>
+                    <button onclick="cambiarCantidad('${item.lot}', 1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">+</button>
+                </div>
+                <div style="text-align:center; font-size:0.8em; color:#666; margin-top:2px;">
+                    Disponibles: ${item.units_available}
                 </div>
             </div>
         `;
-        container.innerHTML += html;
-    });
-}
+    }
 
+    const btnState = esGratis ? 'disabled' : '';
+    const btnText = esGratis ? getText('card_btn_unavailable') : getText('card_btn_add');
+
+    // 4. Construir el HTML final
+    // NOTA: Cambiamos el onclick del botón añadir para usar la nueva función inteligente
+    return `
+        <div class="lote-card" data-lot="${item.lot}">
+            <div class="category-corner-icon">
+                <img src="icons/${iconName}.jpg" class="corner-icon-img" onerror="this.src='icons/default.jpg'">
+            </div>
+
+            <h3>Lot ${item.lot}</h3>
+            <h4>${traducirTitulo(item.descripcion)}</h4>
+
+            <div class="badge-container">${badgesHTML}</div>
+
+            <p style="font-size:0.85em; color:#666;">
+                ${translations[currentLang].categories[item.categorie] || item.categorie}
+            </p>
+
+            <strong style="display:block; margin:10px 0; font-size:1.3em;">${precioDisplay}</strong>
+
+            ${unitSelectorHTML}
+
+            <div class="card-actions">
+                <button onclick="verDetalle('${item.lot}')" style="background:#444;">${getText('card_btn_view')}</button>
+
+                <button id="btn-add-${item.lot}"
+                        onclick="agregarAlCarritoInteligente('${item.lot}')"
+                        ${btnState}>
+                    ${btnText}
+                </button>
+            </div>
+        </div>
+    `;
+}
 // MODAL DETALLE
 function verDetalle(lotID) {
     const lote = catalogoData.find(i => i.lot === lotID);
@@ -711,4 +754,72 @@ function traducirTitulo(textoOriginal) {
     }
 
     return texto;
+}
+/* ========================================== */
+/* 4. FUNCIONES DE UNIDADES Y CARRITO INTELIGENTE */
+/* ========================================== */
+
+// Manejar botones + y -
+function cambiarCantidad(lotId, cambio, max) {
+    let actual = unitSelections[lotId] || 0;
+    let nuevo = actual + cambio;
+
+    if (nuevo < 0) nuevo = 0;
+    if (nuevo > max) nuevo = max;
+
+    unitSelections[lotId] = nuevo;
+
+    // Actualizar UI
+    const countSpan = document.getElementById(`count-${lotId}`);
+    if(countSpan) countSpan.innerText = nuevo;
+
+    actualizarBotonCompra(lotId);
+}
+
+// Cambiar texto del botón según selección
+function actualizarBotonCompra(lotId) {
+    const item = catalogoData.find(i => i.lot === lotId);
+    if (!item) return;
+
+    const qty = unitSelections[lotId] || 0;
+    const btn = document.getElementById(`btn-add-${lotId}`);
+    if (!btn) return;
+
+    if (qty === 0) {
+        // MODO LOTE
+        btn.innerText = getText('card_btn_add');
+        btn.style.backgroundColor = ""; // Restaurar color original (CSS)
+        btn.style.border = "";
+    } else {
+        // MODO UNIDAD
+        const totalPrecio = qty * item.unit_price;
+        const totalFmt = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(totalPrecio);
+
+        btn.innerHTML = `Ajouter <b>${qty}</b> unités - ${totalFmt}`;
+        btn.style.backgroundColor = "#7FBC42"; // Verde
+        btn.style.border = "1px solid #7FBC42";
+    }
+}
+
+// Lógica inteligente para añadir al carrito
+function agregarAlCarritoInteligente(lotId) {
+    const item = catalogoData.find(i => i.lot === lotId);
+    if (!item) return;
+
+    const qty = unitSelections[lotId] || 0;
+
+    if (qty === 0) {
+        // Opción A: Añadir el Lote completo (Llamamos a tu función original)
+        anadirAlCarrito(item.lot, item.descripcion, item.prix);
+    } else {
+        // Opción B: Añadir Unidades Sueltas
+        // Modificamos la descripción y el precio antes de enviar
+        const descNueva = `${item.descripcion} (x${qty} Unités)`;
+        const precioTotal = item.unit_price * qty;
+
+        anadirAlCarrito(item.lot, descNueva, precioTotal);
+
+        // Resetear contador visual
+        cambiarCantidad(lotId, -qty, item.units_available); // Truco para resetear a 0 usando la lógica existente
+    }
 }
