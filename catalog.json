@@ -469,7 +469,7 @@
     },
     {
         "lot": "57",
-        "prix": 62500.0,
+        "prix": 0.0,
         "categorie": "Station Totale",
         "descripcion": "Station Total TS60 I 0.5  R1000",
         "detalles": "Station Totale avec imagerie TS60 I 0.5\"  <br>  GeoCom Robotique TS/MS  <br>  Poignée radio RH16 (2019)  <br>  Embase GDF321",
@@ -638,7 +638,7 @@
     },
     {
         "lot": "79",
-        "prix": 19500.0,
+        "prix": 0.0,
         "categorie": "GPS",
         "descripcion": "GS16 3.75G & UHF Performance NAFTA",
         "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2015)  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
@@ -651,7 +651,7 @@
     },
     {
         "lot": "80",
-        "prix": 19500.0,
+        "prix": 0.0,
         "categorie": "GPS",
         "descripcion": "GS16 3.75G & UHF Performance NAFTA",
         "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2015)  <br>  Armoire de rangement produits inflammables  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
@@ -742,7 +742,7 @@
     },
     {
         "lot": "89",
-        "prix": 7100.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Niveau LS15 0.2mm",
         "detalles": "Niveau LS15 0.2mm (2019)  <br>  Chargeur GKL311  <br>  Câble de transfert GEV267  <br>  Mire aluminium 3.5m code barre",
@@ -833,7 +833,7 @@
     },
     {
         "lot": "101.1",
-        "prix": 10000.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone DJI Matrice 350 RTK",
         "detalles": "DJI Matrice 350 RTK (2024)  <br>  2x Batteries TB65 (2024)  <br>  Emetteur DJI RC Plus  <br>  Chargeur BS65",
@@ -846,7 +846,7 @@
     },
     {
         "lot": "101.2",
-        "prix": 8000.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone DJI Matrice 300 RTK",
         "detalles": "DJI Matrice 300 RTK (2021)  <br>  Emetteur DJI Smart Controller Enterprise  <br>  Chargeur BS60",
@@ -859,7 +859,7 @@
     },
     {
         "lot": "101.3",
-        "prix": 3000.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone accessoire Caméra DJI Zenmuse H20",
         "detalles": "Caméra DJI Zenmuse H20 (2021)  <br>  Grand Angle Zoom 23x optique",
@@ -872,7 +872,7 @@
     },
     {
         "lot": "101.4",
-        "prix": 8000.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone accessoire Caméra DJI Zenmuse P1 avec objecOf 35 mm",
         "detalles": "Caméra DJI Zenmuse P1 (2021)  <br>  Objectif 35 mm  <br>  Photogrammétrie",
@@ -885,7 +885,7 @@
     },
     {
         "lot": "101.5",
-        "prix": 14500.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Lidar DJI Zenmuse L2",
         "detalles": "Lidar DJI Zenmuse L2 (2024)",
@@ -898,7 +898,7 @@
     },
     {
         "lot": "101.6",
-        "prix": 3800.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone",
         "detalles": "AVSS PRS-M350 parachute (2021)  <br>  Homologué par Transports Canada",
@@ -911,7 +911,7 @@
     },
     {
         "lot": "101.7",
-        "prix": 1800.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batterie TB65",
         "detalles": "Batterie TB65",
@@ -924,7 +924,7 @@
     },
     {
         "lot": "101.8",
-        "prix": 150.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone valisepour Batterie",
         "detalles": "Valise de transport pour Batterie TB60/TB65",
@@ -937,7 +937,7 @@
     },
     {
         "lot": "101.9",
-        "prix": 200.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batteries WB37",
         "detalles": "Batterie WB37 (2021) - Lot de 5 unités",
@@ -950,7 +950,7 @@
     },
     {
         "lot": "101.10",
-        "prix": 50.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Support Émetteur DJI C Plus",
         "detalles": "Courroie et support pour émetteur DJI RC Plus (2024)",
@@ -963,7 +963,7 @@
     },
     {
         "lot": "101.11",
-        "prix": 200.0,
+        "prix": 0.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Support de caméra supérieur",
         "detalles": "Support de connecteur de cardan de caméra supérieur (2021)",
@@ -2437,7 +2437,7 @@
     },
     {
         "lot": "604",
-        "prix": 460.0,
+        "prix": 0.0,
         "categorie": "Véhicule Électrique",
         "descripcion": "Caméra GoPro Héro12",
         "detalles": "2x Caméra GoPro Héro12 27MP  <br>  Support de fixation",
@@ -2502,7 +2502,7 @@
     },
     {
         "lot": "704",
-        "prix": 150.0,
+        "prix": 0.0,
         "categorie": "Matériels de Sécurité",
         "descripcion": "Appareil de levage magnétique pour couvercle de regard",
         "detalles": "Appareil de levage magnétique pour couvercle de regard VEVOR",
@@ -2763,7 +2763,7 @@
     },
     {
         "lot": "900",
-        "prix": 50000.0,
+        "prix": 0.0,
         "categorie": "Véhicule",
         "descripcion": "Ford Transit 250 AWD",
         "detalles": "Ford Transit 250 AWD  <br>  Excellente condition A-1",
@@ -2776,7 +2776,7 @@
     },
     {
         "lot": "901",
-        "prix": 20000.0,
+        "prix": 0.0,
         "categorie": "Véhicule",
         "descripcion": "Remorque 2 essieux",
         "detalles": "Remorque 2 essieux Deal Cargo 20' X 7'  <br>  Espace de travail aménagé  <br>  Alimentation électrique 110 volt",
