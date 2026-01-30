@@ -17,11 +17,12 @@
     <nav id="main-nav">
         <button onclick="mostrarSeccion('home')" class="nav-btn active" data-i18n="nav_home">Accueil</button>
         <button onclick="mostrarSeccion('catalogo')" class="nav-btn" data-i18n="nav_catalog">Catalogue</button>
-        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn" data-i18n="nav_disclaimer">Politique de Vente
-        </button>
-        <button onclick="mostrarSeccion('contact')" class="nav-btn" data-i18n="nav_contact">Contact</button>
+        <button onclick="mostrarSeccion('disclaimer')" class="nav-btn" data-i18n="nav_disclaimer">Politique de Vente</button>
+
+        <a href="index.html" class="nav-btn" style="text-decoration:none; display:inline-block;" data-i18n="nav_departments">Départements</a>
+
         <button onclick="toggleLanguage()" class="nav-btn" id="lang-toggle"
-                style="border: 1px solid white; margin-left:10px;">EN
+            style="border: 1px solid white; margin-left:10px;">EN
         </button>
     </nav>
 </header>
@@ -31,15 +32,22 @@
         <h2 data-i18n="hero_title">Portail de Liquidation d'Actifs - Projet NouvLR</h2>
         <p data-i18n="hero_desc">Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de
             géomatique met en vente son parc d'équipements topographiques excédentaires.</p>
+        <p class="contact-inline" style="margin-top: 10px; font-weight: 600; color: #333;">
+            <span data-i18n="contact_intro">Pour toute question : </span>
+            <a href="mailto:Vente.actifs@nouvlr.com" style="color: #7FBC42; text-decoration: none;">Vente.actifs@nouvlr.com</a>
+        </p>
         <div class="hero-actions">
             <button onclick="mostrarSeccion('catalogo')" class="big-btn" data-i18n="btn_catalog">Consulter le
                 Catalogue
             </button>
-            <a href="catalogue.pdf" download="Catalogue_NouvLR.pdf" class="download-btn">📄 Télécharger PDF</a>
         </div>
-        <p style="margin-top: 20px; font-size: 0.9em; color: #888;">*Vente réservée aux professionnels.</p>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #888;" data-i18n="footer_note">*Vente réservée aux professionnels.</p>
     </div>
+
 </section>
+
+
+
 
 <section id="section-catalogo" class="content-section hidden">
     <div id="search-container" style="text-align: center; margin-bottom: 20px;">

@@ -18,10 +18,16 @@ const translations = {
         nav_home: "Accueil",
         nav_catalog: "Catalogue",
         nav_disclaimer: "Politique",
-        nav_contact: "Contact",
+
+        // --- NUEVOS ---
+        nav_departments: "Départements",
+        contact_intro: "Pour toute question ou information : ",
+        footer_note: "*Vente réservée aux professionnels.", // <--- ¡AQUÍ ESTÁ EN FRANCÉS!
+        // --------------
+
         hero_title: "Portail de Liquidation d'Actifs - Projet NouvLR",
-        //hero_desc: "Dans le cadre de la finalisation des travaux d'infrastructure du REM, le département de géomatique met en vente son parc d'équipements topographiques excédentaires.",
         hero_desc: "NouvLR met à la disposition les actifs du département de support Technique de Construction et d'Arpentage. Grâce à une bibliothèque complète d'articles classés par catégorie conçu pour soutenir vos opérations et optimiser votre efficacité au quotidien.",
+
         btn_catalog: "Consulter le Catalogue",
         search_placeholder: "🔍 Rechercher (ex: TS16, Trépied...)",
 
@@ -40,31 +46,23 @@ const translations = {
             "Véhicule": "Véhicule"
         },
 
-        // Tarjetas y Modal
         card_price_free: "Bientôt disponible",
         card_btn_add: "Ajouter à la Demande",
         card_btn_view: "Voir Détail",
         card_btn_unavailable: "Non Disponible",
-
         modal_details_title: "Détails & Inclusions:",
         modal_manual_btn: "📄 Voir Fiche Technique (PDF)",
         modal_price_prefix: "Prix: ",
-
-        // Carrito
         cart_title: "Votre Demande de Cotation",
         cart_table_lot: "Lot",
         cart_table_desc: "Description",
         cart_table_price: "Prix",
         cart_total: "Total Estimé",
         cart_empty: "Votre demande est vide.",
-
-        // Formulario
         form_name: "Nom et Prénom:",
         form_email: "Courriel:",
         form_btn_send: "Envoyer la Demande",
         form_btn_cancel: "Annuler",
-
-        // Badges (Etiquetas)
         tag_tripod: "🔭 Trépied",
         tag_pole: "📏 Canne",
         tag_charger: "🔋 Chargeur",
@@ -72,14 +70,21 @@ const translations = {
         tag_radio: "📡 Radio",
         tag_tablet: "📱 Tablette"
     },
+
     en: {
         nav_home: "Home",
         nav_catalog: "Catalog",
         nav_disclaimer: "Policy",
-        nav_contact: "Contact",
+
+        // --- NUEVOS ---
+        nav_departments: "Departments",
+        contact_intro: "For questions or inquiries: ",
+        footer_note: "*Sale reserved for professionals.", // <--- ¡AQUÍ ESTÁ EN INGLÉS! (Si falta esta, no cambia)
+        // --------------
+
         hero_title: "Asset Liquidation Portal - NouvLR Project",
-        //hero_desc: "As part of the REM infrastructure project completion, the geomatics department is selling its surplus topographical equipment.",
         hero_desc: "NouvLR makes the assets of the Construction Technical Support and Surveying department available. Featuring a complete library of items classified by category, designed to support your operations and optimize your daily efficiency.",
+
         btn_catalog: "View Catalog",
         search_placeholder: "🔍 Search (e.g., TS16, Tripod...)",
 
@@ -96,33 +101,25 @@ const translations = {
             "Matériels de Sécurité": "Safety Equipment",
             "Entrepôt Conteneur": "Storage Container",
             "Véhicule": "Vehicle"
-        }, // <--- ¡AQUÍ FALTABA UNA COMA!
+        },
 
-        // Cards & Modal
         card_price_free: "Coming Soon",
         card_btn_add: "Add to Quote",
         card_btn_view: "View Details",
         card_btn_unavailable: "Unavailable",
-
         modal_details_title: "Details & Inclusions:",
         modal_manual_btn: "📄 View Datasheet (PDF)",
         modal_price_prefix: "Price: ",
-
-        // Cart
         cart_title: "Your Quote Request",
         cart_table_lot: "Lot",
         cart_table_desc: "Description",
         cart_table_price: "Price",
         cart_total: "Estimated Total",
         cart_empty: "Your quote request is empty.",
-
-        // Form
         form_name: "Full Name:",
         form_email: "Email:",
         form_btn_send: "Send Quote Request",
         form_btn_cancel: "Cancel",
-
-        // Badges
         tag_tripod: "🔭 Tripod",
         tag_pole: "📏 Pole",
         tag_charger: "🔋 Charger",
@@ -131,7 +128,6 @@ const translations = {
         tag_tablet: "📱 Tablet"
     }
 };
-
 /* ========================================== */
 /* 3. FUNCIONES PRINCIPALES                   */
 /* ========================================== */

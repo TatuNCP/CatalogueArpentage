@@ -1030,7 +1030,7 @@
         "lot": "111",
         "prix": 500.0,
         "categorie": "Accessoires",
-        "descripcion": "Cannes 46 mètre",
+        "descripcion": "Cannes 4.6 mètre",
         "detalles": "Cannes 4.6 mètre",
         "manual_url": "",
         "imagenes": [
@@ -1083,7 +1083,7 @@
         "prix": 1106.7,
         "categorie": "Accessoires",
         "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
-        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread",
+        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread aimanté",
         "manual_url": "",
         "imagenes": [
             "118.jpg"
@@ -1717,7 +1717,7 @@
     },
     {
         "lot": "206",
-        "prix": 240.0,
+        "prix": 475.0,
         "categorie": "Outils électriques",
         "descripcion": "Milwakee ensemble de lumière DEL à batterie",
         "detalles": "Milwakee ensemble de lumière DEL à batterie",
@@ -2000,8 +2000,7 @@
             "400_A.jpg",
             "400_B.jpg",
             "400_C.jpg",
-            "400_D.jpg",
-            "400_E.jpg"
+            "400_D.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2064,7 +2063,7 @@
         "prix": 1175.0,
         "categorie": "Quincailleries",
         "descripcion": "Parasol",
-        "detalles": "2x Parasol 8 x 10",
+        "detalles": "2x Parasol 8 x 10",
         "manual_url": "",
         "imagenes": [
             "405.jpg"

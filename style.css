@@ -180,48 +180,97 @@ body {
 /* ========================================= */
 /* 4. CATÁLOGO Y TARJETAS */
 /* ========================================= */
+
+/* CONTENEDOR DE FILTROS */
 #filter-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 30px;
+    gap: 10px; /* Espacio uniforme entre botones */
 }
 
+/* EL WRAPPER (Botón completo) */
 .category-button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Alinea arriba para que queden parejos */
     background-color: transparent !important;
     border: none;
     padding: 5px;
-    margin: 0 5px 15px 5px;
     cursor: pointer;
-    flex-basis: calc(100% / 7 - 10px);
-    min-width: 90px;
-}
-.category-button-wrapper:hover { transform: translateY(-5px); }
 
+    /* Ancho dinámico pero controlado */
+    flex-basis: calc(100% / 7 - 10px);
+    min-width: 100px; /* Mínimo para que no se aplaste en móvil */
+    transition: transform 0.3s ease;
+}
+
+/* LA IMAGEN (EL ICONO) */
 .category-icon-clickable {
     width: 100%;
-    max-width: 100px;
-    object-fit: contain;
-    background-color: var(--color-primario);
-    border-radius: 15px;
-    padding: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    aspect-ratio: 1 / 1;
+    max-width: 90px; /* Tamaño controlado */
+    aspect-ratio: 1 / 1; /* Asegura que sea cuadrado */
+    object-fit: cover; /* La imagen llena el cuadrado */
+
+    /* ESTILO VISUAL (SQUIRCLE) */
+    background-color: #fff; /* Fondo blanco para que la foto resalte */
+    border-radius: 18px; /* <--- ESTO LO HACE CUADRADO REDONDEADO */
+    border: 3px solid transparent; /* Borde invisible listo para activarse */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave normal */
+
+    transition: all 0.3s ease;
 }
 
+/* 1. Estado Normal (Gris) */
 .category-text-below {
     margin-top: 8px;
-    font-size: 0.9em;
-    font-weight: bold;
-    color: var(--color-texto);
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #555; /* Gris oscuro */
     text-align: center;
+    transition: all 0.3s ease; /* Animación suave de color */
+    line-height: 1.2;
 }
 
+/* 2. Estado HOVER (Al pasar el mouse, el texto se pone un poco verde) */
+.category-button-wrapper:hover .category-text-below {
+    color: #7FBC42;
+    opacity: 0.8;
+}
+
+/* 3. Estado ACTIVO (Seleccionado: Verde intenso y Negrita) */
+.category-button-wrapper.active .category-text-below {
+    color: #7FBC42 !important; /* Forzamos el Verde Corporativo */
+    font-weight: 800; /* Más grueso (Bold) */
+    text-transform: uppercase; /* Opcional: Mayúsculas para destacar más */
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3); /* Un pelín de brillo en el texto */
+}
+/* --- INTERACCIONES --- */
+
+/* 1. HOVER (Al pasar el mouse) */
+.category-button-wrapper:hover {
+    transform: translateY(-5px); /* Flota un poco */
+}
+.category-button-wrapper:hover .category-icon-clickable {
+    border-color: rgba(127, 188, 66, 0.5); /* Borde verde suave */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* 2. ACTIVO (Cuando está seleccionado) */
+.category-button-wrapper.active .category-icon-clickable {
+    border-color: #7FBC42; /* Borde VERDE FUERTE */
+    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4); /* Resplandor verde */
+    transform: scale(1.05); /* Un pelín más grande */
+}
+
+.category-button-wrapper.active .category-text-below {
+    color: #002D72; /* Texto se vuelve AZUL */
+    font-weight: 700;
+}
 /* TARJETAS */
 #catalogo-container {
     display: flex;

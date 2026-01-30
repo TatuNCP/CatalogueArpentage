@@ -223,104 +223,118 @@
 </head>
 <body>
 
-    <header id="main-header">
-        <div class="header-container">
+<header id="main-header">
+    <div class="header-container">
 
-            <div class="branding">
-                <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
+        <div class="branding">
+            <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
 
-                <div class="header-titles">
-                    <h1 id="h-title">VENTE D'ACTIFS</h1>
-                    <p id="h-subtitle">PROJET NOUVLR</p>
-                </div>
+            <div class="header-titles">
+                <h1 id="h-title">VENTE D'ACTIFS</h1>
+                <p id="h-subtitle">PROJET NOUVLR</p>
             </div>
-
-            <button id="language-toggle" class="lang-btn">ENGLISH</button>
-        </div>
-    </header>
-
-    <main class="portada-main">
-
-        <div class="welcome-message">
-            <h2 id="welcome-text">SÉLECTIONNEZ UNE <span style="color:#7FBC42; font-weight:bold;">CATÉGORIE</span></h2>
         </div>
 
-        <div class="icons-grid">
+        <button id="language-toggle" class="lang-btn">ENGLISH</button>
+    </div>
+</header>
 
-            <a href="arpentage.html" class="icon-item active" id="icon-1">
-                <div class="img-wrapper">
-                    <img src="icons/IconF1.jpg" id="img-1" alt="Arpentage">
-                </div>
-                <div class="icon-label" id="lbl-1">Arpentage</div>
-            </a>
+<main class="portada-main">
 
-            <div class="icon-item inactive" id="icon-2"><div class="img-wrapper"><img src="icons/IconF2.jpg" id="img-2"></div></div>
-            <div class="icon-item inactive" id="icon-3"><div class="img-wrapper"><img src="icons/IconF3.jpg" id="img-3"></div></div>
-            <div class="icon-item inactive" id="icon-4"><div class="img-wrapper"><img src="icons/IconF4.jpg" id="img-4"></div></div>
+    <div class="welcome-message">
+        <h2 id="welcome-text">SÉLECTIONNEZ UNE <span style="color:#7FBC42; font-weight:bold;">CATÉGORIE</span></h2>
+    </div>
 
-            <div class="icon-item inactive" id="icon-5"><div class="img-wrapper"><img src="icons/IconF5.jpg" id="img-5"></div></div>
-            <div class="icon-item inactive" id="icon-6"><div class="img-wrapper"><img src="icons/IconF6.jpg" id="img-6"></div></div>
-            <div class="icon-item inactive" id="icon-7"><div class="img-wrapper"><img src="icons/IconF7.jpg" id="img-7"></div></div>
-            <div class="icon-item inactive" id="icon-8"><div class="img-wrapper"><img src="icons/IconF8.jpg" id="img-8"></div></div>
+    <div class="icons-grid">
 
+        <a href="arpentage.html" class="icon-item active" id="icon-1">
+            <div class="img-wrapper">
+                <img src="icons/IconF1.jpg" id="img-1" alt="Arpentage">
+            </div>
+            <div class="icon-label" id="lbl-1">Arpentage</div>
+        </a>
+
+        <div class="icon-item inactive" id="icon-2">
+            <div class="img-wrapper"><img src="icons/IconF2.jpg" id="img-2"></div>
         </div>
-    </main>
+        <div class="icon-item inactive" id="icon-3">
+            <div class="img-wrapper"><img src="icons/IconF3.jpg" id="img-3"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-4">
+            <div class="img-wrapper"><img src="icons/IconF4.jpg" id="img-4"></div>
+        </div>
 
-    <footer>
-        &copy; 2026 NouvLR. Tous droits réservés.
-    </footer>
+        <div class="icon-item inactive" id="icon-5">
+            <div class="img-wrapper"><img src="icons/IconF5.jpg" id="img-5"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-6">
+            <div class="img-wrapper"><img src="icons/IconF6.jpg" id="img-6"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-7">
+            <div class="img-wrapper"><img src="icons/IconF7.jpg" id="img-7"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-8">
+            <div class="img-wrapper"><img src="icons/IconF8.jpg" id="img-8"></div>
+        </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.getElementById('language-toggle');
-            const hTitle = document.getElementById('h-title');
-            const hSubtitle = document.getElementById('h-subtitle');
-            const welcome = document.getElementById('welcome-text');
-            const lbl1 = document.getElementById('lbl-1');
+    </div>
+</main>
 
-            const txt = {
-                fr: {
-                    h1: "VENTE D'ACTIFS",
-                    sub: "PROJET NOUVLR",
-                    wel: "SÉLECTIONNEZ UNE <span style='color:#7FBC42; font-weight:bold;'>CATÉGORIE</span>",
-                    l1: "Arpentage",
-                    btn: "ENGLISH"
-                },
-                en: {
-                    h1: "ASSET SALE",
-                    sub: "PROJECT NOUVLR",
-                    wel: "SELECT A <span style='color:#7FBC42; font-weight:bold;'>CATEGORY</span>",
-                    l1: "Surveying",
-                    btn: "FRANÇAIS"
-                }
-            };
+<footer>
+    &copy; 2026 NouvLR. Tous droits réservés.
+</footer>
 
-            let lang = localStorage.getItem('preferredLanguage') || 'fr';
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('language-toggle');
+        const hTitle = document.getElementById('h-title');
+        const hSubtitle = document.getElementById('h-subtitle');
+        const welcome = document.getElementById('welcome-text');
+        const lbl1 = document.getElementById('lbl-1');
 
-            function update() {
-                hTitle.textContent = txt[lang].h1;
-                hSubtitle.textContent = txt[lang].sub;
-                welcome.innerHTML = txt[lang].wel;
-                lbl1.textContent = txt[lang].l1;
-                btn.textContent = txt[lang].btn;
+        const txt = {
+            fr: {
+                h1: "VENTE D'ACTIFS",
+                sub: "PROJET NOUVLR",
+                wel: "SÉLECTIONNEZ UNE <span style='color:#7FBC42; font-weight:bold;'>CATÉGORIE</span>",
+                l1: "Arpentage",
+                btn: "ENGLISH"
+            },
+            en: {
+                h1: "ASSET SALE",
+                sub: "PROJECT NOUVLR",
+                wel: "SELECT A <span style='color:#7FBC42; font-weight:bold;'>CATEGORY</span>",
+                l1: "Surveying",
+                btn: "FRANÇAIS"
+            }
+        };
 
-                const prefix = (lang === 'fr') ? 'IconF' : 'IconE';
-                for (let i = 1; i <= 8; i++) {
-                    const img = document.getElementById(`img-${i}`);
-                    if (img) img.src = `icons/${prefix}${i}.jpg`;
-                }
+        let lang = localStorage.getItem('preferredLanguage') || 'fr';
 
-                localStorage.setItem('preferredLanguage', lang);
-                document.documentElement.lang = lang;
+        function update() {
+            hTitle.textContent = txt[lang].h1;
+            hSubtitle.textContent = txt[lang].sub;
+            welcome.innerHTML = txt[lang].wel;
+            lbl1.textContent = txt[lang].l1;
+            btn.textContent = txt[lang].btn;
+
+            const prefix = (lang === 'fr') ? 'IconF' : 'IconE';
+            for (let i = 1; i <= 8; i++) {
+                const img = document.getElementById(`img-${i}`);
+                if (img) img.src = `icons/${prefix}${i}.jpg`;
             }
 
-            btn.addEventListener('click', () => {
-                lang = (lang === 'fr') ? 'en' : 'fr';
-                update();
-            });
+            localStorage.setItem('preferredLanguage', lang);
+            document.documentElement.lang = lang;
+        }
 
+        btn.addEventListener('click', () => {
+            lang = (lang === 'fr') ? 'en' : 'fr';
             update();
         });
-    </script>
+
+        update();
+    });
+</script>
 </body>
 </html>
