@@ -1,6 +1,7 @@
 /* ========================================== */
 /* 1. VARIABLES GLOBALES                      */
 /* ========================================== */
+const DEPARTMENT_PREFIX = "A-"; // Arpentage
 let currentLang = 'fr'; // Idioma por defecto
 let catalogoData = []; // Datos del catálogo
 let currentImageSet = []; // Imágenes del lote actual
@@ -215,16 +216,25 @@ function getText(key) {
 
 // CARGAR DATOS
 function cargarCatalogo() {
-    // IMPORTANTE: Asegúrate de que este nombre sea el correcto (dcatalog.json o catalogo_final_ocr.json)
     fetch('catalog.json')
         .then(response => {
             if (!response.ok) throw new Error('Error loading JSON');
             return response.json();
         })
         .then(data => {
-            catalogoData = data;
-            generarFiltros(data);
-            generarTarjetas(data);
+            // --- AQUÍ ESTÁ EL CAMBIO ---
+            // Filtramos solo los lotes que empiezan por "A-"
+            catalogoData = data.filter(item =>
+                item.lot && item.lot.toString().startsWith(DEPARTMENT_PREFIX)
+            );
+
+            // Pequeña ayuda por si no carga nada
+            if (catalogoData.length === 0) {
+                console.warn(`Atención: No se han encontrado artículos con el prefijo "${DEPARTMENT_PREFIX}"`);
+            }
+
+            generarFiltros(catalogoData);
+            generarTarjetas(catalogoData);
         })
         .catch(error => {
             console.error('Error:', error);
@@ -232,6 +242,7 @@ function cargarCatalogo() {
                 '<p style="color:red; text-align:center;">Erreur de chargement. Vérifiez le fichier JSON.</p>';
         });
 }
+
 // 1. Variable global para controlar el tiempo (IMPORTANTE: Ponla fuera de la función)
 let searchTimeout;
 
